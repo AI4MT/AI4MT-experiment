@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:tcinputCloud="http://tcinputCloud/1.0">
+  <tcinputCloud:DataCentre>
+    <net bandwidth="15"
+        latency="15">
+      <switches/>
+    </net>
+    <racks numBoards="14">
+      <board nodesPerBoard="11">
+        <switch/>
+        <nodeType CPUCores="10" CPUSpeed="16" MEMSpeed="7" DiskSpeed="4"/>
+      </board>
+    </racks>
+    <racks numBoards="5">
+      <board nodesPerBoard="4">
+        <switch/>
+        <nodeType CPUCores="20" CPUSpeed="19" MEMSpeed="10" DiskSpeed="14"/>
+      </board>
+    </racks>
+    <racks numBoards="14">
+      <board nodesPerBoard="6">
+        <switch/>
+        <nodeType CPUCores="5" CPUSpeed="18" MEMSpeed="6" DiskSpeed="3"/>
+      </board>
+    </racks>
+    <racks numBoards="16">
+      <board nodesPerBoard="5">
+        <switch/>
+        <nodeType CPUCores="9" CPUSpeed="4" MEMSpeed="9" DiskSpeed="4"/>
+      </board>
+    </racks>
+    <racks numBoards="20">
+      <board nodesPerBoard="19">
+        <switch/>
+        <nodeType CPUCores="13" CPUSpeed="8" MEMSpeed="7" DiskSpeed="6"/>
+      </board>
+    </racks>
+    <racks numBoards="12">
+      <board nodesPerBoard="10">
+        <switch/>
+        <nodeType CPUCores="17" CPUSpeed="15" MEMSpeed="9" DiskSpeed="1"/>
+      </board>
+    </racks>
+    <racks numBoards="8">
+      <board nodesPerBoard="17">
+        <switch/>
+        <nodeType CPUCores="16" CPUSpeed="12" MEMSpeed="20" DiskSpeed="17"/>
+      </board>
+    </racks>
+    <racks numBoards="9">
+      <board nodesPerBoard="11">
+        <switch/>
+        <nodeType CPUCores="19" CPUSpeed="3" MEMSpeed="20" DiskSpeed="1"/>
+      </board>
+    </racks>
+    <racks numBoards="7">
+      <board nodesPerBoard="1">
+        <switch/>
+        <nodeType CPUCores="13" CPUSpeed="8" MEMSpeed="6" DiskSpeed="13"/>
+      </board>
+    </racks>
+    <racks numBoards="8">
+      <board nodesPerBoard="18">
+        <switch/>
+        <nodeType CPUCores="1" CPUSpeed="17" MEMSpeed="17" DiskSpeed="6"/>
+      </board>
+    </racks>
+    <racks numBoards="3">
+      <board nodesPerBoard="6">
+        <switch/>
+        <nodeType CPUCores="9" CPUSpeed="17" MEMSpeed="14" DiskSpeed="20"/>
+      </board>
+    </racks>
+    <racks numBoards="12">
+      <board nodesPerBoard="14">
+        <switch/>
+        <nodeType CPUCores="10" CPUSpeed="1" MEMSpeed="11" DiskSpeed="9"/>
+      </board>
+    </racks>
+    <racks numBoards="2">
+      <board nodesPerBoard="14">
+        <switch/>
+        <nodeType CPUCores="14" CPUSpeed="19" MEMSpeed="6" DiskSpeed="16"/>
+      </board>
+    </racks>
+    <racks numBoards="4">
+      <board nodesPerBoard="10">
+        <switch/>
+        <nodeType CPUCores="10" CPUSpeed="8" MEMSpeed="17" DiskSpeed="6"/>
+      </board>
+    </racks>
+    <racks numBoards="11">
+      <board nodesPerBoard="10">
+        <switch/>
+        <nodeType CPUCores="20" CPUSpeed="5" MEMSpeed="6" DiskSpeed="6"/>
+      </board>
+    </racks>
+    <racks numBoards="1">
+      <board nodesPerBoard="14">
+        <switch/>
+        <nodeType CPUCores="16" CPUSpeed="15" MEMSpeed="6" DiskSpeed="6"/>
+      </board>
+    </racks>
+    <racks numBoards="17">
+      <board nodesPerBoard="4">
+        <switch/>
+        <nodeType CPUCores="5" CPUSpeed="18" MEMSpeed="12" DiskSpeed="6"/>
+      </board>
+    </racks>
+    <racks numBoards="14">
+      <board nodesPerBoard="19">
+        <switch/>
+        <nodeType CPUCores="8" CPUSpeed="13" MEMSpeed="13" DiskSpeed="10"/>
+      </board>
+    </racks>
+    <racks numBoards="19">
+      <board nodesPerBoard="11">
+        <switch/>
+        <nodeType CPUCores="5" CPUSpeed="9" MEMSpeed="12" DiskSpeed="6"/>
+      </board>
+    </racks>
+    <racks numBoards="3">
+      <board nodesPerBoard="2">
+        <switch/>
+        <nodeType CPUCores="8" CPUSpeed="15" MEMSpeed="16" DiskSpeed="11"/>
+      </board>
+    </racks>
+    <racks numBoards="11">
+      <board nodesPerBoard="5">
+        <switch/>
+        <nodeType CPUCores="6" CPUSpeed="16" MEMSpeed="7" DiskSpeed="1"/>
+      </board>
+    </racks>
+    <racks numBoards="18">
+      <board nodesPerBoard="19">
+        <switch/>
+        <nodeType CPUCores="3" CPUSpeed="7" MEMSpeed="9" DiskSpeed="5"/>
+      </board>
+    </racks>
+    <racks numBoards="18">
+      <board nodesPerBoard="17">
+        <switch/>
+        <nodeType CPUCores="9" CPUSpeed="17" MEMSpeed="16" DiskSpeed="8"/>
+      </board>
+    </racks>
+    <racks numBoards="5">
+      <board nodesPerBoard="13">
+        <switch/>
+        <nodeType CPUCores="2" CPUSpeed="16" MEMSpeed="3" DiskSpeed="16"/>
+      </board>
+    </racks>
+    <racks numBoards="3">
+      <board nodesPerBoard="17">
+        <switch/>
+        <nodeType CPUCores="17" CPUSpeed="8" MEMSpeed="2" DiskSpeed="19"/>
+      </board>
+    </racks>
+    <racks numBoards="7">
+      <board nodesPerBoard="3">
+        <switch/>
+        <nodeType CPUCores="2" CPUSpeed="3" MEMSpeed="10" DiskSpeed="13"/>
+      </board>
+    </racks>
+    <racks numBoards="12">
+      <board nodesPerBoard="1">
+        <switch/>
+        <nodeType CPUCores="11" CPUSpeed="14" MEMSpeed="9" DiskSpeed="12"/>
+      </board>
+    </racks>
+    <racks numBoards="17">
+      <board nodesPerBoard="9">
+        <switch/>
+        <nodeType CPUCores="18" CPUSpeed="19" MEMSpeed="17" DiskSpeed="7"/>
+      </board>
+    </racks>
+    <racks numBoards="8">
+      <board nodesPerBoard="10">
+        <switch/>
+        <nodeType CPUCores="2" CPUSpeed="5" MEMSpeed="4" DiskSpeed="5"/>
+      </board>
+    </racks>
+    <racks numBoards="3">
+      <board nodesPerBoard="5">
+        <switch/>
+        <nodeType CPUCores="14" CPUSpeed="11" MEMSpeed="3" DiskSpeed="6"/>
+      </board>
+    </racks>
+    <racks numBoards="2">
+      <board nodesPerBoard="16">
+        <switch/>
+        <nodeType CPUCores="6" CPUSpeed="1" MEMSpeed="9" DiskSpeed="16"/>
+      </board>
+    </racks>
+    <racks numBoards="16">
+      <board nodesPerBoard="18">
+        <switch/>
+        <nodeType CPUCores="9" CPUSpeed="3" MEMSpeed="5" DiskSpeed="9"/>
+      </board>
+    </racks>
+    <racks numBoards="13">
+      <board nodesPerBoard="8">
+        <switch/>
+        <nodeType CPUCores="16" CPUSpeed="11" MEMSpeed="3" DiskSpeed="15"/>
+      </board>
+    </racks>
+    <racks numBoards="1">
+      <board nodesPerBoard="6">
+        <switch/>
+        <nodeType CPUCores="1" CPUSpeed="5" MEMSpeed="2" DiskSpeed="8"/>
+      </board>
+    </racks>
+    <racks numBoards="17">
+      <board nodesPerBoard="15">
+        <switch/>
+        <nodeType CPUCores="9" CPUSpeed="8" MEMSpeed="13" DiskSpeed="15"/>
+      </board>
+    </racks>
+    <racks numBoards="18">
+      <board nodesPerBoard="17">
+        <switch/>
+        <nodeType CPUCores="11" CPUSpeed="7" MEMSpeed="17" DiskSpeed="17"/>
+      </board>
+    </racks>
+    <racks numBoards="7">
+      <board nodesPerBoard="12">
+        <switch/>
+        <nodeType CPUCores="14" CPUSpeed="5" MEMSpeed="10" DiskSpeed="19"/>
+      </board>
+    </racks>
+    <racks numBoards="11">
+      <board nodesPerBoard="9">
+        <switch/>
+        <nodeType CPUCores="16" CPUSpeed="1" MEMSpeed="15" DiskSpeed="18"/>
+      </board>
+    </racks>
+    <racks numBoards="13">
+      <board nodesPerBoard="10">
+        <switch/>
+        <nodeType CPUCores="12" CPUSpeed="12" MEMSpeed="12" DiskSpeed="17"/>
+      </board>
+    </racks>
+    <racks numBoards="6">
+      <board nodesPerBoard="1">
+        <switch/>
+        <nodeType CPUCores="7" CPUSpeed="12" MEMSpeed="11" DiskSpeed="10"/>
+      </board>
+    </racks>
+    <racks numBoards="19">
+      <board nodesPerBoard="17">
+        <switch/>
+        <nodeType CPUCores="1" CPUSpeed="18" MEMSpeed="13" DiskSpeed="12"/>
+      </board>
+    </racks>
+    <racks numBoards="17">
+      <board nodesPerBoard="19">
+        <switch/>
+        <nodeType CPUCores="15" CPUSpeed="18" MEMSpeed="9" DiskSpeed="6"/>
+      </board>
+    </racks>
+    <racks numBoards="9">
+      <board nodesPerBoard="13">
+        <switch/>
+        <nodeType CPUCores="19" CPUSpeed="6" MEMSpeed="13" DiskSpeed="15"/>
+      </board>
+    </racks>
+    <racks numBoards="5">
+      <board nodesPerBoard="18">
+        <switch/>
+        <nodeType CPUCores="12" CPUSpeed="6" MEMSpeed="15" DiskSpeed="18"/>
+      </board>
+    </racks>
+    <racks numBoards="16">
+      <board nodesPerBoard="3">
+        <switch/>
+        <nodeType CPUCores="2" CPUSpeed="3" MEMSpeed="13" DiskSpeed="4"/>
+      </board>
+    </racks>
+    <racks numBoards="12">
+      <board nodesPerBoard="4">
+        <switch/>
+        <nodeType CPUCores="5" CPUSpeed="11" MEMSpeed="6" DiskSpeed="10"/>
+      </board>
+    </racks>
+    <racks numBoards="13">
+      <board nodesPerBoard="7">
+        <switch/>
+        <nodeType CPUCores="5" CPUSpeed="16" MEMSpeed="17" DiskSpeed="2"/>
+      </board>
+    </racks>
+    <racks numBoards="2">
+      <board nodesPerBoard="12">
+        <switch/>
+        <nodeType CPUCores="20" CPUSpeed="17" MEMSpeed="17" DiskSpeed="13"/>
+      </board>
+    </racks>
+    <racks numBoards="2">
+      <board nodesPerBoard="5">
+        <switch/>
+        <nodeType CPUCores="1" CPUSpeed="7" MEMSpeed="4" DiskSpeed="7"/>
+      </board>
+    </racks>
+    <racks numBoards="1">
+      <board nodesPerBoard="1">
+        <switch/>
+        <nodeType CPUCores="17" CPUSpeed="16" MEMSpeed="6" DiskSpeed="1"/>
+      </board>
+    </racks>
+  </tcinputCloud:DataCentre>
+</xmi:XMI>

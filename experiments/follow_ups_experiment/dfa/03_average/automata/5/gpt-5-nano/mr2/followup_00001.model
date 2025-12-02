@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<DFAAutomaton:Automaton xmlns:DFAAutomaton="http://dfaAutomaton/1.0" xmlns:xmi="http://www.omg.org/XMI" xmi:version="2.0" xmi:id="a10" name="dfa_5_followup">
+  <states xmi:id="a10_s0" name="q0" isInitial="true" isFinal="true"/>
+  <states xmi:id="a10_s1" name="q1"/>
+  <states xmi:id="a10_s2" name="q2" isFinal="true"/>
+  <states xmi:id="a10_s3" name="q3" isFinal="true"/>
+  <states xmi:id="a10_s4" name="q4"/>
+  <states xmi:id="a10_s5" name="q5"/>
+  <states xmi:id="a10_s6" name="q6"/>
+  <states xmi:id="a10_s7" name="q7"/>
+  <states xmi:id="a10_s8" name="q8"/>
+  <states xmi:id="a10_s9" name="q9" isFinal="true"/>
+  <alphabet xmi:id="a10_sym0" symbol="a"/>
+  <alphabet xmi:id="a10_sym1" symbol="b"/>
+  <transitions xmi:id="a10_t0" src="a10_s0" tar="a10_s3" symbol="a10_sym0"/>
+  <transitions xmi:id="a10_t1" src="a10_s0" tar="a10_s0" symbol="a10_sym1"/>
+  <transitions xmi:id="a10_t2" src="a10_s1" tar="a10_s4" symbol="a10_sym0"/>
+  <transitions xmi:id="a10_t3" src="a10_s1" tar="a10_s5" symbol="a10_sym1"/>
+  <transitions xmi:id="a10_t4" src="a10_s2" tar="a10_s4" symbol="a10_sym0"/>
+  <transitions xmi:id="a10_t5" src="a10_s2" tar="a10_s6" symbol="a10_sym1"/>
+  <transitions xmi:id="a10_t6" src="a10_s3" tar="a10_s6" symbol="a10_sym0"/>
+  <transitions xmi:id="a10_t7" src="a10_s3" tar="a10_s0" symbol="a10_sym1"/>
+  <transitions xmi:id="a10_t8" src="a10_s4" tar="a10_s1" symbol="a10_sym0"/>
+  <transitions xmi:id="a10_t9" src="a10_s4" tar="a10_s9" symbol="a10_sym1"/>
+  <transitions xmi:id="a10_t10" src="a10_s5" tar="a10_s1" symbol="a10_sym0"/>
+  <transitions xmi:id="a10_t11" src="a10_s5" tar="a10_s8" symbol="a10_sym1"/>
+  <transitions xmi:id="a10_t12" src="a10_s6" tar="a10_s5" symbol="a10_sym0"/>
+  <transitions xmi:id="a10_t13" src="a10_s6" tar="a10_s1" symbol="a10_sym1"/>
+  <transitions xmi:id="a10_t14" src="a10_s7" tar="a10_s1" symbol="a10_sym0"/>
+  <transitions xmi:id="a10_t15" src="a10_s7" tar="a10_s6" symbol="a10_sym1"/>
+  <transitions xmi:id="a10_t16" src="a10_s8" tar="a10_s0" symbol="a10_sym0"/>
+  <transitions xmi:id="a10_t17" src="a10_s8" tar="a10_s8" symbol="a10_sym1"/>
+  <transitions xmi:id="a10_t18" src="a10_s9" tar="a10_s6" symbol="a10_sym0"/>
+  <transitions xmi:id="a10_t19" src="a10_s9" tar="a10_s1" symbol="a10_sym1"/>
+  <words>/model/wmodels/word_5.model</words>
+</DFAAutomaton:Automaton>

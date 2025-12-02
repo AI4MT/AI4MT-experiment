@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ASCII"?>
+<DFAAutomaton:Automaton xmlns:DFAAutomaton="http://dfaAutomaton/1.0" xmlns:xmi="http://www.omg.org/XMI" xmi:version="2.0" xmi:id="b1" name="dfa_5_followup">
+  <states xmi:id="sb0" name="q0" isInitial="true" isFinal="false"/>
+  <states xmi:id="sb1" name="q1" isFinal="true"/>
+  <states xmi:id="sb2" name="q2" isFinal="false"/>
+  <states xmi:id="sb3" name="q3" isFinal="false"/>
+  <states xmi:id="sb4" name="q4" isFinal="true"/>
+  <states xmi:id="sb5" name="q5" isFinal="true"/>
+  <states xmi:id="sb6" name="q6" isFinal="true"/>
+  <states xmi:id="sb7" name="q7" isFinal="true"/>
+  <states xmi:id="sb8" name="q8" isFinal="true"/>
+  <states xmi:id="sb9" name="q9" isFinal="false"/>
+
+  <alphabet xmi:id="sab0" symbol="a"/>
+  <alphabet xmi:id="sab1" symbol="b"/>
+
+  <transitions xmi:id="tb0" src="sb0" tar="sb3" symbol="sab0"/>
+  <transitions xmi:id="tb1" src="sb0" tar="sb0" symbol="sab1"/>
+  <transitions xmi:id="tb2" src="sb1" tar="sb4" symbol="sab0"/>
+  <transitions xmi:id="tb3" src="sb1" tar="sb5" symbol="sab1"/>
+  <transitions xmi:id="tb4" src="sb2" tar="sb4" symbol="sab0"/>
+  <transitions xmi:id="tb5" src="sb2" tar="sb6" symbol="sab1"/>
+  <transitions xmi:id="tb6" src="sb3" tar="sb6" symbol="sab0"/>
+  <transitions xmi:id="tb7" src="sb3" tar="sb0" symbol="sab1"/>
+  <transitions xmi:id="tb8" src="sb4" tar="sb1" symbol="sab0"/>
+  <transitions xmi:id="tb9" src="sb4" tar="sb9" symbol="sab1"/>
+  <transitions xmi:id="tb10" src="sb5" tar="sb1" symbol="sab0"/>
+  <transitions xmi:id="tb11" src="sb5" tar="sb8" symbol="sab1"/>
+  <transitions xmi:id="tb12" src="sb6" tar="sb5" symbol="sab0"/>
+  <transitions xmi:id="tb13" src="sb6" tar="sb1" symbol="sab1"/>
+  <transitions xmi:id="tb14" src="sb7" tar="sb1" symbol="sab0"/>
+  <transitions xmi:id="tb15" src="sb7" tar="sb6" symbol="sab1"/>
+  <transitions xmi:id="tb16" src="sb8" tar="sb0" symbol="sab0"/>
+  <transitions xmi:id="tb17" src="sb8" tar="sb8" symbol="sab1"/>
+  <transitions xmi:id="tb18" src="sb9" tar="sb6" symbol="sab0"/>
+  <transitions xmi:id="tb19" src="sb9" tar="sb1" symbol="sab1"/>
+
+  <words>/model/wmodels/word_5.model</words>
+</DFAAutomaton:Automaton>

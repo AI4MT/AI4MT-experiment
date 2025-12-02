@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<DFAAutomaton:Automaton xmlns:DFAAutomaton="http://dfaAutomaton/1.0" xmlns:xmi="http://www.omg.org/XMI" xmi:version="2.0" xmi:id="a2_x2" name="dfa_3">
+  <states xmi:id="s0_x2" name="q0" isInitial="true" isFinal="false"/>
+  <states xmi:id="s1_x2" name="q1" isInitial="false" isFinal="true"/>
+  <alphabet xmi:id="sym0_x2" symbol="a"/>
+  <alphabet xmi:id="sym1_x2" symbol="b"/>
+  <transitions xmi:id="t0_x2" src="s0_x2" tar="s1_x2" symbol="sym0_x2"/>
+  <transitions xmi:id="t1_x2" src="s0_x2" tar="s0_x2" symbol="sym1_x2"/>
+  <transitions xmi:id="t2_x2" src="s1_x2" tar="s0_x2" symbol="sym0_x2"/>
+  <transitions xmi:id="t3_x2" src="s1_x2" tar="s0_x2" symbol="sym1_x2"/>
+  <words>/model/wmodels/word_3.model</words>
+</DFAAutomaton:Automaton>

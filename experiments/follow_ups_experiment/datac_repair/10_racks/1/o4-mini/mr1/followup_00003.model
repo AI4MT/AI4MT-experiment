@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ASCII"?>
+<tcinputCloud:DataCentre xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:tcinputCloud="http://tcinputCloud/1.0">
+  <net bandwidth="12" latency="14">
+    <switches/>
+  </net>
+  <racks numBoards="16">
+    <board nodesPerBoard="14">
+      <switch/>
+      <nodeType CPUCores="13" CPUSpeed="10" MEMSpeed="17" DiskSpeed="7"/>
+    </board>
+  </racks>
+  <racks numBoards="15">
+    <board nodesPerBoard="16">
+      <switch/>
+      <nodeType CPUCores="13" CPUSpeed="11" MEMSpeed="9" DiskSpeed="3"/>
+    </board>
+  </racks>
+  <racks numBoards="11">
+    <board nodesPerBoard="4">
+      <switch/>
+      <nodeType CPUCores="15" CPUSpeed="8" MEMSpeed="6" DiskSpeed="9"/>
+    </board>
+  </racks>
+  <racks numBoards="17">
+    <board nodesPerBoard="15">
+      <switch/>
+      <nodeType CPUCores="16" CPUSpeed="20" MEMSpeed="11" DiskSpeed="14"/>
+    </board>
+  </racks>
+  <racks numBoards="11">
+    <board nodesPerBoard="7">
+      <switch/>
+      <nodeType CPUCores="18" CPUSpeed="17" MEMSpeed="6" DiskSpeed="10"/>
+    </board>
+  </racks>
+  <racks numBoards="12">
+    <board nodesPerBoard="2">
+      <switch/>
+      <nodeType CPUCores="1" CPUSpeed="3" MEMSpeed="12" DiskSpeed="16"/>
+    </board>
+  </racks>
+  <racks numBoards="16">
+    <board nodesPerBoard="6">
+      <switch/>
+      <nodeType CPUCores="9" CPUSpeed="6" MEMSpeed="4" DiskSpeed="9"/>
+    </board>
+  </racks>
+  <racks numBoards="4">
+    <board nodesPerBoard="2">
+      <switch/>
+      <nodeType CPUCores="9" CPUSpeed="9" MEMSpeed="17" DiskSpeed="16"/>
+    </board>
+  </racks>
+  <racks numBoards="16">
+    <board nodesPerBoard="14">
+      <switch/>
+      <nodeType CPUCores="7" CPUSpeed="10" MEMSpeed="14" DiskSpeed="6"/>
+    </board>
+  </racks>
+  <racks numBoards="12">
+    <board nodesPerBoard="15">
+      <switch/>
+      <nodeType CPUCores="7" CPUSpeed="1" MEMSpeed="10" DiskSpeed="10"/>
+    </board>
+  </racks>
+</tcinputCloud:DataCentre>

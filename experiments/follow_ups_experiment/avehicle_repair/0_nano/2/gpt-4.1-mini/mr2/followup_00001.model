@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:XMI xmlns:ns0="http://www.omg.org/XMI" xmlns:ns1="http://example.com/purepursuit" ns0:version="2.0">
+  <ns1:TestCase_Input route="14-15-10-47-16-17" distance="435.998" nominalSpeed="8" minimalSpeed="3" angVelGain="92" approximationReductionGain="0.375183" l="5" ld="5">
+    <refPoses x="199.000000" y="110.000000" />
+    <mapPoints x="199.000000" y="108.000000" />
+    <obstacles X="164.680000" Y="65.320000" psi="1.570800" />
+    <obstacles X="25.800000" Y="110.000000" psi="1.570800" />
+    <obstacles X="40.000000" Y="75.000000" psi="0.785400" />
+    <obstacles X="80.000000" Y="110.000000" psi="0.523600" />
+    <obstacles X="90.000000" Y="115.000000" psi="0.349066" />
+  </ns1:TestCase_Input>
+  <ns1:TestCase_Output timeToDestination="0" distance="435.998" errorDist="0" execTime="0" />
+</ns0:XMI>

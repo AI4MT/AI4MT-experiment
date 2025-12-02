@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:pp="http://example.com/purepursuit">
+  <pp:TestCase_Input route="" distance="1250.34" nominalSpeed="8" minimalSpeed="3" angVelGain="75" approximationReductionGain="1.85" l="5" ld="6">
+    <refPoses x="-184.6" y="-112.5"/>
+    <refPoses x="-177.4" y="-112.5"/>
+    <refPoses x="-170.2" y="-112.5"/>
+    <refPoses x="-163.0" y="-112.5"/>
+    <refPoses x="-155.8" y="-112.5"/>
+    <refPoses x="-148.6" y="-112.5"/>
+    <refPoses x="-141.4" y="-112.5"/>
+    <refPoses x="-134.2" y="-112.5"/>
+    <refPoses x="-127.0" y="-112.5"/>
+    <refPoses x="-119.8" y="-112.5"/>
+    <refPoses x="-112.6" y="-112.5"/>
+    <refPoses x="-103.6" y="-112.5"/>
+    <refPoses x="-94.6" y="-112.5"/>
+    <refPoses x="-85.6" y="-112.5"/>
+    <refPoses x="-76.6" y="-112.5"/>
+    <refPoses x="-67.6" y="-112.5"/>
+    <refPoses x="-58.6" y="-112.5"/>
+    <refPoses x="-49.6" y="-112.5"/>
+    <refPoses x="-40.6" y="-112.5"/>
+    <refPoses x="-31.6" y="-112.5"/>
+    <refPoses x="-22.6" y="-112.5"/>
+    <refPoses x="-24.596" y="-110.501"/>
+    <refPoses x="-24.592" y="-110.502"/>
+    <refPoses x="-24.588" y="-110.503"/>
+    <refPoses x="-24.584" y="-110.504"/>
+    <refPoses x="-24.58" y="-110.505"/>
+    <refPoses x="-24.576" y="-110.506"/>
+    <refPoses x="-24.572" y="-110.507"/>
+    <refPoses x="-24.568" y="-110.508"/>
+    <refPoses x="-24.564" y="-110.509"/>
+    <refPoses x="-24.56" y="-110.51"/>
+    <refPoses x="-20.574" y="-107.629"/>
+    <refPoses x="-20.588" y="-104.748"/>
+    <refPoses x="-20.602" y="-101.867"/>
+    <refPoses x="-20.616" y="-98.986"/>
+    <refPoses x="-20.63" y="-96.105"/>
+    <refPoses x="-20.644" y="-93.224"/>
+    <refPoses x="-20.658" y="-90.343"/>
+    <refPoses x="-20.672" y="-87.462"/>
+    <refPoses x="-20.686" y="-84.581"/>
+    <refPoses x="-20.7" y="-81.7"/>
+    <mapPoints x="-240.77" y="-110.5"/>
+    <mapPoints x="-184.0" y="-110.5"/>
+    <mapPoints x="-112.6" y="-110.5"/>
+    <mapPoints x="-22.6" y="-110.5"/>
+    <mapPoints x="76.4" y="-110.5"/>
+    <mapPoints x="-240.77"/>
+    <mapPoints x="-184.6"/>
+    <mapPoints x="-112.6"/>
+    <mapPoints x="-20.34"/>
+    <mapPoints x="76.4"/>
+    <mapPoints x="-242.15" y="108.0"/>
+    <mapPoints x="-202.6" y="108.0"/>
+    <mapPoints x="-112.6" y="108.0"/>
+    <mapPoints x="-20.38" y="108.0"/>
+    <mapPoints x="74.58" y="108.0"/>
+    <mapPoints x="166.4" y="108.0"/>
+    <mapPoints x="199.0" y="108.0"/>
+    <mapPoints x="166.4" y="148.33"/>
+    <mapPoints x="166.4" y="-151.67"/>
+    <mapPoints x="76.41" y="108.01"/>
+    <mapPoints x="76.4" y="-151.67"/>
+    <mapPoints x="-20.38" y="148.33"/>
+    <mapPoints x="-19.7" y="-16.3"/>
+    <mapPoints x="-20.8" y="-54.4"/>
+    <mapPoints x="-22.7" y="-81.7"/>
+    <mapPoints x="-22.56" y="-110.51"/>
+    <mapPoints x="-112.6" y="148.33"/>
+    <mapPoints x="-112.6" y="-151.67"/>
+    <mapPoints x="-202.6" y="148.33"/>
+    <mapPoints x="-202.8" y="108.0"/>
+    <mapPoints x="-202.0023" y="95.1997"/>
+    <mapPoints x="-201.7012" y="85.396"/>
+    <mapPoints x="-201.1182" y="75.0835"/>
+    <mapPoints x="-198.8997" y="65.159"/>
+    <mapPoints x="-196.1993" y="55.6373"/>
+    <mapPoints x="-192.8766" y="45.9306"/>
+    <mapPoints x="-189.3987" y="35.8963"/>
+    <mapPoints x="-186.8737" y="25.9599"/>
+    <mapPoints x="-184.9706" y="15.1573"/>
+    <mapPoints x="-184.6" y="-110.5"/>
+    <mapPoints x="-184.6" y="-151.67"/>
+    <mapPoints x="72.1" y="148.33"/>
+    <mapPoints x="72.1" y="107.98"/>
+    <mapPoints x="-22.56" y="-110.47"/>
+    <mapPoints x="-22.6" y="-151.67"/>
+    <mapPoints x="76.4" y="-1.25"/>
+    <mapPoints x="167.1" y="-1.3"/>
+    <mapPoints x="199.0" y="-1.25"/>
+    <mapPoints x="122.3" y="-112.4"/>
+    <mapPoints x="166.4" y="-112.5"/>
+    <mapPoints x="199.0" y="-112.5"/>
+    <obstacles X="-112.6" Y="-112.5" psi="1.5708"/>
+    <obstacles X="-20.7" Y="-101.7" psi="1.5708"/>
+  </pp:TestCase_Input>
+  <pp:TestCase_Output xmi:id="tcOutput4" timeToDestination="25.00" distance="30.00" errorDist="3.78304" execTime="86.6426"/>
+</xmi:XMI>

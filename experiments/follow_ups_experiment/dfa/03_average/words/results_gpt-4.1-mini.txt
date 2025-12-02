@@ -1,0 +1,30 @@
+Relation: mr3
+Timing Statistics (ms):
+6 models, with exec. times in ms:
+2704,3068
+2805,1798
+3290,0905
+3504,3117
+3531,2735
+15975,3208
+Average time: 5301,75 ms
+Median time: 3397,20 ms
+Standard deviation: 4783,95 ms
+Number of XMI fixes performed: 0
+Total number of follow-ups: 5 (83,33%)
+Number of follow-ups by trial (0 means no fixing was necessary): {0=5, 1=0, 2=0, 3=0}
+Relation: mr4
+Timing Statistics (ms):
+6 models, with exec. times in ms:
+2419,7400
+2528,4678
+2656,9573
+2777,2230
+2945,7744
+15782,5183
+Average time: 4851,78 ms
+Median time: 2717,09 ms
+Standard deviation: 4891,28 ms
+Number of XMI fixes performed: 0
+Total number of follow-ups: 5 (83,33%)
+Number of follow-ups by trial (0 means no fixing was necessary): {0=5, 1=0, 2=0, 3=0}

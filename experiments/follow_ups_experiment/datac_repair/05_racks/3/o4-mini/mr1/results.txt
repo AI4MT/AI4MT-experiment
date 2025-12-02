@@ -1,0 +1,14 @@
+
+Timing Statistics (ms):
+5 models, with exec. times in ms:
+20852,2778
+22458,0158
+22826,3173
+24935,3879
+26947,1113
+Average time: 23603,82 ms
+Median time: 22826,32 ms
+Standard deviation: 2118,44 ms
+Number of XMI fixes performed: 0
+Total number of follow-ups: 5 (100,00%)
+Number of follow-ups by trial (0 means no fixing was necessary): {0=5, 1=0, 2=0, 3=0}

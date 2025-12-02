@@ -1,0 +1,30 @@
+metamodel avehicles "/AutonomousVehicle/model/avehicle.ecore" with m1, m2
+models "/AutonomousVehicle/model/avmodels"
+
+avehicles input Features {
+	context TestCase_Input def: nominalSpeed: Int = nominalSpeed		// Target nominal speed, at which the controller tries to keep the ego vehicle while following the route.
+	context TestCase_Input def: obstacleCount: Int = obstacles->size()	// number of obstacles
+	context TestCase_Input def: waypointsCount: Int = refPoses->size()	// numner of waypoints
+}
+
+avehicles output Features
+{
+	timeToDestination: Int
+	distance: Int
+	balancing: Int
+}
+Processor {
+	Name: String
+	Version: String
+} 
+
+MetamorphicRelations {
+  // Slower vehicles implies higher time to destination
+  MR1  = [ (nominalSpeed(m1) > nominalSpeed(m2)) implies ((timeToDestination(m2) >= timeToDestination(m1)) and (distance(m2) <= distance(m1)))]
+  
+  // Less obstacles implies lower time to destination, Distance≈ (±15%)
+  MR2  = [ (obstacleCount(m1) < obstacleCount(m2) ) implies ((timeToDestination(m1) <= timeToDestination(m2) ) and (distance(m2) - distance(m1) <= 0.15 * distance(m2) ))]
+  
+  // Less waypoints implies TTD≈, Distance≈ (±15%) 
+  MR3  = [ (waypointsCount(m1) < waypointsCount(m2)) implies (timeToDestination(m2) - timeToDestination(m1) <= 0.15 * timeToDestination(m1) )]
+}

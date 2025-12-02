@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DFAAutomaton:Automaton xmlns:DFAAutomaton="http://dfaAutomaton/1.0" xmlns:xmi="http://www.omg.org/XMI" xmi:version="2.0" xmi:id="dfa2" name="dfa_2">
+  <states xmi:id="st0" name="q0" isInitial="true" isFinal="true"/>
+  <states xmi:id="st1" name="q1" isFinal="true"/>
+  <states xmi:id="st2" name="q2" isFinal="true"/>
+  <states xmi:id="st3" name="q3" isFinal="true"/>
+  <states xmi:id="st4" name="q4" isFinal="true"/>
+  <states xmi:id="st5" name="q5" />
+  <states xmi:id="st6" name="q6" isFinal="true"/>
+  <states xmi:id="st7" name="q7" isFinal="true"/>
+  <states xmi:id="st8" name="q8" isFinal="true"/>
+  <states xmi:id="st9" name="q9" isFinal="true"/>
+  <states xmi:id="st10" name="q10" isFinal="true"/>
+  <states xmi:id="st11" name="q11" isFinal="true"/>
+  <states xmi:id="st12" name="q12" isFinal="true"/>
+  <states xmi:id="st13" name="q13" isFinal="true"/>
+  <states xmi:id="st14" name="q14" isFinal="true"/>
+  <states xmi:id="st15" name="q15" isFinal="true"/>
+  <states xmi:id="st16" name="q16" isFinal="true"/>
+  <states xmi:id="st17" name="q17" />
+  <states xmi:id="st18" name="q18" isFinal="true"/>
+  <states xmi:id="st19" name="q19" isFinal="true"/>
+  <states xmi:id="st20" name="q20" isFinal="true"/>
+  <states xmi:id="st21" name="q21" isFinal="true"/>
+  <states xmi:id="st22" name="q22" isFinal="true"/>
+  <states xmi:id="st23" name="q23" isFinal="true"/>
+  <states xmi:id="st24" name="q24" isFinal="true"/>
+  <states xmi:id="st25" name="q25" isFinal="true"/>
+  <states xmi:id="st26" name="q26" isFinal="true"/>
+  <states xmi:id="st27" name="q27" isFinal="true"/>
+  <states xmi:id="st28" name="q28" isFinal="true"/>
+  <states xmi:id="st29" name="q29" isFinal="true"/>
+  <states xmi:id="st30" name="q30" isFinal="true"/>
+  <states xmi:id="st31" name="q31" isFinal="true"/>
+  <states xmi:id="st32" name="q32" isFinal="true"/>
+  <states xmi:id="st33" name="q33" isFinal="true"/>
+  <states xmi:id="st34" name="q34" isFinal="true"/>
+  <states xmi:id="st35" name="q35" isFinal="true"/>
+  <states xmi:id="st36" name="q36" isFinal="true"/>
+  <states xmi:id="st37" name="q37" isFinal="true"/>
+  <states xmi:id="st38" name="q38" isFinal="true"/>
+  <states xmi:id="st39" name="q39" isFinal="true"/>
+  <states xmi:id="st40" name="q40" isFinal="true"/>
+  <states xmi:id="st41" name="q41" isFinal="true"/>
+  <states xmi:id="st42" name="q42" isFinal="true"/>
+  <states xmi:id="st43" name="q43" isFinal="true"/>
+  <states xmi:id="st44" name="q44" isFinal="true"/>
+  <states xmi:id="st45" name="q45" isFinal="true"/>
+  <states xmi:id="st46" name="q46" isFinal="true"/>
+  <states xmi:id="st47" name="q47" isFinal="true"/>
+  <states xmi:id="st48" name="q48" isFinal="true"/>
+  <states xmi:id="st49" name="q49" isFinal="true"/>
+
+  <alphabet xmi:id="sym0" symbol="a"/>
+  <alphabet xmi:id="sym1" symbol="b"/>
+
+  <transitions xmi:id="t0"  src="st0" tar="st49" symbol="sym0"/>
+  <transitions xmi:id="t1"  src="st0" tar="st26" symbol="sym1"/>
+  <transitions xmi:id="t2"  src="st1" tar="st17" symbol="sym0"/>
+  <transitions xmi:id="t3"  src="st1" tar="st6"  symbol="sym1"/>
+  <transitions xmi:id="t4"  src="st2" tar="st2"  symbol="sym0"/>
+  <transitions xmi:id="t5"  src="st2" tar="st24" symbol="sym1"/>
+  <transitions xmi:id="t6"  src="st3" tar="st34" symbol="sym0"/>
+  <transitions xmi:id="t7"  src="st3" tar="st35" symbol="sym1"/>
+  <transitions xmi:id="t8"  src="st4" tar="st21" symbol="sym0"/>
+  <transitions xmi:id="t9"  src="st4" tar="st21" symbol="sym1"/>
+  <transitions xmi:id="t10" src="st5" tar="st3"  symbol="sym0"/>
+  <transitions xmi:id="t11" src="st5" tar="st10" symbol="sym1"/>
+  <transitions xmi:id="t12" src="st6" tar="st8"  symbol="sym0"/>
+  <transitions xmi:id="t13" src="st6" tar="st21" symbol="sym1"/>
+  <transitions xmi:id="t14" src="st7" tar="st35" symbol="sym0"/>
+  <transitions xmi:id="t15" src="st7" tar="st21" symbol="sym1"/>
+  <transitions xmi:id="t16" src="st8" tar="st44" symbol="sym0"/>
+  <transitions xmi:id="t17" src="st8" tar="st15" symbol="sym1"/>
+  <transitions xmi:id="t18" src="st9" tar="st10" symbol="sym0"/>
+  <transitions xmi:id="t19" src="st9" tar="st0"  symbol="sym1"/>
+  <transitions xmi:id="t20" src="st10" tar="st27" symbol="sym0"/>
+  <transitions xmi:id="t21" src="st10" tar="st49" symbol="sym1"/>
+  <transitions xmi:id="t22" src="st11" tar="st5"  symbol="sym0"/>
+  <transitions xmi:id="t23" src="st11" tar="st38" symbol="sym1"/>
+  <transitions xmi:id="t24" src="st12" tar="st24" symbol="sym0"/>
+  <transitions xmi:id="t25" src="st12" tar="st4"  symbol="sym1"/>
+  <transitions xmi:id="t26" src="st13" tar="st0"  symbol="sym0"/>
+  <transitions xmi:id="t27" src="st13" tar="st20" symbol="sym1"/>
+  <transitions xmi:id="t28" src="st14" tar="st46" symbol="sym0"/>
+  <transitions xmi:id="t29" src="st14" tar="st28" symbol="sym1"/>
+  <transitions xmi:id="t30" src="st15" tar="st6"  symbol="sym0"/>
+  <transitions xmi:id="t31" src="st15" tar="st2"  symbol="sym1"/>
+  <transitions xmi:id="t32" src="st16" tar="st5"  symbol="sym0"/>
+  <transitions xmi:id="t33" src="st16" tar="st42" symbol="sym1"/>
+  <transitions xmi:id="t34" src="st17" tar="st9"  symbol="sym0"/>
+  <transitions xmi:id="t35" src="st17" tar="st8"  symbol="sym1"/>
+  <transitions xmi:id="t36" src="st18" tar="st1"  symbol="sym0"/>
+  <transitions xmi:id="t37" src="st18" tar="st18" symbol="sym1"/>
+  <transitions xmi:id="t38" src="st19" tar="st27" symbol="sym0"/>
+  <transitions xmi:id="t39" src="st19" tar="st36" symbol="sym1"/>
+  <transitions xmi:id="t40" src="st20" tar="st30" symbol="sym0"/>
+  <transitions xmi:id="t41" src="st20" tar="st16" symbol="sym1"/>
+  <transitions xmi:id="t42" src="st21" tar="st30" symbol="sym0"/>
+  <transitions xmi:id="t43" src="st21" tar="st2"  symbol="sym1"/>
+  <transitions xmi:id="t44" src="st22" tar="st49" symbol="sym0"/>
+  <transitions xmi:id="t45" src="st22" tar="st19" symbol="sym1"/>
+  <transitions xmi:id="t46" src="st23" tar="st21" symbol="sym0"/>
+  <transitions xmi:id="t47" src="st23" tar="st33" symbol="sym1"/>
+  <transitions xmi:id="t48" src="st24" tar="st30" symbol="sym0"/>
+  <transitions xmi:id="t49" src="st24" tar="st13" symbol="sym1"/>
+  <transitions xmi:id="t50" src="st25" tar="st38" symbol="sym0"/>
+  <transitions xmi:id="t51" src="st25" tar="st40" symbol="sym1"/>
+  <transitions xmi:id="t52" src="st26" tar="st33" symbol="sym0"/>
+  <transitions xmi:id="t53" src="st26" tar="st36" symbol="sym1"/>
+  <transitions xmi:id="t54" src="st27" tar="st20" symbol="sym0"/>
+  <transitions xmi:id="t55" src="st27" tar="st0"  symbol="sym1"/>
+  <transitions xmi:id="t56" src="st28" tar="st25" symbol="sym0"/>
+  <transitions xmi:id="t57" src="st28" tar="st49" symbol="sym1"/>
+  <transitions xmi:id="t58" src="st29" tar="st41" symbol="sym0"/>
+  <transitions xmi:id="t59" src="st29" tar="st32" symbol="sym1"/>
+  <transitions xmi:id="t60" src="st30" tar="st27" symbol="sym0"/>
+  <transitions xmi:id="t61" src="st30" tar="st43" symbol="sym1"/>
+  <transitions xmi:id="t62" src="st31" tar="st34" symbol="sym0"/>
+  <transitions xmi:id="t63" src="st31" tar="st40" symbol="sym1"/>
+  <transitions xmi:id="t64" src="st32" tar="st42" symbol="sym0"/>
+  <transitions xmi:id="t65" src="st32" tar="st38" symbol="sym1"/>
+  <transitions xmi:id="t66" src="st33" tar="st31" symbol="sym0"/>
+  <transitions xmi:id="t67" src="st33" tar="st33" symbol="sym1"/>
+  <transitions xmi:id="t68" src="st34" tar="st42" symbol="sym0"/>
+  <transitions xmi:id="t69" src="st34" tar="st26" symbol="sym1"/>
+  <transitions xmi:id="t70" src="st35" tar="st23" symbol="sym0"/>
+  <transitions xmi:id="t71" src="st35" tar="st32" symbol="sym1"/>
+  <transitions xmi:id="t72" src="st36" tar="st2"  symbol="sym0"/>
+  <transitions xmi:id="t73" src="st36" tar="st48" symbol="sym1"/>
+  <transitions xmi:id="t74" src="st37" tar="st41" symbol="sym0"/>
+  <transitions xmi:id="t75" src="st37" tar="st11" symbol="sym1"/>
+  <transitions xmi:id="t76" src="st38" tar="st46" symbol="sym0"/>
+  <transitions xmi:id="t77" src="st38" tar="st5"  symbol="sym1"/>
+  <transitions xmi:id="t78" src="st39" tar="st31" symbol="sym0"/>
+  <transitions xmi:id="t79" src="st39" tar="st42" symbol="sym1"/>
+  <transitions xmi:id="t80" src="st40" tar="st16" symbol="sym0"/>
+  <transitions xmi:id="t81" src="st40" tar="st10" symbol="sym1"/>
+  <transitions xmi:id="t82" src="st41" tar="st21" symbol="sym0"/>
+  <transitions xmi:id="t83" src="st41" tar="st21" symbol="sym1"/>
+  <transitions xmi:id="t84" src="st42" tar="st35" symbol="sym0"/>
+  <transitions xmi:id="t85" src="st42" tar="st25" symbol="sym1"/>
+  <transitions xmi:id="t86" src="st43" tar="st4"  symbol="sym0"/>
+  <transitions xmi:id="t87" src="st43" tar="st46" symbol="sym1"/>
+  <transitions xmi:id="t88" src="st44" tar="st29" symbol="sym0"/>
+  <transitions xmi:id="t89" src="st44" tar="st24" symbol="sym1"/>
+  <transitions xmi:id="t90" src="st45" tar="st36" symbol="sym0"/>
+  <transitions xmi:id="t91" src="st45" tar="st49" symbol="sym1"/>
+  <transitions xmi:id="t92" src="st46" tar="st21" symbol="sym0"/>
+  <transitions xmi:id="t93" src="st46" tar="st1"  symbol="sym1"/>
+  <transitions xmi:id="t94" src="st47" tar="st12" symbol="sym0"/>
+  <transitions xmi:id="t95" src="st47" tar="st37" symbol="sym1"/>
+  <transitions xmi:id="t96" src="st48" tar="st5"  symbol="sym0"/>
+  <transitions xmi:id="t97" src="st48" tar="st40" symbol="sym1"/>
+  <transitions xmi:id="t98" src="st49" tar="st23" symbol="sym0"/>
+  <transitions xmi:id="t99" src="st49" tar="st0"  symbol="sym1"/>
+  <words>/model/wmodels/word_1.model</words>
+</DFAAutomaton:Automaton>

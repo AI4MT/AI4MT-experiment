@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<DFAAutomaton:Automaton xmlns:DFAAutomaton="http://dfaAutomaton/1.0" xmlns:xmi="http://www.omg.org/XMI" xmi:version="2.0" xmi:id="a2_f" name="dfa_3">
+  <states xmi:id="s0_f" name="q0" isInitial="true" isFinal="true"/>
+  <states xmi:id="s1_f" name="q1" isFinal="true"/>
+  <states xmi:id="s2_f" name="q2"/>
+  <states xmi:id="s3_f" name="q3"/>
+  <states xmi:id="s4_f" name="q4" isFinal="true"/>
+  <alphabet xmi:id="sym0_f" symbol="a"/>
+  <alphabet xmi:id="sym1_f" symbol="b"/>
+  <transitions xmi:id="t0_f" src="s0_f" tar="s2_f" symbol="sym0_f"/>
+  <transitions xmi:id="t1_f" src="s0_f" tar="s3_f" symbol="sym1_f"/>
+  <transitions xmi:id="t2_f" src="s1_f" tar="s0_f" symbol="sym0_f"/>
+  <transitions xmi:id="t3_f" src="s1_f" tar="s0_f" symbol="sym1_f"/>
+  <transitions xmi:id="t4_f" src="s2_f" tar="s0_f" symbol="sym0_f"/>
+  <transitions xmi:id="t5_f" src="s2_f" tar="s1_f" symbol="sym1_f"/>
+  <transitions xmi:id="t6_f" src="s3_f" tar="s1_f" symbol="sym0_f"/>
+  <transitions xmi:id="t7_f" src="s3_f" tar="s0_f" symbol="sym1_f"/>
+  <transitions xmi:id="t8_f" src="s4_f" tar="s2_f" symbol="sym0_f"/>
+  <transitions xmi:id="t9_f" src="s4_f" tar="s3_f" symbol="sym1_f"/>
+  <words>/model/wmodels/word_3.model</words>
+</DFAAutomaton:Automaton>

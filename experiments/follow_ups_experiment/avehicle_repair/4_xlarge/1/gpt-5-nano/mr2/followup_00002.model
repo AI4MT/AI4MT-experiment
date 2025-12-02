@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pp:TestCase_Input route="" distance="33.0" nominalSpeed="10" minimalSpeed="3" angVelGain="75" approximationReductionGain="1.85" l="5" ld="6">
+  <obstacles X="-112.6" Y="-112.5" psi="1.5708"/>
+  <obstacles X="-20.7" Y="-101.7" psi="1.5708"/>
+  <obstacles X="-140.0" Y="-120.0" psi="1.5708"/>
+</pp:TestCase_Input>
+<pp:TestCase_Output xmi:id="tcOutput3" timeToDestination="24.0" distance="33.0" errorDist="3.8" execTime="85.0"/>

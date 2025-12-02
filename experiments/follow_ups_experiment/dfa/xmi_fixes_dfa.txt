@@ -1,0 +1,115 @@
+ El volumen de la unidad C es Windows 
+ El n£mero de serie del volumen es: D44E-72CF
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\dfa\01_tiny\words\5\gpt-5-nano\mr3
+
+06/11/2025  22:43               574 followup_00001sfx.model
+06/11/2025  22:43               574 followup_00001sfxsfx.model
+06/11/2025  22:43               574 followup_00001sfxsfxsfx.model
+               3 archivos          1.722 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\dfa\02_small\words\6\gpt-5-nano\mr4
+
+06/11/2025  23:06               623 followup_00001sfx.model
+06/11/2025  23:06               623 followup_00001sfxsfx.model
+06/11/2025  23:06               623 followup_00001sfxsfxsfx.model
+               3 archivos          1.869 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\dfa\03_average\automata\3\gpt-5-nano\mr2
+
+09/11/2025  10:01             4.097 followup_00001sfx.model
+09/11/2025  10:01             4.096 followup_00001sfxsfx.model
+09/11/2025  10:02             4.057 followup_00001sfxsfxsfx.model
+               3 archivos         12.250 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\dfa\03_average\automata\6\gpt-5-nano\mr2
+
+09/11/2025  10:07             4.158 followup_00001sfx.model
+               1 archivos          4.158 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\dfa\04_big\automata\4\gpt-5-nano\mr2
+
+09/11/2025  11:03             7.979 followup_00001sfx.model
+09/11/2025  11:04             7.979 followup_00001sfxsfx.model
+09/11/2025  11:05             8.162 followup_00001sfxsfxsfx.model
+09/11/2025  11:06             8.177 followup_00001sfxsfxsfxfix.model
+               4 archivos         32.297 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\dfa\04_big\automata\6\gpt-5-nano\mr1
+
+09/11/2025  11:11             3.882 followup_00001sfx.model
+               1 archivos          3.882 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\dfa\05_huge\automata\2\gpt-4o-mini\mr1
+
+09/11/2025  12:48            10.159 followup_00001sfx.model
+09/11/2025  12:48            10.158 followup_00001sfxfix.model
+09/11/2025  12:50            10.158 followup_00001sfxfixfix.model
+09/11/2025  12:51            10.158 followup_00001sfxfixfixfix.model
+               4 archivos         40.633 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\dfa\05_huge\automata\3\gpt-4o-mini\mr1
+
+09/11/2025  13:07            41.469 followup_00001sfx.model
+09/11/2025  13:13            41.469 followup_00001sfxsfx.model
+09/11/2025  13:19            41.469 followup_00001sfxsfxsfx.model
+               3 archivos        124.407 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\dfa\05_huge\automata\3\gpt-4o-mini\mr2
+
+09/11/2025  13:21             8.814 followup_00001sfx.model
+09/11/2025  13:22             8.814 followup_00001sfxfix.model
+09/11/2025  13:23             8.814 followup_00001sfxfixfix.model
+09/11/2025  13:24             8.814 followup_00001sfxfixfixfix.model
+               4 archivos         35.256 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\dfa\05_huge\automata\4\gpt-5-nano\mr1
+
+09/11/2025  14:54             8.485 followup_00001sfx.model
+09/11/2025  14:55             8.680 followup_00001sfxfix.model
+09/11/2025  14:56             8.680 followup_00001sfxfixfix.model
+09/11/2025  14:57             8.680 followup_00001sfxfixfixfix.model
+               4 archivos         34.525 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\dfa\05_huge\automata\5\gpt-4o-mini\mr1
+
+09/11/2025  13:41            41.456 followup_00001sfx.model
+09/11/2025  13:47            41.457 followup_00001sfxsfx.model
+09/11/2025  13:53            39.180 followup_00001sfxsfxsfx.model
+               3 archivos        122.093 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\dfa\05_huge\automata\6\gpt-5-nano\mr2
+
+09/11/2025  15:10            17.615 followup_00001sfx.model
+09/11/2025  15:12            17.615 followup_00001sfxsfx.model
+09/11/2025  15:14            17.615 followup_00001sfxsfxsfx.model
+               3 archivos         52.845 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\dfa\05_huge\words\2\gpt-5-nano\mr3
+
+08/11/2025  11:07            43.008 followup_00001sfx.model
+08/11/2025  11:08             3.756 followup_00001sfxsfx.model
+08/11/2025  11:08             3.756 followup_00001sfxsfxsfx.model
+               3 archivos         50.520 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\dfa\05_huge\words\3\gpt-5-nano\mr3
+
+08/11/2025  11:11             3.025 followup_00001sfx.model
+08/11/2025  11:12             3.025 followup_00001sfxsfx.model
+08/11/2025  11:12             3.025 followup_00001sfxsfxsfx.model
+               3 archivos          9.075 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\dfa\05_huge\words\3\gpt-5-nano\mr4
+
+08/11/2025  11:15             2.956 followup_00001sfx.model
+08/11/2025  11:15             2.956 followup_00001sfxsfx.model
+08/11/2025  11:15             2.956 followup_00001sfxsfxsfx.model
+               3 archivos          8.868 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\dfa\05_huge\words\4\gpt-5-nano\mr3
+
+08/11/2025  11:23            43.017 followup_00001sfx.model
+08/11/2025  11:30            43.017 followup_00001sfxsfx.model
+08/11/2025  11:37            43.017 followup_00001sfxsfxsfx.model
+               3 archivos        129.051 bytes
+

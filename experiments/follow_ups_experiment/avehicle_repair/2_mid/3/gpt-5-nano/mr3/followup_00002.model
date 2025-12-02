@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns0:XMI xmlns:ns0="http://www.omg.org/XMI" xmlns:ns1="http://example.com/purepursuit" ns0:version="2.0">
+  <ns1:TestCase_Input route="18-16-20-46-10-9-8-7-39-40-1" distance="713.168" nominalSpeed="6" minimalSpeed="3" angVelGain="75" approximationReductionGain="0.513162" l="6" ld="6">
+    <refPoses x="-240.770000" y="-112.500000"/>
+    <refPoses x="-177.400000" y="-2.000000"/>
+    <refPoses x="2.084000" y="-2.000000"/>
+    <refPoses x="78.407000" y="73.482000"/>
+    <refPoses x="168.400000" y="148.330000"/>
+  </ns1:TestCase_Input>
+  <ns1:TestCase_Output timeToDestination="0" distance="713.168" errorDist="0" execTime="0" />
+  <ns1:TestCase_Input route="18-16-20-46-10-9-8-7-39-40-1" distance="713.168" nominalSpeed="6" minimalSpeed="3" angVelGain="75" approximationReductionGain="0.513162" l="6" ld="6">
+    <refPoses x="-240.770000" y="-112.500000"/>
+    <refPoses x="-177.400000" y="-2.000000"/>
+    <refPoses x="2.084000" y="-2.000000"/>
+    <refPoses x="78.407000" y="73.482000"/>
+    <refPoses x="168.400000" y="148.330000"/>
+    <refPoses x="250.000000" y="200.000000"/>
+    <refPoses x="300.000000" y="250.000000"/>
+  </ns1:TestCase_Input>
+  <ns1:TestCase_Output timeToDestination="0" distance="713.168" errorDist="0" execTime="0" />
+</ns0:XMI>

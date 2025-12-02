@@ -1,0 +1,145 @@
+Relation: mr1
+Timing Statistics (ms):
+20 models, with exec. times in ms:
+97137,4792
+118962,9294
+144771,1660
+153066,4939
+153656,9473
+160837,5953
+174040,8865
+181773,3115
+206357,2127
+215528,2648
+223895,1735
+229155,6691
+232786,0364
+258865,2395
+297996,3348
+314910,4670
+315786,1393
+318024,1574
+385556,8666
+387809,9508
+Average time: 228545,92 ms
+Median time: 219711,72 ms
+Standard deviation: 82728,81 ms
+Number of XMI fixes performed: 0
+Total number of follow-ups: 10 (50,00%)
+Number of follow-ups by trial (0 means no fixing was necessary): {0=0, 1=3, 2=4, 3=3}
+Relation: mr2
+Timing Statistics (ms):
+20 models, with exec. times in ms:
+87386,3465
+164210,1872
+169279,2027
+172496,6823
+172672,3162
+198844,3797
+202178,3900
+203340,0855
+230893,0843
+270081,0151
+277878,9677
+281895,5920
+289000,0362
+299514,7976
+301942,9729
+324473,3839
+326382,9254
+364145,0545
+377347,6588
+401058,0182
+Average time: 255751,05 ms
+Median time: 273979,99 ms
+Standard deviation: 81056,80 ms
+Number of XMI fixes performed: 0
+Total number of follow-ups: 2 (10,00%)
+Number of follow-ups by trial (0 means no fixing was necessary): {0=0, 1=1, 2=1, 3=0}
+Relation: mr3
+Timing Statistics (ms):
+20 models, with exec. times in ms:
+84943,9697
+119046,9499
+120071,4361
+127471,5022
+127640,7981
+164087,2139
+165602,9607
+166907,1614
+171061,5643
+185929,2812
+193311,0445
+203900,0394
+234241,1952
+261781,7427
+281079,4792
+288541,0686
+296549,5433
+296930,2218
+298539,6392
+312618,2974
+Average time: 205012,76 ms
+Median time: 189620,16 ms
+Standard deviation: 71186,38 ms
+Number of XMI fixes performed: 0
+Total number of follow-ups: 11 (55,00%)
+Number of follow-ups by trial (0 means no fixing was necessary): {0=0, 1=7, 2=2, 3=2}
+Relation: mr4
+Timing Statistics (ms):
+20 models, with exec. times in ms:
+87426,2000
+94020,5166
+94325,4328
+102514,1883
+113685,1483
+122184,3647
+127212,9230
+130869,6765
+134046,6011
+135059,8774
+141965,7477
+145184,8221
+152687,9894
+207030,1635
+211496,6630
+222597,0227
+236850,6885
+244003,8901
+315547,3511
+508414,3322
+Average time: 176356,18 ms
+Median time: 138512,81 ms
+Standard deviation: 96595,11 ms
+Number of XMI fixes performed: 0
+Total number of follow-ups: 17 (85,00%)
+Number of follow-ups by trial (0 means no fixing was necessary): {0=0, 1=11, 2=6, 3=0}
+Relation: mr5
+Timing Statistics (ms):
+20 models, with exec. times in ms:
+80946,9174
+94067,6598
+132244,9320
+166228,5391
+168633,9488
+183640,0979
+204296,6433
+217780,3188
+219211,6988
+220443,0296
+222157,3987
+227318,2823
+232422,2671
+233011,1347
+235932,9805
+264995,9036
+294011,7846
+295819,9632
+307603,8443
+316347,7957
+Average time: 215855,76 ms
+Median time: 221300,21 ms
+Standard deviation: 63443,06 ms
+Number of XMI fixes performed: 0
+Total number of follow-ups: 8 (40,00%)
+Number of follow-ups by trial (0 means no fixing was necessary): {0=0, 1=3, 2=1, 3=4}

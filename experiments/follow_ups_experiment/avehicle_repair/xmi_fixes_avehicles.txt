@@ -1,0 +1,107 @@
+ El volumen de la unidad C es Windows 
+ El n£mero de serie del volumen es: D44E-72CF
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\avehicle_repair\0_nano\4\gpt-5-nano\mr2
+
+20/10/2025  18:23               245 followup_00005sfx.model
+20/10/2025  18:23               245 followup_00005sfxsfx.model
+20/10/2025  18:23               245 followup_00005sfxsfxsfx.model
+               3 archivos            735 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\avehicle_repair\1_small\3\gpt-5-nano\mr1
+
+20/10/2025  20:55               197 followup_00001sfx.model
+20/10/2025  20:55               231 followup_00001sfxsfx.model
+20/10/2025  20:55               197 followup_00001sfxsfxsfx.model
+20/10/2025  20:54               231 followup_00002sfx.model
+20/10/2025  20:54               232 followup_00002sfxsfx.model
+20/10/2025  20:54               245 followup_00002sfxsfxsfx.model
+20/10/2025  20:53               245 followup_00003sfx.model
+20/10/2025  20:53               245 followup_00003sfxsfx.model
+20/10/2025  20:53               231 followup_00003sfxsfxsfx.model
+20/10/2025  20:52               231 followup_00004sfx.model
+20/10/2025  20:52               244 followup_00004sfxsfx.model
+20/10/2025  20:52               245 followup_00004sfxsfxsfx.model
+20/10/2025  20:52               197 followup_00005sfx.model
+20/10/2025  20:52               245 followup_00005sfxsfx.model
+20/10/2025  20:52               231 followup_00005sfxsfxsfx.model
+              15 archivos          3.447 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\avehicle_repair\3_large\3\gpt-5-nano\mr2
+
+21/10/2025  19:23               246 followup_00003sfx.model
+21/10/2025  19:23               258 followup_00003sfxsfx.model
+21/10/2025  19:23               258 followup_00003sfxsfxsfx.model
+               3 archivos            762 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\avehicle_repair\3_large\4\gpt-5-nano\mr1
+
+21/10/2025  19:31               246 followup_00004sfx.model
+21/10/2025  19:31               246 followup_00004sfxsfx.model
+21/10/2025  19:31               246 followup_00004sfxsfxsfx.model
+               3 archivos            738 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\avehicle_repair\4_xlarge\1\gpt-5-nano\mr2
+
+24/10/2025  10:48               246 followup_00001sfx.model
+24/10/2025  10:48               246 followup_00001sfxsfx.model
+24/10/2025  10:48               246 followup_00001sfxsfxsfx.model
+24/10/2025  10:47               246 followup_00002sfx.model
+24/10/2025  10:47               258 followup_00002sfxsfx.model
+24/10/2025  10:47               246 followup_00002sfxsfxsfx.model
+24/10/2025  10:46               246 followup_00003sfx.model
+24/10/2025  10:46               246 followup_00003sfxsfx.model
+24/10/2025  10:46               246 followup_00003sfxsfxsfx.model
+24/10/2025  10:38               245 followup_00004sfx.model
+24/10/2025  10:38               258 followup_00004sfxsfx.model
+24/10/2025  10:38               246 followup_00004sfxsfxsfx.model
+24/10/2025  10:36               258 followup_00005sfx.model
+24/10/2025  10:36               246 followup_00005sfxsfx.model
+24/10/2025  10:36               246 followup_00005sfxsfxsfx.model
+              15 archivos          3.725 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\avehicle_repair\4_xlarge\1\o4-mini\mr1
+
+22/10/2025  20:38               246 followup_00003sfx.model
+22/10/2025  20:38               246 followup_00003sfxsfx.model
+22/10/2025  20:38               246 followup_00003sfxsfxsfx.model
+               3 archivos            738 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\avehicle_repair\4_xlarge\3\gpt-5-nano\mr1
+
+24/10/2025  12:03               246 followup_00001sfx.model
+24/10/2025  12:03               246 followup_00001sfxsfx.model
+24/10/2025  12:03               246 followup_00001sfxsfxsfx.model
+24/10/2025  11:59               246 followup_00003sfx.model
+24/10/2025  11:59               246 followup_00003sfxsfx.model
+24/10/2025  11:59               246 followup_00003sfxsfxsfx.model
+24/10/2025  11:58               246 followup_00004sfx.model
+24/10/2025  11:58               246 followup_00004sfxsfx.model
+24/10/2025  11:58               258 followup_00004sfxsfxsfx.model
+24/10/2025  11:57               246 followup_00005sfx.model
+24/10/2025  11:57               246 followup_00005sfxsfx.model
+24/10/2025  11:57               246 followup_00005sfxsfxsfx.model
+              12 archivos          2.964 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\avehicle_repair\4_xlarge\4\gpt-5-nano\mr3
+
+24/10/2025  12:53               246 followup_00001sfx.model
+24/10/2025  12:53               246 followup_00001sfxsfx.model
+24/10/2025  12:53               246 followup_00001sfxsfxsfx.model
+24/10/2025  12:52               246 followup_00002sfx.model
+24/10/2025  12:52               246 followup_00002sfxsfx.model
+24/10/2025  12:52               246 followup_00002sfxsfxsfx.model
+24/10/2025  12:50               246 followup_00003sfx.model
+24/10/2025  12:50               246 followup_00003sfxsfx.model
+24/10/2025  12:50               246 followup_00003sfxsfxsfx.model
+24/10/2025  12:49               246 followup_00004sfx.model
+24/10/2025  12:49               246 followup_00004sfxsfx.model
+24/10/2025  12:49               246 followup_00004sfxsfxsfx.model
+24/10/2025  12:47               258 followup_00005sfx.model
+24/10/2025  12:47               246 followup_00005sfxsfx.model
+24/10/2025  12:47               246 followup_00005sfxsfxsfx.model
+              15 archivos          3.702 bytes
+
+     Total de archivos en la lista:
+              69 archivos         16.811 bytes
+               0 dirs  587.330.818.048 bytes libres

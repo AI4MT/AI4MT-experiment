@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:XMI xmlns:ns0="http://www.omg.org/XMI" xmlns:ns1="http://example.com/purepursuit" ns0:version="2.0">
+  <ns1:TestCase_Input route="" distance="1250.34" nominalSpeed="10" minimalSpeed="3" angVelGain="75" approximationReductionGain="1.85" l="5" ld="6">
+    <refPoses x="-184.600000" y="-112.500000" /><refPoses x="-170.200000" y="-112.500000" /><refPoses x="-155.800000" y="-112.500000" /><refPoses x="-141.400000" y="-112.500000" /><refPoses x="-127.000000" y="-112.500000" /><refPoses x="-112.600000" y="-112.500000" /><refPoses x="-94.600000" y="-112.500000" /><refPoses x="-76.600000" y="-112.500000" /><refPoses x="-58.600000" y="-112.500000" /><refPoses x="-40.600000" y="-112.500000" /><refPoses x="-24.596000" y="-110.501000" /><refPoses x="-24.588000" y="-110.503000" /><refPoses x="-24.580000" y="-110.505000" /><refPoses x="-24.572000" y="-110.507000" /><refPoses x="-24.564000" y="-110.509000" /><refPoses x="-20.574000" y="-107.629000" /><refPoses x="-20.602000" y="-101.867000" /><refPoses x="-20.630000" y="-96.105000" /><refPoses x="-20.658000" y="-90.343000" /><refPoses x="-20.700000" y="-81.700000" /><refPoses x="-0.000001" y="-50.000000" /><refPoses x="2.000000" y="10.000000" /><refPoses x="4.000000" y="20.000000" /><refPoses x="6.000000" y="-30.000000" /><refPoses x="8.000000" y="40.000000" />
+    <obstacles X="-112.600000" Y="-112.500000" psi="1.570800" /><obstacles X="-20.700000" Y="-101.700000" psi="1.570800" />
+    <refPoses x="-1.111111" y="-111.111111" /><refPoses x="-2.222222" y="-110.222222" />
+  </ns1:TestCase_Input>
+  <ns1:TestCase_Output timeToDestination="24.0" distance="31.6228" errorDist="3.78304" execTime="86.6426" />
+</ns0:XMI>

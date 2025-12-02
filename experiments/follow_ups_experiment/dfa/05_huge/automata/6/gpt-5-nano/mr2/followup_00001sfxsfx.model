@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DFAAutomaton:Automaton xmlns:DFAAutomaton="http://dfaAutomaton/1.0" xmlns:xmi="http://www.omg.org/XMI" xmi:version="2.0" xmi:id="a5" name="dfa_6">
+  <states xmi:id="s0" name="q0" isInitial="true" isFinal="true"/>
+  <states xmi:id="s1" name="q1"/>
+  <states xmi:id="s2" name="q2"/>
+  <states xmi:id="s3" name="q3"/>
+  <states xmi:id="s4" name="q4"/>
+  <states xmi:id="s5" name="q5" isFinal="true"/>
+  <states xmi:id="s6" name="q6"/>
+  <states xmi:id="s7" name="q7"/>
+  <states xmi:id="s8" name="q8"/>
+  <states xmi:id="s9" name="q9" isFinal="true"/>
+  <states xmi:id="s10" name="q10"/>
+  <states xmi:id="s11" name="q11"/>
+  <states xmi:id="s12" name="q12"/>
+  <states xmi:id="s13" name="q13"/>
+  <states xmi:id="s14" name="q14"/>
+  <states xmi:id="s15" name="q15" isFinal="true"/>
+  <states xmi:id="s16" name="q16"/>
+  <states xmi:id="s17" name="q17"/>
+  <states xmi:id="s18" name="q18"/>
+  <states xmi:id="s19" name="q19"/>
+  <states xmi:id="s20" name="q20"/>
+  <states xmi:id="s21" name="q21" isFinal="true"/>
+  <states xmi:id="s22" name="q22"/>
+  <states xmi:id="s23" name="q23"/>
+  <states xmi:id="s24" name="q24"/>
+  <states xmi:id="s25" name="q25"/>
+  <states xmi:id="s26" name="q26"/>
+  <states xmi:id="s27" name="q27" isFinal="true"/>
+  <states xmi:id="s28" name="q28"/>
+  <states xmi:id="s29" name="q29"/>
+  <states xmi:id="s30" name="q30"/>
+  <states xmi:id="s31" name="q31"/>
+  <states xmi:id="s32" name="q32"/>
+  <states xmi:id="s33" name="q33"/>
+  <states xmi:id="s34" name="q34"/>
+  <states xmi:id="s35" name="q35"/>
+  <states xmi:id="s36" name="q36"/>
+  <states xmi:id="s37" name="q37"/>
+  <states xmi:id="s38" name="q38"/>
+  <states xmi:id="s39" name="q39"/>
+  <states xmi:id="s40" name="q40"/>
+  <states xmi:id="s41" name="q41"/>
+  <states xmi:id="s42" name="q42" isFinal="true"/>
+  <states xmi:id="s43" name="q43" isFinal="true"/>
+  <states xmi:id="s44" name="q44"/>
+  <states xmi:id="s45" name="q45"/>
+  <states xmi:id="s46" name="q46"/>
+  <states xmi:id="s47" name="q47"/>
+  <states xmi:id="s48" name="q48"/>
+  <states xmi:id="s49" name="q49"/>
+  <alphabet xmi:id="sym0" symbol="a"/>
+  <alphabet xmi:id="sym1" symbol="b"/>
+  <transitions xmi:id="t0" src="s0" tar="s18" symbol="sym0"/>
+  <transitions xmi:id="t1" src="s0" tar="s20" symbol="sym1"/>
+  <transitions xmi:id="t2" src="s1" tar="s42" symbol="sym0"/>
+  <transitions xmi:id="t3" src="s1" tar="s25" symbol="sym1"/>
+  <transitions xmi:id="t4" src="s2" tar="s22" symbol="sym0"/>
+  <transitions xmi:id="t5" src="s2" tar="s14" symbol="sym1"/>
+  <transitions xmi:id="t6" src="s3" tar="s3" symbol="sym0"/>
+  <transitions xmi:id="t7" src="s3" tar="s3" symbol="sym1"/>
+  <transitions xmi:id="t8" src="s4" tar="s35" symbol="sym0"/>
+  <transitions xmi:id="t9" src="s4" tar="s4" symbol="sym1"/>
+  <transitions xmi:id="t10" src="s5" tar="s7" symbol="sym0"/>
+  <transitions xmi:id="t11" src="s5" tar="s15" symbol="sym1"/>
+  <transitions xmi:id="t12" src="s6" tar="s18" symbol="sym0"/>
+  <transitions xmi:id="t13" src="s6" tar="s15" symbol="sym1"/>
+  <transitions xmi:id="t14" src="s7" tar="s8" symbol="sym0"/>
+  <transitions xmi:id="t15" src="s7" tar="s35" symbol="sym1"/>
+  <transitions xmi:id="t16" src="s8" tar="s0" symbol="sym0"/>
+  <transitions xmi:id="t17" src="s8" tar="s38" symbol="sym1"/>
+  <transitions xmi:id="t18" src="s9" tar="s49" symbol="sym0"/>
+  <transitions xmi:id="t19" src="s9" tar="s41" symbol="sym1"/>
+  <transitions xmi:id="t20" src="s10" tar="s34" symbol="sym0"/>
+  <transitions xmi:id="t21" src="s10" tar="s16" symbol="sym1"/>
+  <transitions xmi:id="t22" src="s11" tar="s26" symbol="sym0"/>
+  <transitions xmi:id="t23" src="s11" tar="s35" symbol="sym1"/>
+  <transitions xmi:id="t24" src="s12" tar="s23" symbol="sym0"/>
+  <transitions xmi:id="t25" src="s12" tar="s23" symbol="sym1"/>
+  <transitions xmi:id="t26" src="s13" tar="s40" symbol="sym0"/>
+  <transitions xmi:id="t27" src="s13" tar="s8" symbol="sym1"/>
+  <transitions xmi:id="t28" src="s14" tar="s26" symbol="sym0"/>
+  <transitions xmi:id="t29" src="s14" tar="s2" symbol="sym1"/>
+  <transitions xmi:id="t30" src="s15" tar="s38" symbol="sym0"/>
+  <transitions xmi:id="t31" src="s15" tar="s18" symbol="sym1"/>
+  <transitions xmi:id="t32" src="s16" tar="s22" symbol="sym0"/>
+  <transitions xmi:id="t33" src="s16" tar="s20" symbol="sym1"/>
+  <transitions xmi:id="t34" src="s17" tar="s44" symbol="sym0"/>
+  <transitions xmi:id="t35" src="s17" tar="s0" symbol="sym1"/>
+  <transitions xmi:id="t36" src="s18" tar="s22" symbol="sym0"/>
+  <transitions xmi:id="t37" src="s18" tar="s32" symbol="sym1"/>
+  <transitions xmi:id="t38" src="s19" tar="s48" symbol="sym0"/>
+  <transitions xmi:id="t39" src="s19" tar="s0" symbol="sym1"/>
+  <transitions xmi:id="t40" src="s20" tar="s41" symbol="sym0"/>
+  <transitions xmi:id="t41" src="s20" tar="s18" symbol="sym1"/>
+  <transitions xmi:id="t42" src="s21" tar="s5" symbol="sym0"/>
+  <transitions xmi:id="t43" src="s21" tar="s24" symbol="sym1"/>
+  <transitions xmi:id="t44" src="s22" tar="s46" symbol="sym0"/>
+  <transitions xmi:id="t45" src="s22" tar="s11" symbol="sym1"/>
+  <transitions xmi:id="t46" src="s23" tar="s39" symbol="sym0"/>
+  <transitions xmi:id="t47" src="s23" tar="s20" symbol="sym1"/>
+  <transitions xmi:id="t48" src="s24" tar="s28" symbol="sym0"/>
+  <transitions xmi:id="t49" src="s24" tar="s6" symbol="sym1"/>
+  <transitions xmi:id="t50" src="s25" tar="s46" symbol="sym0"/>
+  <transitions xmi:id="t51" src="s25" tar="s38" symbol="sym1"/>
+  <transitions xmi:id="t52" src="s26" tar="s47" symbol="sym0"/>
+  <transitions xmi:id="t53" src="s26" tar="s34" symbol="sym1"/>
+  <transitions xmi:id="t54" src="s27" tar="s12" symbol="sym0"/>
+  <transitions xmi:id="t55" src="s27" tar="s25" symbol="sym1"/>
+  <transitions xmi:id="t56" src="s28" tar="s40" symbol="sym0"/>
+  <transitions xmi:id="t57" src="s28" tar="s43" symbol="sym1"/>
+  <transitions xmi:id="t58" src="s29" tar="s4" symbol="sym0"/>
+  <transitions xmi:id="t59" src="s29" tar="s12" symbol="sym1"/>
+  <transitions xmi:id="t60" src="s30" tar="s13" symbol="sym0"/>
+  <transitions xmi:id="t61" src="s30" tar="s46" symbol="sym1"/>
+  <transitions xmi:id="t62" src="s31" tar="s22" symbol="sym0"/>
+  <transitions xmi:id="t63" src="s31" tar="s27" symbol="sym1"/>
+  <transitions xmi:id="t64" src="s32" tar="s49" symbol="sym0"/>
+  <transitions xmi:id="t65" src="s32" tar="s30" symbol="sym1"/>
+  <transitions xmi:id="t66" src="s33" tar="s18" symbol="sym0"/>
+  <transitions xmi:id="t67" src="s33" tar="s41" symbol="sym1"/>
+  <transitions xmi:id="t68" src="s34" tar="s35" symbol="sym0"/>
+  <transitions xmi:id="t69" src="s34" tar="s34" symbol="sym1"/>
+  <transitions xmi:id="t70" src="s35" tar="s10" symbol="sym0"/>
+  <transitions xmi:id="t71" src="s35" tar="s24" symbol="sym1"/>
+  <transitions xmi:id="t72" src="s36" tar="s1" symbol="sym0"/>
+  <transitions xmi:id="t73" src="s36" tar="s16" symbol="sym1"/>
+  <transitions xmi:id="t74" src="s37" tar="s46" symbol="sym0"/>
+  <transitions xmi:id="t75" src="s37" tar="s1" symbol="sym1"/>
+  <transitions xmi:id="t76" src="s38" tar="s48" symbol="sym0"/>
+  <transitions xmi:id="t77" src="s38" tar="s40" symbol="sym1"/>
+  <transitions xmi:id="t78" src="s39" tar="s43" symbol="sym0"/>
+  <transitions xmi:id="t79" src="s39" tar="s10" symbol="sym1"/>
+  <transitions xmi:id="t80" src="s40" tar="s49" symbol="sym0"/>
+  <transitions xmi:id="t81" src="s40" tar="s12" symbol="sym1"/>
+  <transitions xmi:id="t82" src="s41" tar="s23" symbol="sym0"/>
+  <transitions xmi:id="t83" src="s41" tar="s11" symbol="sym1"/>
+  <transitions xmi:id="t84" src="s42" tar="s6" symbol="sym0"/>
+  <transitions xmi:id="t85" src="s42" tar="s8" symbol="sym1"/>
+  <transitions xmi:id="t86" src="s43" tar="s45" symbol="sym0"/>
+  <transitions xmi:id="t87" src="s43" tar="s38" symbol="sym1"/>
+  <transitions xmi:id="t88" src="s44" tar="s6" symbol="sym0"/>
+  <transitions xmi:id="t89" src="s44" tar="s17" symbol="sym1"/>
+  <transitions xmi:id="t90" src="s45" tar="s7" symbol="sym0"/>
+  <transitions xmi:id="t91" src="s45" tar="s4" symbol="sym1"/>
+  <transitions xmi:id="t92" src="s46" tar="s23" symbol="sym0"/>
+  <transitions xmi:id="t93" src="s46" tar="s3" symbol="sym1"/>
+  <transitions xmi:id="t94" src="s47" tar="s16" symbol="sym0"/>
+  <transitions xmi:id="t95" src="s47" tar="s23" symbol="sym1"/>
+  <transitions xmi:id="t96" src="s48" tar="s8" symbol="sym0"/>
+  <transitions xmi:id="t97" src="s48" tar="s16" symbol="sym1"/>
+  <transitions xmi:id="t98" src="s49" tar="s26" symbol="sym0"/>
+  <transitions xmi:id="t99" src="s49" tar="s5" symbol="sym1"/>
+  <words>/model/wmodels/word_6.model</words>
+</DFAAutomaton:Automaton>
+<DFAAutomaton:Automaton xmlns:DFAAutomaton="http://dfaAutomaton/1.0" xmlns:xmi="http://www.omg.org/XMI" xmi:version="2.0" xmi:id="a6" name="dfa_6_x2">
+  <states xmi:id="s0b" name="q0" isInitial="true" isFinal="true"/>
+  <states xmi:id="s1b" name="q1"/>
+  <states xmi:id="s2b" name="q2"/>
+  <states xmi:id="s3b" name="q3"/>
+  <states xmi:id="s4b" name="q4"/>
+  <states xmi:id="s5b" name="q5" isFinal="true"/>
+  <states xmi:id="s6b" name="q6"/>
+  <states xmi:id="s7b" name="q7"/>
+  <states xmi:id="s8b" name="q8"/>
+  <states xmi:id="s9b" name="q9" isFinal="true"/>
+  <states xmi:id="s10b" name="q10"/>
+  <states xmi:id="s11b" name="q11"/>
+  <states xmi:id="s12b" name="q12"/>
+  <states xmi:id="s13b" name="q13"/>
+  <states xmi:id="s14b" name="q14"/>
+  <states xmi:id="s15b" name="q15" isFinal="true"/>
+  <states xmi:id="s16b" name="q16"/>
+  <states xmi:id="s17b" name="q17"/>
+  <states xmi:id="s18b" name="q18"/>
+  <states xmi:id="s19b" name="q19"/>
+  <states xmi:id="s20b" name="q20"/>
+  <states xmi:id="s21b" name="q21" isFinal="true"/>
+  <states xmi:id="s22b" name="q22"/>
+  <states xmi:id="s23b" name="q23"/>
+  <states xmi:id="s24b" name="q24"/>
+  <states xmi:id="s25b" name="q25"/>
+  <states xmi:id="s26b" name="q26"/>
+  <states xmi:id="s27b" name="q27" isFinal="true"/>
+  <states xmi:id="s28b" name="q28"/>
+  <states xmi:id="s29b" name="q29"/>
+  <states xmi:id="s30b" name="q30"/>
+  <states xmi:id="s31b" name="q31"/>
+  <states xmi:id="s32b" name="q32"/>
+  <states xmi:id="s33b" name="q33"/>
+  <states xmi:id="s34b" name="q34"/>
+  <states xmi:id="s35b" name="q35"/>
+  <states xmi:id="s36b" name="q36"/>
+  <states xmi:id="s37b" name="q37"/>
+  <states xmi:id="s38b" name="q38"/>
+  <states xmi:id="s39b" name="q39"/>
+  <states xmi:id="s40b" name="q40"/>
+  <states xmi:id="s41b" name="q41"/>
+  <states xmi:id="s42b" name="q42" isFinal="true"/>
+  <states xmi:id="s43b" name="q43" isFinal="true"/>
+  <states xmi:id="s44b" name="q44"/>
+  <states xmi:id="s45b" name="q45"/>
+  <states xmi:id="s46b" name="q46"/>
+  <states xmi:id="s47b" name="q47"/>
+  <states xmi:id="s48b" name="q48"/>
+  <states xmi:id="s49b" name="q49"/>
+  <alphabet xmi:id="sym0b" symbol="a"/>
+  <alphabet xmi:id="sym1b" symbol="b"/>
+  <transitions xmi:id="t0b" src="s0b" tar="s18b" symbol="sym0b"/>
+  <transitions xmi:id="t1b" src="s0b" tar="s20b" symbol="sym1b"/>
+  <transitions xmi:id="t2b" src="s1b" tar="s42b" symbol="sym0b"/>
+  <transitions xmi:id="t3b" src="s1b" tar="s25b" symbol="sym1b"/>
+  <transitions xmi:id="t4b" src="s2b" tar="s22b" symbol="sym0b"/>
+  <transitions xmi:id="t5b" src="s2b" tar="s14b" symbol="sym1b"/>
+  <transitions xmi:id="t6b" src="s3b" tar="s3b" symbol="sym0b"/>
+  <transitions xmi:id="t7b" src="s3b" tar="s3b" symbol="sym1b"/>
+  <transitions xmi:id="t8b" src="s4b" tar="s35b" symbol="sym0b"/>
+  <transitions xmi:id="t9b" src="s4b" tar="s4b" symbol="sym1b"/>
+  <transitions xmi:id="t10b" src="s5b" tar="s7b" symbol="sym0b"/>
+  <transitions xmi:id="t11b" src="s5b" tar="s15b" symbol="sym1b"/>
+  <transitions xmi:id="t12b" src="s6b" tar="s18b" symbol="sym0b"/>
+  <transitions xmi:id="t13b" src="s6b" tar="s15b" symbol="sym1b"/>
+  <transitions xmi:id="t14b" src="s7b" tar="s8b" symbol="sym0b"/>
+  <transitions xmi:id="t15b" src="s7b" tar="s35b" symbol="sym1b"/>
+  <transitions xmi:id="t16b" src="s8b" tar="s0b" symbol="sym0b"/>
+  <transitions xmi:id="t17b" src="s8b" tar="s38b" symbol="sym1b"/>
+  <transitions xmi:id="t18b" src="s9b" tar="s49b" symbol="sym0b"/>
+  <transitions xmi:id="t19b" src="s9b" tar="s41b" symbol="sym1b"/>
+  <transitions xmi:id="t20b" src="s10b" tar="s34b" symbol="sym0b"/>
+  <transitions xmi:id="t21b" src="s10b" tar="s16b" symbol="sym1b"/>
+  <transitions xmi:id="t22b" src="s11b" tar="s26b" symbol="sym0b"/>
+  <transitions xmi:id="t23b" src="s11b" tar="s35b" symbol="sym1b"/>
+  <transitions xmi:id="t24b" src="s12b" tar="s23b" symbol="sym0b"/>
+  <transitions xmi:id="t25b" src="s12b" tar="s23b" symbol="sym1b"/>
+  <transitions xmi:id="t26b" src="s13b" tar="s40b" symbol="sym0b"/>
+  <transitions xmi:id="t27b" src="s13b" tar="s8b" symbol="sym1b"/>
+  <transitions xmi:id="t28b" src="s14b" tar="s26b" symbol="sym0b"/>
+  <transitions xmi:id="t29b" src="s14b" tar="s2b" symbol="sym1b"/>
+  <transitions xmi:id="t30b" src="s15b" tar="s38b" symbol="sym0b"/>
+  <transitions xmi:id="t31b" src="s15b" tar="s18b" symbol="sym1b"/>
+  <transitions xmi:id="t32b" src="s16b" tar="s22b" symbol="sym0b"/>
+  <transitions xmi:id="t33b" src="s16b" tar="s20b" symbol="sym1b"/>
+  <transitions xmi:id="t34b" src="s17b" tar="s44b" symbol="sym0b"/>
+  <transitions xmi:id="t35b" src="s17b" tar="s0b" symbol="sym1b"/>
+  <transitions xmi:id="t36b" src="s18b" tar="s22b" symbol="sym0b"/>
+  <transitions xmi:id="t37b" src="s18b" tar="s32b" symbol="sym1b"/>
+  <transitions xmi:id="t38b" src="s19b" tar="s48b" symbol="sym0b"/>
+  <transitions xmi:id="t39b" src="s19b" tar="s0b" symbol="sym1b"/>
+  <transitions xmi:id="t40b" src="s20b" tar="s41b" symbol="sym0b"/>
+  <transitions xmi:id="t41b" src="s20b" tar="s18b" symbol="sym1b"/>
+  <transitions xmi:id="t42b" src="s21b" tar="s5b" symbol="sym0b"/>
+  <transitions xmi:id="t43b" src="s21b" tar="s24b" symbol="sym1b"/>
+  <transitions xmi:id="t44b" src="s22b" tar="s46b" symbol="sym0b"/>
+  <transitions xmi:id="t45b" src="s22b" tar="s11b" symbol="sym1b"/>
+  <transitions xmi:id="t46b" src="s23b" tar="s39b" symbol="sym0b"/>
+  <transitions xmi:id="t47b" src="s23b" tar="s20b" symbol="sym1b"/>
+  <transitions xmi:id="t48b" src="s24b" tar="s28b" symbol="sym0b"/>
+  <transitions xmi:id="t49b" src="s24b" tar="s6b" symbol="sym1b"/>
+  <transitions xmi:id="t50b" src="s25b" tar="s46b" symbol="sym0b"/>
+  <transitions xmi:id="t51b" src="s25b" tar="s38b" symbol="sym1b"/>
+  <transitions xmi:id="t52b" src="s26b" tar="s47b" symbol="sym0b"/>
+  <transitions xmi:id="t53b" src="s26b" tar="s34b" symbol="sym1b"/>
+  <transitions xmi:id="t54b" src="s27b" tar="s12b" symbol="sym0b"/>
+  <transitions xmi:id="t55b" src="s27b" tar="s25b" symbol="sym1b"/>
+  <transitions xmi:id="t56b" src="s28b" tar="s40b" symbol="sym0b"/>
+  <transitions xmi:id="t57b" src="s28b" tar="s43b" symbol="sym1b"/>
+  <transitions xmi:id="t58b" src="s29b" tar="s4b" symbol="sym0b"/>
+  <transitions xmi:id="t59b" src="s29b" tar="s12b" symbol="sym1b"/>
+  <transitions xmi:id="t60b" src="s30b" tar="s13b" symbol="sym0b"/>
+  <transitions xmi:id="t61b" src="s30b" tar="s46b" symbol="sym1b"/>
+  <transitions xmi:id="t62b" src="s31b" tar="s22b" symbol="sym0b"/>
+  <transitions xmi:id="t63b" src="s31b" tar="s27b" symbol="sym1b"/>
+  <transitions xmi:id="t64b" src="s32b" tar="s49b" symbol="sym0b"/>
+  <transitions xmi:id="t65b" src="s32b" tar="s30b" symbol="sym1b"/>
+  <transitions xmi:id="t66b" src="s33b" tar="s18b" symbol="sym0b"/>
+  <transitions xmi:id="t67b" src="s33b" tar="s41b" symbol="sym1b"/>
+  <transitions xmi:id="t68b" src="s34b" tar="s35b" symbol="sym0b"/>
+  <transitions xmi:id="t69b" src="s34b" tar="s34b" symbol="sym1b"/>
+  <transitions xmi:id="t70b" src="s35b" tar="s10b" symbol="sym0b"/>
+  <transitions xmi:id="t71b" src="s35b" tar="s24b" symbol="sym1b"/>
+  <transitions xmi:id="t72b" src="s36b" tar="s1b" symbol="sym0b"/>
+  <transitions xmi:id="t73b" src="s36b" tar="s16b" symbol="sym1b"/>
+  <transitions xmi:id="t74b" src="s37b" tar="s46b" symbol="sym0b"/>
+  <transitions xmi:id="t75b" src="s37b" tar="s1b" symbol="sym1b"/>
+  <transitions xmi:id="t76b" src="s38b" tar="s48b" symbol="sym0b"/>
+  <transitions xmi:id="t77b" src="s38b" tar="s40b" symbol="sym1b"/>
+  <transitions xmi:id="t78b" src="s39b" tar="s43b" symbol="sym0b"/>
+  <transitions xmi:id="t79b" src="s39b" tar="s10b" symbol="sym1b"/>
+  <transitions xmi:id="t80b" src="s40b" tar="s49b" symbol="sym0b"/>
+  <transitions xmi:id="t81b" src="s40b" tar="s12b" symbol="sym1b"/>
+  <transitions xmi:id="t82b" src="s41b" tar="s23b" symbol="sym0b"/>
+  <transitions xmi:id="t83b" src="s41b" tar="s11b" symbol="sym1b"/>
+  <transitions xmi:id="t84b" src="s42b" tar="s6b" symbol="sym0b"/>
+  <transitions xmi:id="t85b" src="s42b" tar="s8b" symbol="sym1b"/>
+  <transitions xmi:id="t86b" src="s43b" tar="s45b" symbol="sym0b"/>
+  <transitions xmi:id="t87b" src="s43b" tar="s38b" symbol="sym1b"/>
+  <transitions xmi:id="t88b" src="s44b" tar="s6b" symbol="sym0b"/>
+  <transitions xmi:id="t89b" src="s44b" tar="s17b" symbol="sym1b"/>
+  <transitions xmi:id="t90b" src="s45b" tar="s7b" symbol="sym0b"/>
+  <transitions xmi:id="t91b" src="s45b" tar="s4b" symbol="sym1b"/>
+  <transitions xmi:id="t92b" src="s46b" tar="s23b" symbol="sym0b"/>
+  <transitions xmi:id="t93b" src="s46b" tar="s3b" symbol="sym1b"/>
+  <transitions xmi:id="t94b" src="s47b" tar="s16b" symbol="sym0b"/>
+  <transitions xmi:id="t95b" src="s47b" tar="s23b" symbol="sym1b"/>
+  <transitions xmi:id="t96b" src="s48b" tar="s8b" symbol="sym0b"/>
+  <transitions xmi:id="t97b" src="s48b" tar="s16b" symbol="sym1b"/>
+  <transitions xmi:id="t98b" src="s49b" tar="s26b" symbol="sym0b"/>
+  <transitions xmi:id="t99b" src="s49b" tar="s5b" symbol="sym1b"/>
+  <words>/model/wmodels/word_6.model</words>
+</DFAAutomaton:Automaton>

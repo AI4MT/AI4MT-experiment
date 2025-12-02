@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DFAAutomaton:Automaton xmlns:DFAAutomaton="http://dfaAutomaton/1.0" xmlns:xmi="http://www.omg.org/XMI" xmi:version="2.0" xmi:id="a2" name="dfa_2_followup">
+  <states xmi:id="sb0" name="q0" isInitial="true"/>
+  <states xmi:id="sb1" name="q1"/>
+  <states xmi:id="sb2" name="q2"/>
+  <states xmi:id="sb3" name="q3"/>
+  <states xmi:id="sb4" name="q4"/>
+  <states xmi:id="sb5" name="q5"/>
+  <states xmi:id="sb6" name="q6" isFinal="true"/>
+  <states xmi:id="sb7" name="q7"/>
+  <states xmi:id="sb8" name="q8"/>
+  <states xmi:id="sb9" name="q9"/>
+  <states xmi:id="sb10" name="q10" isFinal="true"/>
+  <states xmi:id="sb11" name="q11"/>
+  <states xmi:id="sb12" name="q12"/>
+  <states xmi:id="sb13" name="q13"/>
+  <states xmi:id="sb14" name="q14"/>
+  <states xmi:id="sb15" name="q15" isFinal="true"/>
+  <states xmi:id="sb16" name="q16" isFinal="true"/>
+  <states xmi:id="sb17" name="q17"/>
+  <states xmi:id="sb18" name="q18"/>
+  <states xmi:id="sb19" name="q19" isFinal="true"/>
+  <alphabet xmi:id="sym0b" symbol="a"/>
+  <alphabet xmi:id="sym1b" symbol="b"/>
+  <transitions xmi:id="tb0" src="sb0" tar="sb0" symbol="sym0b"/>
+  <transitions xmi:id="tb1" src="sb0" tar="sb12" symbol="sym1b"/>
+  <transitions xmi:id="tb2" src="sb1" tar="sb16" symbol="sym0b"/>
+  <transitions xmi:id="tb3" src="sb1" tar="sb13" symbol="sym1b"/>
+  <transitions xmi:id="tb4" src="sb2" tar="sb17" symbol="sym0b"/>
+  <transitions xmi:id="tb5" src="sb2" tar="sb19" symbol="sym1b"/>
+  <transitions xmi:id="tb6" src="sb3" tar="sb15" symbol="sym0b"/>
+  <transitions xmi:id="tb7" src="sb3" tar="sb16" symbol="sym1b"/>
+  <transitions xmi:id="tb8" src="sb4" tar="sb13" symbol="sym0b"/>
+  <transitions xmi:id="tb9" src="sb4" tar="sb11" symbol="sym1b"/>
+  <transitions xmi:id="tb10" src="sb5" tar="sb16" symbol="sym0b"/>
+  <transitions xmi:id="tb11" src="sb5" tar="sb1" symbol="sym1b"/>
+  <transitions xmi:id="tb12" src="sb6" tar="sb5" symbol="sym0b"/>
+  <transitions xmi:id="tb13" src="sb6" tar="sb2" symbol="sym1b"/>
+  <transitions xmi:id="tb14" src="sb7" tar="sb15" symbol="sym0b"/>
+  <transitions xmi:id="tb15" src="sb7" tar="sb8" symbol="sym1b"/>
+  <transitions xmi:id="tb16" src="sb8" tar="sb5" symbol="sym0b"/>
+  <transitions xmi:id="tb17" src="sb8" tar="sb10" symbol="sym1b"/>
+  <transitions xmi:id="tb18" src="sb9" tar="sb10" symbol="sym0b"/>
+  <transitions xmi:id="tb19" src="sb9" tar="sb17" symbol="sym1b"/>
+  <transitions xmi:id="tb20" src="sb10" tar="sb12" symbol="sym0b"/>
+  <transitions xmi:id="tb21" src="sb10" tar="sb2" symbol="sym1b"/>
+  <transitions xmi:id="tb22" src="sb11" tar="sb14" symbol="sym0b"/>
+  <transitions xmi:id="tb23" src="sb11" tar="sb12" symbol="sym1b"/>
+  <transitions xmi:id="tb24" src="sb12" tar="sb18" symbol="sym0b"/>
+  <transitions xmi:id="tb25" src="sb12" tar="sb10" symbol="sym1b"/>
+  <transitions xmi:id="tb26" src="sb13" tar="sb0" symbol="sym0b"/>
+  <transitions xmi:id="tb27" src="sb13" tar="sb6" symbol="sym1b"/>
+  <transitions xmi:id="tb28" src="sb14" tar="sb18" symbol="sym0b"/>
+  <transitions xmi:id="tb29" src="sb14" tar="sb2" symbol="sym1b"/>
+  <transitions xmi:id="tb30" src="sb15" tar="sb11" symbol="sym0b"/>
+  <transitions xmi:id="tb31" src="sb15" tar="sb0" symbol="sym1b"/>
+  <transitions xmi:id="tb32" src="sb16" tar="sb11" symbol="sym0b"/>
+  <transitions xmi:id="tb33" src="sb16" tar="sb7" symbol="sym1b"/>
+  <transitions xmi:id="tb34" src="sb17" tar="sb12" symbol="sym0b"/>
+  <transitions xmi:id="tb35" src="sb17" tar="sb17" symbol="sym1b"/>
+  <transitions xmi:id="tb36" src="sb18" tar="sb16" symbol="sym0b"/>
+  <transitions xmi:id="tb37" src="sb18" tar="sb1" symbol="sym1b"/>
+  <transitions xmi:id="tb38" src="sb19" tar="sb9" symbol="sym0b"/>
+  <transitions xmi:id="tb39" src="sb19" tar="sb15" symbol="sym1b"/>
+  <words>/model/wmodels/word_2.model</words>
+</DFAAutomaton:Automaton>

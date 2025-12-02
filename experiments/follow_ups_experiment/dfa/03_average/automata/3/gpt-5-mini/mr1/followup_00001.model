@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<DFAAutomaton:Automaton xmlns:DFAAutomaton="http://dfaAutomaton/1.0" xmlns:xmi="http://www.omg.org/XMI" xmi:version="2.0" xmi:id="a3" name="dfa_3_x2">
+  <states xmi:id="s0" name="q0" isInitial="true" isFinal="false"/>
+  <states xmi:id="s1" name="q1" isInitial="false" isFinal="true"/>
+  <states xmi:id="s2" name="q2" isInitial="false" isFinal="true"/>
+  <states xmi:id="s3" name="q3" isInitial="false" isFinal="false"/>
+  <states xmi:id="s4" name="q4" isInitial="false" isFinal="true"/>
+  <states xmi:id="s5" name="q5" isInitial="false" isFinal="false"/>
+  <states xmi:id="s6" name="q6" isInitial="false" isFinal="true"/>
+  <states xmi:id="s7" name="q7" isInitial="false" isFinal="false"/>
+  <states xmi:id="s8" name="q8" isInitial="false" isFinal="false"/>
+  <states xmi:id="s9" name="q9" isInitial="false" isFinal="true"/>
+  <alphabet xmi:id="sym0" symbol="a"/>
+  <alphabet xmi:id="sym1" symbol="b"/>
+  <transitions xmi:id="t0" src="s0" tar="s8" symbol="sym0"/>
+  <transitions xmi:id="t1" src="s0" tar="s6" symbol="sym1"/>
+  <transitions xmi:id="t2" src="s1" tar="s8" symbol="sym0"/>
+  <transitions xmi:id="t3" src="s1" tar="s9" symbol="sym1"/>
+  <transitions xmi:id="t4" src="s2" tar="s7" symbol="sym0"/>
+  <transitions xmi:id="t5" src="s2" tar="s8" symbol="sym1"/>
+  <transitions xmi:id="t6" src="s3" tar="s6" symbol="sym0"/>
+  <transitions xmi:id="t7" src="s3" tar="s5" symbol="sym1"/>
+  <transitions xmi:id="t8" src="s4" tar="s8" symbol="sym0"/>
+  <transitions xmi:id="t9" src="s4" tar="s0" symbol="sym1"/>
+  <transitions xmi:id="t10" src="s5" tar="s2" symbol="sym0"/>
+  <transitions xmi:id="t11" src="s5" tar="s1" symbol="sym1"/>
+  <transitions xmi:id="t12" src="s6" tar="s7" symbol="sym0"/>
+  <transitions xmi:id="t13" src="s6" tar="s4" symbol="sym1"/>
+  <transitions xmi:id="t14" src="s7" tar="s2" symbol="sym0"/>
+  <transitions xmi:id="t15" src="s7" tar="s5" symbol="sym1"/>
+  <transitions xmi:id="t16" src="s8" tar="s5" symbol="sym0"/>
+  <transitions xmi:id="t17" src="s8" tar="s8" symbol="sym1"/>
+  <transitions xmi:id="t18" src="s9" tar="s6" symbol="sym0"/>
+  <transitions xmi:id="t19" src="s9" tar="s1" symbol="sym1"/>
+  <words>/model/wmodels/word_3.model</words>
+</DFAAutomaton:Automaton>

@@ -1,0 +1,39 @@
+metamodel dfa "/dfa.gotten/model/DFAAutomaton.ecore" with x1, x2
+models "/dfa.gotten/model/dfamodels"
+metamodel word "/dfa.gotten/model/DFAWord.ecore" with w1, w2
+models "/dfa.gotten/model/wmodels"
+
+dfa input Features {
+	context Automaton def: FinalStates: Set = states->select(isFinal = true)->collect(name)->asSet()
+    context Automaton def: NonFinalStates: Set = states->select(isFinal = false)->collect(name)->asSet()    
+}
+
+word input Features {
+	context Words def: Word: List = symbol
+}
+
+output Features {  	// this takes two arguments, the automaton and the word
+   Result : Boolean	// True if word accepted, false otherwiser
+}
+
+Processor {
+	Name : String
+	Version : String	
+}
+
+MetamorphicRelations {
+	// if the non-final states of automaton x1 are equal to the final states of x2, then if x1 accepts a word, the other automata must reject it, and vice-versa 
+	MR1 = [(NonFinalStates(x1) == FinalStates(x2)) implies ( (Result(x1, w1) and not Result(x2, w1) ) or ( not Result(x1, w1) and Result(x2, w1)) )	]
+
+	// if a first automaton x1 differs from a second automaton x2 only by having a subset of final states
+    // then any word accepted by the first automaton must also be accepted by the second one
+	MR2 = [	( FinalStates(x2)->includesAll(FinalStates(x1)) ) implies ( not Result(x1, w1) or Result(x2, w1) ) ]    
+
+	// We are testing an automata for (0+1)*0. Hence, if we append a '1' to any word ending in '0'  
+	// then the automata accepts the word ending in '0' and rejects the word ending in '1' 
+	MR3 = [ (Word(w1)->last() == '0' and Word(w1)->add('1') == Word(w2)) 	implies ( Result(x1, w1) and not Result(x1, w2))]
+	
+	// We are testing an automata for (0+1)*0. If a word with length at least 2 ends in the symbol '0' and a second word is 
+	// obtained by removing the first symbol of the first word, then both words must be accepted
+	MR4 = [ (Word(w1)->last() == '0' and Word(w1)->size() > 1 and Word(w1)->remove(0) == Word(w2)) implies (Result(x1, w1) and Result(x1, w2))]
+}

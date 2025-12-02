@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:pp="http://example.com/purepursuit">
+  <pp:TestCase_Input route="18-16-20-46-10-9-8-7-39-40-1" distance="713.168" nominalSpeed="6" minimalSpeed="3" angVelGain="75" approximationReductionGain="0.513162" l="6" ld="6">
+    <refPoses x="-240.77" y="-112.5"/>
+    <refPoses x="0" y="0"/>
+    <refPoses x="0" y="0"/>
+  </pp:TestCase_Input>
+  <pp:TestCase_Output timeToDestination="0" distance="713.168" errorDist="0" execTime="0"/>
+</xmi:XMI>

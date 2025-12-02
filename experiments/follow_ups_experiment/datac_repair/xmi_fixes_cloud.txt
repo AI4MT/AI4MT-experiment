@@ -1,0 +1,112 @@
+ El volumen de la unidad C es Windows 
+ El n£mero de serie del volumen es: D44E-72CF
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\datac_repair\10_racks\1\gpt-5-nano\mr2
+
+10/10/2025  11:17               197 followup_00003sfx.model
+10/10/2025  11:17               245 followup_00003sfxsfx.model
+10/10/2025  11:17               231 followup_00003sfxsfxsfx.model
+               3 archivos            673 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\datac_repair\10_racks\3\gpt-5-nano\mr5
+
+10/10/2025  12:02               245 followup_00005sfx.model
+10/10/2025  12:02               245 followup_00005sfxsfx.model
+10/10/2025  12:02               246 followup_00005sfxsfxsfx.model
+               3 archivos            736 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\datac_repair\10_racks\4\gpt-5-nano\mr4
+
+10/10/2025  12:19               231 followup_00001sfx.model
+10/10/2025  12:19               245 followup_00001sfxsfx.model
+10/10/2025  12:20               245 followup_00001sfxsfxsfx.model
+10/10/2025  12:19               205 followup_00002sfx.model
+10/10/2025  12:19               197 followup_00002sfxsfx.model
+10/10/2025  12:19               317 followup_00002sfxsfxsfx.model
+10/10/2025  12:19               220 followup_00003sfx.model
+10/10/2025  12:19               207 followup_00003sfxsfx.model
+10/10/2025  12:19               207 followup_00003sfxsfxsfx.model
+10/10/2025  12:18               205 followup_00004sfx.model
+10/10/2025  12:18               207 followup_00004sfxsfx.model
+10/10/2025  12:18               220 followup_00004sfxsfxsfx.model
+10/10/2025  12:18               197 followup_00005sfx.model
+10/10/2025  12:18               197 followup_00005sfxsfx.model
+10/10/2025  12:18               220 followup_00005sfxsfxsfx.model
+              15 archivos          3.320 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\datac_repair\20_racks\1\gpt-5-nano\mr1
+
+12/10/2025  09:37               245 followup_00001sfx.model
+12/10/2025  09:37               245 followup_00001sfxsfx.model
+12/10/2025  09:37               245 followup_00001sfxsfxsfx.model
+12/10/2025  09:36               246 followup_00002sfx.model
+12/10/2025  09:36               197 followup_00002sfxsfx.model
+12/10/2025  09:36               245 followup_00002sfxsfxsfx.model
+               6 archivos          1.423 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\datac_repair\20_racks\2\gpt-5-mini\mr3
+
+11/10/2025  10:13               230 followup_00005sfx.model
+11/10/2025  10:13               317 followup_00005sfxsfx.model
+11/10/2025  10:13               245 followup_00005sfxsfxsfx.model
+               3 archivos            792 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\datac_repair\20_racks\3\gpt-5-nano\mr2
+
+12/10/2025  10:19               232 followup_00001sfx.model
+12/10/2025  10:19               230 followup_00001sfxsfx.model
+12/10/2025  10:19               245 followup_00001sfxsfxsfx.model
+               3 archivos            707 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\datac_repair\20_racks\3\gpt-5-nano\mr4
+
+12/10/2025  10:34               244 followup_00001sfx.model
+12/10/2025  10:34               197 followup_00001sfxsfx.model
+12/10/2025  10:34               244 followup_00001sfxsfxsfx.model
+12/10/2025  10:33               245 followup_00002sfx.model
+12/10/2025  10:33               246 followup_00002sfxsfx.model
+12/10/2025  10:33               212 followup_00002sfxsfxsfx.model
+12/10/2025  10:33               197 followup_00003sfx.model
+12/10/2025  10:33               245 followup_00003sfxsfx.model
+12/10/2025  10:33               245 followup_00003sfxsfxsfx.model
+12/10/2025  10:32               246 followup_00004sfx.model
+12/10/2025  10:32               245 followup_00004sfxsfx.model
+12/10/2025  10:32               245 followup_00004sfxsfxsfx.model
+12/10/2025  10:31               197 followup_00005sfx.model
+12/10/2025  10:31               245 followup_00005sfxsfx.model
+12/10/2025  10:31               232 followup_00005sfxsfxsfx.model
+              15 archivos          3.485 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\datac_repair\20_racks\4\gpt-5-nano\mr2
+
+12/10/2025  10:41               197 followup_00004sfx.model
+12/10/2025  10:41               245 followup_00004sfxsfx.model
+12/10/2025  10:41               197 followup_00004sfxsfxsfx.model
+               3 archivos            639 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\datac_repair\50_racks\2\gpt-5-nano\mr4
+
+13/10/2025  11:30               245 followup_00001sfx.model
+13/10/2025  11:30               245 followup_00001sfxsfx.model
+13/10/2025  11:30               317 followup_00001sfxsfxsfx.model
+               3 archivos            807 bytes
+
+ Directorio de C:\research\AI4MeT\code\AIMeTAssist\MeTAssist\experiments\datac_repair\50_racks\3\gpt-5-nano\mr2
+
+13/10/2025  11:50               245 followup_00001sfx.model
+13/10/2025  11:50               245 followup_00001sfxsfx.model
+13/10/2025  11:50               245 followup_00001sfxsfxsfx.model
+13/10/2025  11:48               231 followup_00002sfx.model
+13/10/2025  11:48               197 followup_00002sfxsfx.model
+13/10/2025  11:48               244 followup_00002sfxsfxsfx.model
+13/10/2025  11:47               231 followup_00003sfx.model
+13/10/2025  11:47               230 followup_00003sfxsfx.model
+13/10/2025  11:47               197 followup_00003sfxsfxsfx.model
+13/10/2025  11:45               245 followup_00004sfx.model
+13/10/2025  11:45               245 followup_00004sfxsfx.model
+13/10/2025  11:45               230 followup_00004sfxsfxsfx.model
+              12 archivos          2.785 bytes
+
+     Total de archivos en la lista:
+              66 archivos         15.367 bytes
+               0 dirs  587.345.149.952 bytes libres

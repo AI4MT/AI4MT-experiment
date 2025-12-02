@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<DFAWord:Words xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:DFAWord="http://dfaWord/1.0" xmi:id="_GxJPkLiYEfCGr5LCV8IXmh" automata="/model/dfamodels/dfa_1.model" accept="true">
+  <symbol>0</symbol>
+  <symbol>1</symbol>
+  <symbol>0</symbol>
+  <symbol>1</symbol>
+  <symbol>0</symbol>
+  <symbol>1</symbol>
+  <symbol>0</symbol>
+  <symbol>0</symbol>
+  <symbol>0</symbol>
+  <symbol>1</symbol>
+  <symbol>1</symbol>
+  <symbol>0</symbol>
+  <symbol>0</symbol>
+  <symbol>1</symbol>
+  <symbol>1</symbol>
+  <symbol>0</symbol>
+  <symbol>0</symbol>
+  <symbol>1</symbol>
+  <symbol>1</symbol>
+  <symbol>1</symbol>
+  <symbol>1</symbol>
+  <symbol>0</symbol>
+  <symbol>1</symbol>
+  <symbol>0</symbol>
+  <symbol>0</symbol>
+  <symbol>1</symbol>
+</DFAWord:Words>

@@ -1,0 +1,34 @@
+metamodel datacentre "/sample.gotten/model/datac.ecore" with m1, m2
+models "/sample.gotten/model/dcmodels"
+metamodel workload "/sample.gotten/model/workload.ecore" with w1, w2
+models "/sample.gotten/model/workloads"
+
+datacentre input Features {
+	context DataCentre def: NNodes: Int = racks->collect(numBoards*board.nodesPerBoard)->sum()
+	context DataCentre def: CPU: Int = racks->collect(numBoards*board.nodesPerBoard*board.nodeType.CPUCores*board.nodeType.CPUSpeed)->sum()
+	context DataCentre def: NMachines: Int = racks->collect(numBoards*board.nodesPerBoard*board.nodeType.CPUCores)->sum()
+	context DataCentre def: Storage: Int = racks->collect(numBoards*board.nodesPerBoard*board.nodeType.DiskSpeed)->sum()	
+	context DataCentre def: Network: Int = net.bandwidth
+	context DataCentre def: Memory: Int = racks->collect(numBoards*board.nodesPerBoard*board.nodeType.MEMSpeed)->sum()
+}
+
+workload input Features {
+ 	context WorkloadSet def: Workload: Set = workloads->collect(Traces)
+ }
+
+output Features {
+	Time : Long
+	Energy : Long
+}
+Processor {
+	Name: String
+	Version: String
+}
+MetamorphicRelations {
+	MR1 = [(( CPU(m1) > CPU(m2) ) and ((w1) == (w2)) ) implies ((Energy(m1) <= Energy(m2)))]
+	MR2 = [(( NMachines(m1) > NMachines(m2)) and ((w1) == (w2)) ) implies ((NMachines(m1)/NMachines(m2)) >= (Energy(m1)/Energy(m2)))]
+	MR3 = [(( Storage(m1) > Storage(m2)) and ((w1) == (w2)) ) implies (Time(m1) <= Time(m2))]
+	MR4 = [(( Network(m1) > Network(m2)) and ((w1) == (w2)) ) implies (Time(m1) <= Time(m2))]
+	MR5 = [(( Memory(m1) > Memory(m2)) and ((w1) == (w2)) ) implies (Time(m1) < Time(m2))]
+	MR6 = [( ((m1) == (m2)) and ( Workload(w1)->includes(Workload(w2))) ) implies (Time(m2) <= Time(m1))]
+}

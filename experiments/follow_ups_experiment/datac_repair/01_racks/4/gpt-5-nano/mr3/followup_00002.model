@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tcinputCloud:DataCentre xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:tcinputCloud="http://tcinputCloud/1.0">
+  <net xmi:id="net0" bandwidth="15" latency="5">
+    <switches xmi:id="switchset0"/>
+  </net>
+  <racks xmi:id="rack0" numBoards="15">
+    <board xmi:id="board0" nodesPerBoard="16">
+      <switch xmi:id="switch0"/>
+      <nodeType xmi:id="nodeType0" CPUCores="12" CPUSpeed="8" MEMSpeed="1" DiskSpeed="7"/>
+    </board>
+  </racks>
+</tcinputCloud:DataCentre>

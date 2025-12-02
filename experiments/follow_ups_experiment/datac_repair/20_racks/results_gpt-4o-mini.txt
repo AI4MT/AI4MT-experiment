@@ -1,0 +1,145 @@
+Relation: mr1
+Timing Statistics (ms):
+20 models, with exec. times in ms:
+52540,2706
+56086,0461
+56779,7842
+60442,7774
+73086,8691
+80736,0374
+88983,6063
+95423,0342
+98069,6605
+99216,2893
+103885,1596
+111154,9320
+116640,4413
+117620,7686
+118309,6868
+119330,0329
+121762,4423
+122247,3194
+126391,5925
+139591,1926
+Average time: 97914,90 ms
+Median time: 101550,72 ms
+Standard deviation: 25920,15 ms
+Number of XMI fixes performed: 0
+Total number of follow-ups: 9 (45,00%)
+Number of follow-ups by trial (0 means no fixing was necessary): {0=0, 1=4, 2=1, 3=4}
+Relation: mr2
+Timing Statistics (ms):
+20 models, with exec. times in ms:
+35617,2977
+72069,2093
+79218,7286
+80755,5280
+81805,4903
+85063,6471
+87454,3317
+87952,6893
+88490,6129
+94514,0724
+95708,0377
+97744,3866
+100303,0115
+104093,1575
+105970,9345
+106620,7686
+107947,0696
+110654,6920
+114749,7887
+131570,2294
+Average time: 93415,18 ms
+Median time: 95111,06 ms
+Standard deviation: 19222,72 ms
+Number of XMI fixes performed: 0
+Total number of follow-ups: 2 (10,00%)
+Number of follow-ups by trial (0 means no fixing was necessary): {0=0, 1=1, 2=1, 3=0}
+Relation: mr3
+Timing Statistics (ms):
+20 models, with exec. times in ms:
+44385,9626
+44450,7802
+46917,1119
+47032,7007
+47279,5590
+55592,8801
+60824,4393
+61348,0364
+65655,8064
+69049,1563
+76273,2620
+84327,2348
+90212,6748
+93787,3636
+95009,7704
+104795,2025
+108947,6103
+117259,6951
+125678,2122
+135702,4201
+Average time: 78726,49 ms
+Median time: 72661,21 ms
+Standard deviation: 28258,81 ms
+Number of XMI fixes performed: 0
+Total number of follow-ups: 15 (75,00%)
+Number of follow-ups by trial (0 means no fixing was necessary): {0=0, 1=8, 2=3, 3=4}
+Relation: mr4
+Timing Statistics (ms):
+20 models, with exec. times in ms:
+40091,0267
+44808,5939
+47911,7987
+50873,2343
+54616,2328
+56237,9856
+61535,2677
+66086,8490
+66795,5457
+76221,8620
+86582,8428
+97641,7406
+101626,0919
+111042,2827
+114731,8138
+116093,2496
+121510,0784
+125049,9721
+138823,5375
+143866,5623
+Average time: 86107,33 ms
+Median time: 81402,35 ms
+Standard deviation: 32773,42 ms
+Number of XMI fixes performed: 0
+Total number of follow-ups: 13 (65,00%)
+Number of follow-ups by trial (0 means no fixing was necessary): {0=0, 1=10, 2=2, 3=1}
+Relation: mr5
+Timing Statistics (ms):
+20 models, with exec. times in ms:
+47634,5657
+51773,7949
+52591,6937
+53238,6100
+56914,6780
+58045,0120
+72087,7204
+78164,3349
+80452,6727
+89049,9955
+91374,1566
+98152,8707
+109912,6937
+118404,3169
+119770,2817
+122743,7737
+123136,2706
+124549,5725
+130815,5286
+190927,6971
+Average time: 93487,01 ms
+Median time: 90212,08 ms
+Standard deviation: 35921,10 ms
+Number of XMI fixes performed: 0
+Total number of follow-ups: 17 (85,00%)
+Number of follow-ups by trial (0 means no fixing was necessary): {0=0, 1=7, 2=6, 3=4}
