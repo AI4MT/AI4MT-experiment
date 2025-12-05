@@ -1,0 +1,34 @@
+metamodel dfa "/dfa.gotten/model/DFAAutomaton.ecore" with x1, x2
+models "/dfa.gotten/model/dfamodels"
+metamodel word "/dfa.gotten/model/DFAWord.ecore" with w1, w2
+models "/dfa.gotten/model/wmodels"
+
+dfa input Features {
+    context Automaton def: FinalStates: Int = states->select(isFinal = true)->size()
+    context Automaton def: NonFinalStates: Int = states->select(isFinal = false)->size()
+    context Automaton def: InitialState: String = states->select(isInitial = true)->first().name
+    context Automaton def: TransitionsCount: Int = transitions->size()
+    context Automaton def: InitialIsFinal: Boolean = states->select(isInitial = true)->first().isFinal
+    context Automaton def: UniqueFinal: Boolean = (FinalStates = 1)
+}
+
+word input Features {
+}
+
+output Features {
+   Result : Boolean
+}
+
+Processor {
+    Name : String
+    Version : String    
+}
+
+MetamorphicRelations {
+    MR3 = [((FinalStates(x1) > FinalStates(x2)) and (TransitionsCount(x1) == TransitionsCount(x2))) implies (Result(x1) == Result(x2))]
+    MR4 = [((NonFinalStates(x1) < NonFinalStates(x2)) and (TransitionsCount(x1) == TransitionsCount(x2))) implies (Result(x1) <= Result(x2))]
+    MR5 = [((InitialIsFinal(x1) = true) and (InitialIsFinal(x2) = false)) implies (Result(x1) = false)]
+    MR6 = [((UniqueFinal(x1) = true) and (UniqueFinal(x2) = false)) implies (Result(x1) = false)]
+    MR7 = [((InitialState(x1) != InitialState(x2)) and (TransitionsCount(x1) == TransitionsCount(x2))) implies (Result(x1) != Result(x2))]
+}
+

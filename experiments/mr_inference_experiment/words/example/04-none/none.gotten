@@ -1,0 +1,30 @@
+metamodel dfa "/dfa.gotten/model/DFAAutomaton.ecore" with x1, x2
+models "/dfa.gotten/model/dfamodels"
+metamodel word "/dfa.gotten/model/DFAWord.ecore" with w1, w2
+models "/dfa.gotten/model/wmodels"
+
+word input Features {}
+
+input Features {
+    context Words def: SymbolCount: Int = automata->collect(symbol)->size()
+    context Words def: AcceptCount: Int = automata->collect(accept)->count(true)
+}
+
+output Features {
+   Result : Boolean
+}
+
+Processor {
+	Name : String
+	Version : String	
+}
+
+MetamorphicRelations {
+    MR1 = [((SymbolCount(w1) > SymbolCount(w2)) and (automata(w1) == automata(w2))) implies (Result(w1) == true)]
+    MR2 = [((AcceptCount(w1) > AcceptCount(w2)) and (automata(w1) == automata(w2))) implies (Result(w1) == true)]
+    MR3 = [((SymbolCount(w1) < SymbolCount(w2)) and (automata(w1) == automata(w2))) implies (Result(w1) == false)]
+    MR4 = [((AcceptCount(w1) < AcceptCount(w2)) and (automata(w1) == automata(w2))) implies (Result(w1) == false)]
+    MR5 = [((SymbolCount(w1) == SymbolCount(w2)) and (automata(w1) == automata(w2))) implies (Result(w1) == Result(w2))]
+    MR6 = [((AcceptCount(w1) == AcceptCount(w2)) and (automata(w1) == automata(w2))) implies (Result(w1) == Result(w2))]
+}
+

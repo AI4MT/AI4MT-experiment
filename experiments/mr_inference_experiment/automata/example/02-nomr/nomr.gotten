@@ -1,0 +1,42 @@
+metamodel dfa "/dfa.gotten/model/DFAAutomaton.ecore" with x1, x2
+models "/dfa.gotten/model/dfamodels"
+metamodel word "/dfa.gotten/model/DFAWord.ecore" with w1, w2
+models "/dfa.gotten/model/wmodels"
+
+dfa input Features {
+	context Automaton def: NSymbols: Int = alphabet->size()
+	context Automaton def: NStates: Int = states->size()
+	context Automaton def: NTransitions: Int = transitions->size()
+	context Automaton def: States: Set = states->collect(name)->asSet()
+	context Automaton def: FinalStates: Set = states->select(isFinal = true)->collect(name)->asSet()
+	context Automaton def: NonFinalStates: Set = states->select(isFinal = false)->collect(name)->asSet()
+	context Automaton def: InitialState: Set = states->select(isInitial = true)->collect(name)->asSet()
+	context Automaton def: Transitions: Set = transitions
+	context Automaton def: InitialIsFinal: Boolean = states->select(isInitial = true).isFinal
+	context Automaton def: UniqueFinal: Int = states->select(isFinal)->size() = 1
+	context Automaton def: NFinalStates: Int = FinalStates->size() // New input feature
+	context Automaton def: NNonFinalStates: Int = NonFinalStates->size() // New input feature
+}
+
+word input Features {
+	context Words def: Word: List = symbol
+}
+
+output Features {
+   Result : Boolean
+}
+
+Processor {
+	Name : String
+	Version : String	
+}
+
+MetamorphicRelations {
+	MR1 = [((NStates(x1) > NStates(x2)) and (NTransitions(x1) == NTransitions(x2))) implies (Result(x1) == true)]
+	MR2 = [((NFinalStates(x1) > NFinalStates(x2)) and (NNonFinalStates(x1) == NNonFinalStates(x2))) implies (Result(x1) == true)]
+	MR3 = [((NStates(x1) > NStates(x2)) and (InitialIsFinal(x1) == InitialIsFinal(x2))) implies (Result(x1) == Result(x2))]
+	MR4 = [((NTransitions(x1) > NTransitions(x2)) and (InitialIsFinal(x1) == InitialIsFinal(x2))) implies (Result(x1) == Result(x2))]
+	MR5 = [((UniqueFinal(x1) == true) and (UniqueFinal(x2) == true)) implies (NFinalStates(x1) == NFinalStates(x2))]
+	MR6 = [((NStates(x1) > NStates(x2)) and (NTransitions(x1) < NTransitions(x2))) implies (Result(x1) == false)]
+}
+

@@ -1,0 +1,29 @@
+metamodel avehicles "/AutonomousVehicle/model/avehicle.ecore" with m1, m2
+models "/AutonomousVehicle/model/avmodels"
+avehicles input Features {
+  nominalSpeed: Int // Velocidad nominal objetivo, en la que el controlador intenta mantener el ego-vehículo durante el seguimiento de la ruta.
+  minimalSpeed: Int // Velocidad mínima permitida en maniobras, para asegurar que el vehículo no frene por debajo de este umbral.
+  angVelGain: Int // Ganancia de la ley de control sobre la velocidad angular. Ajusta la respuesta del yaw rate en función del error de trayectoria.
+  approximationReductionGain: Int // Factor de “reducción de aproximación” que refina la interpolación de los waypoints. Un valor mayor suaviza la trayectoria, pero puede perder precisión.
+  context TestCase_Input def: obstacleCount: Int = obstacles->size()
+  context TestCase_Input def: waypointsCount: Int = refPoses->size()
+  context TestCase_Input def: totalDistance: Double = distance // Total distance covered in the test case.
+  context TestCase_Input def: averageSpeed: Double = (nominalSpeed + minimalSpeed) / 2.0 // Average speed based on nominal and minimal speeds.
+}
+avehicles output Features {
+  timeToDestination: Int
+  distance: Int
+  balancing: Int
+  execTime: Double // Execution time of the test case.
+}
+Processor {
+  Name: String
+  Version: String
+}
+MetamorphicRelations {
+  MR1 = [ (waypointsCount(m1) > waypointsCount(m2)) implies (timeToDestination(m1) <= timeToDestination(m2)) ]
+  MR2 = [ (obstacleCount(m1) < obstacleCount(m2)) implies (distance(m1) >= distance(m2)) ]
+  MR3 = [ (minimalSpeed(m1) < minimalSpeed(m2) and angVelGain(m1) == angVelGain(m2)) implies (balancing(m1) >= balancing(m2)) ]
+  MR4 = [ (approximationReductionGain(m1) > approximationReductionGain(m2)) implies (execTime(m1) <= execTime(m2)) ]
+}
+

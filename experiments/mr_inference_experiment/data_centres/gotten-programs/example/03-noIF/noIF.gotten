@@ -1,0 +1,21 @@
+metamodel datacentre "/sample.gotten/model/datac.ecore" with m1, m2
+metamodel workload "/sample.gotten/model/workload.ecore" with w1, w2
+datacentre input Features {
+  NNodes: Int // Número de nodos en el centro de datos.
+  NProcessors: Int // Número de procesadores en el centro de datos.
+  StorageSpeed: Int // Velocidad de almacenamiento en el centro de datos.
+  latency: Int // Latencia de la red en milisegundos.
+  bandwidth: Int // Ancho de banda de la red en Mbps.
+}
+datacentre output Features {
+  Time: Long
+  Energy: Long
+}
+MetamorphicRelations {
+  MR1 = [ (StorageSpeed(m1) > StorageSpeed(m2) and (w1) == (w2)) implies (Time(m1) <= Time(m2)) ]
+  MR2 = [ (NProcessors(m1) > NProcessors(m2)) implies (Time(m1) < Time(m2)) ]
+  MR3 = [ (NNodes(m1) > NNodes(m2)) implies (Energy(m1) > Energy(m2)) ]
+  MR4 = [ (latency(m1) < latency(m2)) implies (Time(m1) < Time(m2)) ] // Lower latency should result in less time
+  MR5 = [ (bandwidth(m1) > bandwidth(m2)) implies (Energy(m1) <= Energy(m2)) ] // Higher bandwidth should not increase energy consumption
+}
+

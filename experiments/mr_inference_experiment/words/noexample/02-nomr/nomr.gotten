@@ -1,0 +1,28 @@
+metamodel dfa "/dfa.gotten/model/DFAAutomaton.ecore" with x1, x2
+models "/dfa.gotten/model/dfamodels"
+metamodel word "/dfa.gotten/model/DFAWord.ecore" with w1, w2
+models "/dfa.gotten/model/wmodels"
+
+word input Features {
+    context Words def: Word: List = symbol
+    context Words def: Automata: List = automata
+    context Words def: Accept: List = accept
+}
+
+output Features {
+   Result : Boolean
+}
+
+Processor {
+	Name : String
+	Version : String	
+}
+
+MetamorphicRelations {
+    MR1 [ Word(automata) implies Result(x1, w1) ]
+    MR2 [ Word(accept) implies Result(x2, w2) ]
+    MR3 [ Word(symbol) implies Result(x1, w1) ]
+    MR4 [ Word(automata) and Word(accept) implies Result(x1, w2) ]
+    MR5 [ Word(symbol) and Word(accept) implies Result(x2, w1) ]
+}
+

@@ -1,0 +1,24 @@
+metamodel datacentre "/sample.gotten/model/datac.ecore" with m1, m2
+metamodel workload "/sample.gotten/model/workload.ecore" with w1, w2
+datacentre input Features {
+  context DataCentre def: StorageSpeed: Int = racks->collect(board.nodeType.DiskSpeed)->sum()
+  context DataCentre def: NNodes: Int = racks->collect(numBoards*board.nodesPerBoard)->sum()
+  context DataCentre def: NProcessors: Int = racks->collect(numBoards*board.nodeType.CPUCores)->sum()
+  context DataCentre def: TotalBandwidth: Int = net.bandwidth
+  context DataCentre def: TotalLatency: Int = net.latency
+  context DataCentre def: TotalMEMSpeed: Int = racks->collect(board.nodeType.MEMSpeed)->sum()
+}
+output Features {
+  Time(m1): Long
+  Time(m2): Long
+  Energy(m1): Long
+  Energy(m2): Long
+}
+MetamorphicRelations {
+  "MR1" = [ TotalBandwidth(m1) implies TotalBandwidth(m2) ]
+  "MR2" = [ TotalLatency(m1) implies TotalLatency(m2) ]
+  "MR3" = [ TotalMEMSpeed(m1) implies TotalMEMSpeed(m2) ]
+  "MR4" = [ NNodes(m1) implies NNodes(m2) ]
+  "MR5" = [ NProcessors(m1) implies NProcessors(m2) ]
+  "MR6" = [ StorageSpeed(m1) implies StorageSpeed(m2) ]
+}

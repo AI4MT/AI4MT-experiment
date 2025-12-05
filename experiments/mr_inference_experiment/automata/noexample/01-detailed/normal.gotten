@@ -1,0 +1,60 @@
+metamodel dfa "/dfa.gotten/model/DFAAutomaton.ecore" with x1, x2
+models "/dfa.gotten/model/dfamodels"
+metamodel word "/dfa.gotten/model/DFAWord.ecore" with w1, w2
+models "/dfa.gotten/model/wmodels"
+
+dfa input Features {
+	context Automaton def: NSymbols: Int = alphabet->size()
+	context Automaton def: NStates: Int = states->size()
+	context Automaton def: NTransitions: Int = transitions->size()
+	context Automaton def: States: Set = states->collect(name)->asSet()
+	context Automaton def: FinalStates: Set = states->select(isFinal = true)->collect(name)->asSet()
+	context Automaton def: NonFinalStates: Set = states->select(isFinal = false)->collect(name)->asSet()
+	context Automaton def: InitialState: Set = states->select(isInitial = true)->collect(name)->asSet()
+	context Automaton def: Transitions: Set = transitions
+	context Automaton def: InitialIsFinal: Boolean = states->select(isInitial = true).isFinal
+	context Automaton def: UniqueFinal: Int = states->select(isFinal)->size() = 1
+	context Automaton def: NFinalStates: Int = FinalStates->size() // New input feature
+	context Automaton def: NNonFinalStates: Int = NonFinalStates->size() // New input feature
+}
+
+word input Features {
+	context Words def: Word: List = symbol
+}
+
+output Features {
+   Result : Boolean
+}
+
+Processor {
+	Name : String
+	Version : String	
+}
+
+MetamorphicRelations {
+	// if the final state sets of two automata are disjoint and one of the two automata accepts a word, the other automata must reject it, and vice-versa 
+	MR1 = [((States(x1)->excludingAll(FinalStates(x1)))->equals(FinalStates(x2))) 
+		implies ( (Result(x1, w1) and not Result(x2, w1) ) or ( not Result(x1, w1) and Result(x2, w1)) )
+	]
+
+	// if a first automaton differs from a second automaton only by having a subset of final states
+	    // then any word accepted by the first automaton must also be accepted by the second one
+	MR2 = [	( FinalStates(x2)->includesAll(FinalStates(x1)) ) implies ( (not Result(x1, w1)) or (Result(x2, w1)) ) ]    
+
+	// if the number of final states in the first automaton is greater than or equal to the second,
+	// then the first automaton should accept at least as many words as the second automaton
+	MR3 = [ (NFinalStates(x1) >= NFinalStates(x2)) implies (Result(x1, w1) implies Result(x2, w1)) ]
+
+	// if the first automaton has more transitions than the second,
+	// it should not take longer to accept a word than the second automaton
+	MR4 = [ (NTransitions(x1) > NTransitions(x2)) implies (not Result(x1, w1) or Result(x2, w1)) ]
+
+	// if the first automaton has a unique final state, 
+	// it should accept a word if and only if the second automaton also accepts it
+	MR5 = [ (UniqueFinal(x1)) implies (Result(x1, w1) = Result(x2, w1)) ]
+
+	// if the initial state of the first automaton is also a final state,
+	// then it should accept any word that the second automaton accepts
+	MR6 = [ (InitialIsFinal(x1)) implies (Result(x2, w1) implies Result(x1, w1)) ]
+}
+

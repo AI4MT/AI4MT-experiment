@@ -1,0 +1,32 @@
+metamodel dfa "/dfa.gotten/model/DFAAutomaton.ecore" with x1, x2
+models "/dfa.gotten/model/dfamodels"
+metamodel word "/dfa.gotten/model/DFAWord.ecore" with w1, w2
+models "/dfa.gotten/model/wmodels"
+
+word input Features {
+    SymbolCount : Int // New input feature to count symbols
+    AutomataCount : Int // New input feature to count automata
+    AcceptCount : Int // New input feature to count accepted words
+}
+
+output Features {
+   Result : Boolean
+}
+
+Processor {
+	Name : String
+	Version : String	
+}
+
+MetamorphicRelations {
+    // Existing metamorphic relations
+    // ...
+
+    // New metamorphic relations
+    MR1 = [ SymbolCount(w1) >= 0 implies Result(x1, w1) ]; // More symbols should not lead to false results
+    MR2 = [ AutomataCount(w1) >= 0 implies Result(x1, w1) ]; // More automata should not lead to false results
+    MR3 = [ AcceptCount(w1) >= 0 implies Result(x1, w1) ]; // More accepted words should not lead to false results
+    MR4 = [ SymbolCount(w1) > SymbolCount(w2) implies Result(x1, w1) implies Result(x2, w2) ]; // More symbols in w1 should not lead to worse results than w2
+    MR5 = [ AutomataCount(w1) > AutomataCount(w2) implies Result(x1, w1) implies Result(x2, w2) ]; // More automata in w1 should not lead to worse results than w2
+}
+

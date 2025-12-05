@@ -1,0 +1,41 @@
+#VM
+vm.quantity = 512
+vm.mips = 250
+vm.pes = 1
+vm.ram = 128
+vm.bw = 100000
+vm.size = 2500
+vm.priority = 1
+vm.schedulingInterval = 300
+
+#Cloud
+cloud.model = null
+cloud.description = null
+
+#Host
+host.quantity = 512
+host.ram = 4000
+host.ramspeed = 1600
+host.bw = 2000000
+host.sto = 1000000
+host.mips = 1000
+host.pes = 2
+
+#Storage
+sto.type = hdd
+sto.capacity = 1000000
+sto.maxTransferRate = 100
+sto.latency = 5
+
+#Workload
+work.path = /localSpace/cloudEnergy/cloudsimStorage/CloudSimStorage-master/cloudsim/modules/cloudsim-examples/src/main/resources/workload/io_mix/cpu
+work.name = mix_vm
+work.volume = 10
+work.numTraces = 10
+
+#Network
+net.bandwidth = 500000	
+net.latency = 10
+
+#ojo, 100000 minimo o error de config
+#Ojo, error con nTraces=1

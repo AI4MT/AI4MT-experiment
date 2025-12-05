@@ -1,0 +1,2 @@
+Model			TestCase	#Waypoints	ErrorDist	TimeToDest	Balancing	Distance	ExecTime
+purePursuitUSCity	0		20		3.52347		38.49		3.18743		31.6228		17.6482

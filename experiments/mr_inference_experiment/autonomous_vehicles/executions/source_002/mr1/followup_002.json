@@ -1,0 +1,543 @@
+{
+  "type": "TestCase_Input",
+  "route": "14-15-10-47-16-17",
+  "distance": 435.998,
+  "nominalSpeed": 10,
+  "minimalSpeed": 10,
+  "angVelGain": 92,
+  "approximationReductionGain": 2.375183,
+  "l": 5,
+  "ld": 5,
+  "refPoses": [
+    {
+      "type": "Waypoint",
+      "x": 199.0,
+      "y": 110.0
+    },
+    {
+      "type": "Waypoint",
+      "x": 195.74,
+      "y": 110.0
+    },
+    {
+      "type": "Waypoint",
+      "x": 192.48,
+      "y": 110.0
+    },
+    {
+      "type": "Waypoint",
+      "x": 189.22,
+      "y": 110.0
+    },
+    {
+      "type": "Waypoint",
+      "x": 185.96,
+      "y": 110.0
+    },
+    {
+      "type": "Waypoint",
+      "x": 182.7,
+      "y": 110.0
+    },
+    {
+      "type": "Waypoint",
+      "x": 179.44,
+      "y": 110.0
+    },
+    {
+      "type": "Waypoint",
+      "x": 176.18,
+      "y": 110.0
+    },
+    {
+      "type": "Waypoint",
+      "x": 172.92,
+      "y": 110.0
+    },
+    {
+      "type": "Waypoint",
+      "x": 169.66,
+      "y": 110.0
+    },
+    {
+      "type": "Waypoint",
+      "x": 166.4,
+      "y": 110.0
+    },
+    {
+      "type": "Waypoint",
+      "x": 164.47,
+      "y": 97.33
+    },
+    {
+      "type": "Waypoint",
+      "x": 164.54,
+      "y": 86.66
+    },
+    {
+      "type": "Waypoint",
+      "x": 164.61,
+      "y": 75.99
+    },
+    {
+      "type": "Waypoint",
+      "x": 164.68,
+      "y": 65.32
+    },
+    {
+      "type": "Waypoint",
+      "x": 164.75,
+      "y": 54.65
+    },
+    {
+      "type": "Waypoint",
+      "x": 164.82,
+      "y": 43.98
+    },
+    {
+      "type": "Waypoint",
+      "x": 164.89,
+      "y": 33.31
+    },
+    {
+      "type": "Waypoint",
+      "x": 164.96,
+      "y": 22.64
+    },
+    {
+      "type": "Waypoint",
+      "x": 165.03,
+      "y": 11.97
+    },
+    {
+      "type": "Waypoint",
+      "x": 165.1,
+      "y": -1.3
+    },
+    {
+      "type": "Waypoint",
+      "x": 160.03,
+      "y": -1.17
+    },
+    {
+      "type": "Waypoint",
+      "x": 150.96,
+      "y": -1.04
+    },
+    {
+      "type": "Waypoint",
+      "x": 141.89,
+      "y": -0.91
+    },
+    {
+      "type": "Waypoint",
+      "x": 132.82,
+      "y": -0.78
+    },
+    {
+      "type": "Waypoint",
+      "x": 123.75,
+      "y": -0.65
+    },
+    {
+      "type": "Waypoint",
+      "x": 114.68,
+      "y": -0.52
+    },
+    {
+      "type": "Waypoint",
+      "x": 105.61,
+      "y": -0.39
+    },
+    {
+      "type": "Waypoint",
+      "x": 96.54,
+      "y": -0.26
+    },
+    {
+      "type": "Waypoint",
+      "x": 87.47,
+      "y": -0.13
+    },
+    {
+      "type": "Waypoint",
+      "x": 78.4,
+      "y": 0.0
+    },
+    {
+      "type": "Waypoint",
+      "x": 78.218,
+      "y": 10.8
+    },
+    {
+      "type": "Waypoint",
+      "x": 78.036,
+      "y": 21.6
+    },
+    {
+      "type": "Waypoint",
+      "x": 77.854,
+      "y": 32.4
+    },
+    {
+      "type": "Waypoint",
+      "x": 77.672,
+      "y": 43.2
+    },
+    {
+      "type": "Waypoint",
+      "x": 77.49,
+      "y": 54.0
+    },
+    {
+      "type": "Waypoint",
+      "x": 77.308,
+      "y": 64.8
+    },
+    {
+      "type": "Waypoint",
+      "x": 77.126,
+      "y": 75.6
+    },
+    {
+      "type": "Waypoint",
+      "x": 76.944,
+      "y": 86.4
+    },
+    {
+      "type": "Waypoint",
+      "x": 76.762,
+      "y": 97.2
+    },
+    {
+      "type": "Waypoint",
+      "x": 76.58,
+      "y": 108.0
+    },
+    {
+      "type": "Waypoint",
+      "x": 69.16,
+      "y": 110.0
+    },
+    {
+      "type": "Waypoint",
+      "x": 63.74,
+      "y": 110.0
+    },
+    {
+      "type": "Waypoint",
+      "x": 58.32,
+      "y": 110.0
+    },
+    {
+      "type": "Waypoint",
+      "x": 52.9,
+      "y": 110.0
+    },
+    {
+      "type": "Waypoint",
+      "x": 47.48,
+      "y": 110.0
+    },
+    {
+      "type": "Waypoint",
+      "x": 42.06,
+      "y": 110.0
+    },
+    {
+      "type": "Waypoint",
+      "x": 36.64,
+      "y": 110.0
+    },
+    {
+      "type": "Waypoint",
+      "x": 31.22,
+      "y": 110.0
+    },
+    {
+      "type": "Waypoint",
+      "x": 25.8,
+      "y": 110.0
+    },
+    {
+      "type": "Waypoint",
+      "x": -20.38,
+      "y": 110.0
+    }
+  ],
+  "mapPoints": [
+    {
+      "type": "MapPoint",
+      "x": -240.77,
+      "y": -110.5
+    },
+    {
+      "type": "MapPoint",
+      "x": -184.0,
+      "y": -110.5
+    },
+    {
+      "type": "MapPoint",
+      "x": -112.6,
+      "y": -110.5
+    },
+    {
+      "type": "MapPoint",
+      "x": -22.6,
+      "y": -110.5
+    },
+    {
+      "type": "MapPoint",
+      "x": 76.4,
+      "y": -110.5
+    },
+    {
+      "type": "MapPoint",
+      "x": -240.77,
+      "y": 0.0
+    },
+    {
+      "type": "MapPoint",
+      "x": -184.6,
+      "y": 0.0
+    },
+    {
+      "type": "MapPoint",
+      "x": -112.6,
+      "y": 0.0
+    },
+    {
+      "type": "MapPoint",
+      "x": -20.34,
+      "y": 0.0
+    },
+    {
+      "type": "MapPoint",
+      "x": 76.4,
+      "y": 0.0
+    },
+    {
+      "type": "MapPoint",
+      "x": -242.15,
+      "y": 108.0
+    },
+    {
+      "type": "MapPoint",
+      "x": -202.6,
+      "y": 108.0
+    },
+    {
+      "type": "MapPoint",
+      "x": -112.6,
+      "y": 108.0
+    },
+    {
+      "type": "MapPoint",
+      "x": -20.38,
+      "y": 108.0
+    },
+    {
+      "type": "MapPoint",
+      "x": 74.58,
+      "y": 108.0
+    },
+    {
+      "type": "MapPoint",
+      "x": 166.4,
+      "y": 108.0
+    },
+    {
+      "type": "MapPoint",
+      "x": 199.0,
+      "y": 108.0
+    },
+    {
+      "type": "MapPoint",
+      "x": 166.4,
+      "y": 148.33
+    },
+    {
+      "type": "MapPoint",
+      "x": 166.4,
+      "y": -151.67
+    },
+    {
+      "type": "MapPoint",
+      "x": 76.41,
+      "y": 108.01
+    },
+    {
+      "type": "MapPoint",
+      "x": 76.4,
+      "y": -151.67
+    },
+    {
+      "type": "MapPoint",
+      "x": -20.38,
+      "y": 148.33
+    },
+    {
+      "type": "MapPoint",
+      "x": -19.7,
+      "y": -16.3
+    },
+    {
+      "type": "MapPoint",
+      "x": -20.8,
+      "y": -54.4
+    },
+    {
+      "type": "MapPoint",
+      "x": -22.7,
+      "y": -81.7
+    },
+    {
+      "type": "MapPoint",
+      "x": -22.56,
+      "y": -110.51
+    },
+    {
+      "type": "MapPoint",
+      "x": -112.6,
+      "y": 148.33
+    },
+    {
+      "type": "MapPoint",
+      "x": -112.6,
+      "y": -151.67
+    },
+    {
+      "type": "MapPoint",
+      "x": -202.6,
+      "y": 148.33
+    },
+    {
+      "type": "MapPoint",
+      "x": -202.8,
+      "y": 108.0
+    },
+    {
+      "type": "MapPoint",
+      "x": -202.002,
+      "y": 95.1997
+    },
+    {
+      "type": "MapPoint",
+      "x": -201.701,
+      "y": 85.396
+    },
+    {
+      "type": "MapPoint",
+      "x": -201.118,
+      "y": 75.0835
+    },
+    {
+      "type": "MapPoint",
+      "x": -198.9,
+      "y": 65.159
+    },
+    {
+      "type": "MapPoint",
+      "x": -196.199,
+      "y": 55.6373
+    },
+    {
+      "type": "MapPoint",
+      "x": -192.877,
+      "y": 45.9306
+    },
+    {
+      "type": "MapPoint",
+      "x": -189.399,
+      "y": 35.8963
+    },
+    {
+      "type": "MapPoint",
+      "x": -186.874,
+      "y": 25.9599
+    },
+    {
+      "type": "MapPoint",
+      "x": -184.971,
+      "y": 15.1573
+    },
+    {
+      "type": "MapPoint",
+      "x": -184.6,
+      "y": -110.5
+    },
+    {
+      "type": "MapPoint",
+      "x": -184.6,
+      "y": -151.67
+    },
+    {
+      "type": "MapPoint",
+      "x": 72.1,
+      "y": 148.33
+    },
+    {
+      "type": "MapPoint",
+      "x": 72.1,
+      "y": 107.98
+    },
+    {
+      "type": "MapPoint",
+      "x": -22.56,
+      "y": -110.47
+    },
+    {
+      "type": "MapPoint",
+      "x": -22.6,
+      "y": -151.67
+    },
+    {
+      "type": "MapPoint",
+      "x": 76.4,
+      "y": -1.25
+    },
+    {
+      "type": "MapPoint",
+      "x": 167.1,
+      "y": -1.3
+    },
+    {
+      "type": "MapPoint",
+      "x": 199.0,
+      "y": -1.25
+    },
+    {
+      "type": "MapPoint",
+      "x": 122.3,
+      "y": -112.4
+    },
+    {
+      "type": "MapPoint",
+      "x": 166.4,
+      "y": -112.5
+    },
+    {
+      "type": "MapPoint",
+      "x": 199.0,
+      "y": -112.5
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "Obstacle",
+      "X": 164.68,
+      "Y": 65.32,
+      "slopeX": 0.0,
+      "slopeY": 0.0,
+      "psi": 1.5708
+    },
+    {
+      "type": "Obstacle",
+      "X": 25.8,
+      "Y": 110.0,
+      "slopeX": 0.0,
+      "slopeY": 0.0,
+      "psi": 1.5708
+    }
+  ]
+}

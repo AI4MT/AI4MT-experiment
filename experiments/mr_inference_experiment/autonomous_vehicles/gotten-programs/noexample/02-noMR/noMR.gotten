@@ -1,0 +1,39 @@
+metamodel avehicles "/AutonomousVehicle/model/avehicle.ecore" with m1, m2
+models "/AutonomousVehicle/model/avmodels"
+avehicles input Features {
+nominalSpeed: Int //Velocidad nominal objetivo, en la que el controlador intenta mantener el ego-vehículo durante el seguimiento de la ruta.
+minimalSpeed: Int //Velocidad mínima permitida en maniobras, para asegurar que el vehículo no frene por debajo de este umbral.
+angVelGain: Int //Ganancia de la ley de control sobre la velocidad angular. Ajusta la respuesta del yaw rate en función del error de trayectoria.
+approximationReductionGain: Int //Factor de “reducción de aproximación” que refina la interpolación de los waypoints. Un valor mayor suaviza la trayectoria, pero puede perder precisión.
+context TestCase_Input def: obstacleCount: Int = obstacles->size()
+context TestCase_Input def: waypointsCount: Int = refPoses->size()
+refPose : Set //Conjunto de waypoints de la trayectoria de referencia
+xRef : Set //Vector con las abscisas de esos waypoints
+yRef : Set
+Ts : Double //Simulation Time: Tiempo total de simulación
+s : Set //Tamaño de xRef/yRef
+L : Double //longitud del modelo de bicicleta que simulas
+ld : Double //Distancia de “look-ahead”. Determina a qué punto futuro de la trayectoria mira el controlador para corregir la dirección.
+X1 : Double //Coordenadas iniciales actor
+Y1 : Double
+psi1: Double //Ángulo de guiñada inicial (yaw) del primer actor
+slopeX1 : Double //Pendientes en x e y utilizadas para definir la dirección de movimiento u orientación.
+slopeY1 : Double
+}
+avehicles output Features {
+timeToDestination(m1): Int
+distance(m1): Int
+balancing(m1): Int
+timeToDestination(m2): Int
+distance(m2): Int
+balancing(m2): Int
+}
+Processor {
+Name: String
+Version: String
+}
+MetamorphicRelations {
+context TestCase_Input def: timeToDestination(m1) >= minimalSpeed implies timeToDestination(m2) >= minimalSpeed
+context TestCase_Input def: angVelGain > 0 implies balancing(m1) < balancing(m2)
+context TestCase_Input def: approximationReductionGain > 0 implies distance(m1) < distance(m2)
+}

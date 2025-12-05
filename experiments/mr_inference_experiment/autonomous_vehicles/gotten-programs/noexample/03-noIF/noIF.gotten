@@ -1,0 +1,28 @@
+metamodel avehicles "/AutonomousVehicle/model/avehicle.ecore" with m1, m2
+models "/AutonomousVehicle/model/avmodels"
+avehicles input Features {
+    minimalSpeed(m1),
+    minimalSpeed(m2),
+    angVelGain(m1),
+    angVelGain(m2),
+    approximationReductionGain(m1),
+    approximationReductionGain(m2)
+}
+output Features {
+    timeToDestination(m1),
+    timeToDestination(m2),
+    distance(m1),
+    distance(m2),
+    errorDist(m1),
+    errorDist(m2),
+    execTime(m1),
+    execTime(m2)
+}
+MetamorphicRelations {
+    MR1 = [ (nominalSpeed(m1) > nominalSpeed(m2)) implies ((timeToDestination(m2) >= timeToDestination(m1)) and (distance(m2) <= distance(m1)))]
+    MR2 = [ (obstacleCount(m1) > obstacleCount(m2)) implies ((timeToDestination(m1) >= timeToDestination(m2)) and (distance(m2) <= distance(m1)))]
+    MR3 = [ (waypointsCount(m1) > waypointsCount(m2)) implies ((timeToDestination(m1) >= timeToDestination(m2)) and (distance(m2) <= distance(m1)))]
+    MR4 = [ (minimalSpeed(m1) > minimalSpeed(m2)) implies ((timeToDestination(m1) <= timeToDestination(m2)) and (errorDist(m2) <= errorDist(m1)))]
+    MR5 = [ (angVelGain(m1) < angVelGain(m2)) implies ((execTime(m1) >= execTime(m2)) and (distance(m1) >= distance(m2)))]
+    MR6 = [ (approximationReductionGain(m1) < approximationReductionGain(m2)) implies ((timeToDestination(m1) >= timeToDestination(m2)) and (errorDist(m1) <= errorDist(m2)))]
+}

@@ -1,0 +1,54 @@
+Starting metamorphic testing executor
+Command-line arguments:
+0: --standalone
+1: /localSpace/cloudEnergy/cloudsimStorage/evolutionary/InitialPopulation/Al_w1/metaInfo/tc_00000.mtc
+StandAlone mode selected!
+=====> Executing the test case: 0
+Workload: mix_vm
+IoRandomRunner - Init
+IoRandomRunner - inputFolder: /localSpace/cloudEnergy/cloudsimStorage/CloudSimStorage-master/cloudsim/modules/cloudsim-examples/src/main/resources/workload/io_mix/cpu, workload: mix_vm
+IoRandomRunner - Creating broker
+IoRandomRunner - Creating cloudlist
+IoRandomRunner - Creating vm list
+Input folder: /localSpace/cloudEnergy/cloudsimStorage/CloudSimStorage-master/cloudsim/modules/cloudsim-examples/src/main/resources/workload/io_mix/cpu/mix_vmIoRandomRunner - Creating host
+Starting mix_vm_HPPM_mmt_0.8_0.1
+IoRunnerAbstract - start
+IoRunnerAbstract - Bandwidth adaption
+IoRunnerAbstract - Executing
+
+Experiment name: mix_vm_HPPM_mmt_0.8_0.1
+Number of hosts: 512
+Number of VMs: 512
+Total simulation time: 2770.10 sec
+Energy consumption: 18.77333 kWh
+Number of VM migrations: 0
+SLA: 0.00000%
+SLA perf degradation due to migration: 0.00%
+SLA time per active host: 0.00%
+Overall SLA violation: 0.00%
+Average SLA violation: 0.00%
+SLA time per host: 0.00%
+Number of host shutdowns: 0
+Mean time before a host shutdown: NaN sec
+StDev time before a host shutdown: NaN sec
+Mean time before a VM migration: NaN sec
+StDev time before a VM migration: NaN sec
+Execution time - VM selection mean: 0.00067 sec
+Execution time - VM selection stDev: 0.00050 sec
+Execution time - host selection mean: 0.00044 sec
+Execution time - host selection stDev: 0.00053 sec
+Execution time - VM reallocation mean: 0.00044 sec
+Execution time - VM reallocation stDev: 0.00053 sec
+Execution time - total mean: 0.00278 sec
+Execution time - total stDev: 0.00083 sec
+=========== Storage System Stats ============
+Storage Energy consumption: 0.00000 kWh
+total Energy consumption (CPU+storage): 18.77333 kWh
+Cost Energy consumption: 3.30974 $
+Wear-Out cost: 0.00000 $
+SLA cost: 0.00000 $
+All costs: 3.30974 $
+
+Total execution time: 1180
+End of party
+

@@ -1,0 +1,40 @@
+metamodel dfa "/dfa.gotten/model/DFAAutomaton.ecore" with x1, x2
+models "/dfa.gotten/model/dfamodels"
+metamodel word "/dfa.gotten/model/DFAWord.ecore" with w1, w2
+models "/dfa.gotten/model/wmodels"
+
+word input Features {
+    SymbolLength : Int // New input feature to capture the length of the symbol in the word
+    AutomataName : String // New input feature to capture the name of the automaton associated with the word
+}
+
+output Features {
+   Result : Boolean
+}
+
+Processor {
+	Name : String
+	Version : String	
+}
+
+MetamorphicRelations {
+	// if the automata accepts the words ending in '0' and we have a second word that appends '1' to any word ending in '0' 
+	// then the automata accepts the word ending in '0' and rejects the word ending in '1' 
+	MR1 = [ ((Word(w1)->last() == '0') and ((Word(w1)->including('1'))->equals(Word(w2)))) 	implies ( Result(x1, w1) and not Result(x1, w2))]
+
+	// if a word with length at least 2 ends in the symbol '0' and a second word is obtained by removing the first symbol of the first one, then both words must be accepted
+	MR2 = [ ((Word(w1)->size() > 1) and (Word(w1)->last() == '0') and ((Word(w1)->remove(0))->equals(Word(w2)))) implies (Result(x1, w1) and Result(x1, w2))]
+
+	// if the automaton accepts a word and we create a new word by appending the same symbol to it, the new word should also be accepted
+	MR3 = [ (Result(x1, w1) and (Word(w2)->equals(Word(w1)->including(Word(w1)->last()))) ) implies (Result(x1, w2))]
+
+	// if a word is accepted by the automaton and we create a new word by removing the last symbol, the new word should be rejected if the original word is of length 1
+	MR4 = [ (Result(x1, w1) and (Word(w1)->size() == 1) and ((Word(w1)->remove(Word(w1)->size() - 1))->equals(Word(w2)))) implies (not Result(x1, w2))]
+
+	// if two words are accepted by the automaton and they differ by one symbol, then at least one of them should be accepted
+	MR5 = [ (Result(x1, w1) and Result(x1, w2) and (Word(w1)->last() != Word(w2)->last())) implies (Result(x1, w1) or Result(x1, w2))]
+
+	// if the automaton accepts a word and the word has a specific symbol, then the automaton should also accept a word with that symbol at the beginning
+	MR6 = [ (Result(x1, w1) and (Word(w1)->includes('a'))) implies (Result(x1, Word(w1)->including('a'))) ]
+}
+

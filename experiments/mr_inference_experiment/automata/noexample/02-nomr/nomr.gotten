@@ -1,0 +1,45 @@
+metamodel dfa "/dfa.gotten/model/DFAAutomaton.ecore" with x1, x2
+models "/dfa.gotten/model/dfamodels"
+metamodel word "/dfa.gotten/model/DFAWord.ecore" with w1, w2
+models "/dfa.gotten/model/wmodels"
+
+dfa input Features {
+	context Automaton def: NSymbols: Int = alphabet->size()
+	context Automaton def: NStates: Int = states->size()
+	context Automaton def: NTransitions: Int = transitions->size()
+	context Automaton def: States: Set = states->collect(name)->asSet()
+	context Automaton def: FinalStates: Set = states->select(isFinal = true)->collect(name)->asSet()
+	context Automaton def: NonFinalStates: Set = states->select(isFinal = false)->collect(name)->asSet()
+	context Automaton def: InitialState: Set = states->select(isInitial = true)->collect(name)->asSet()
+	context Automaton def: Transitions: Set = transitions
+	context Automaton def: InitialIsFinal: Boolean = states->select(isInitial = true).isFinal
+	context Automaton def: UniqueFinal: Int = states->select(isFinal)->size() = 1
+	context Automaton def: NFinalStates: Int = FinalStates->size() // New input feature
+	context Automaton def: NNonFinalStates: Int = NonFinalStates->size() // New input feature
+}
+
+word input Features {
+	context Words def: Word: List = symbol
+}
+
+output Features {
+   Result : Boolean
+}
+
+Processor {
+	Name : String
+	Version : String	
+}
+
+MetamorphicRelations {
+    // Existing metamorphic relations
+    // ...
+
+    // New metamorphic relations
+    MR3 [ NStates(m1) <= NStates(m2) implies Result(m1) >= Result(m2) ] // More states should not decrease result
+    MR4 [ NTransitions(m1) <= NTransitions(m2) implies Result(m1) >= Result(m2) ] // More transitions should not decrease result
+    MR5 [ NFinalStates(m1) >= NFinalStates(m2) implies Result(m1) >= Result(m2) ] // More final states should not decrease result
+    MR6 [ NNonFinalStates(m1) >= NNonFinalStates(m2) implies Result(m1) >= Result(m2) ] // More non-final states should not decrease result
+    MR7 [ InitialIsFinal(m1) implies Result(m1) = true or Result(m2) = true ] // If initial state is final, result should be true
+}
+

@@ -1,0 +1,42 @@
+metamodel dfa "/dfa.gotten/model/DFAAutomaton.ecore" with x1, x2
+models "/dfa.gotten/model/dfamodels"
+metamodel word "/dfa.gotten/model/DFAWord.ecore" with w1, w2
+models "/dfa.gotten/model/wmodels"
+
+word input Features {
+    // New input features to capture additional metrics
+    context Words def: SymbolCount: Int = symbol->size()
+    context Words def: AutomataName: String = automata
+    context Words def: IsAccepted: Boolean = accept
+}
+
+output Features {
+   Result : Boolean
+}
+
+Processor {
+	Name : String
+	Version : String	
+}
+
+MetamorphicRelations {
+	// if the automata accepts the words ending in '0' and we have a second word that appends '1' to any word ending in '0' 
+	// then the automata accepts the word ending in '0' and rejects the word ending in '1' 
+	MR1 = [ ((Word(w1)->last() == '0') and ((Word(w1)->including('1'))->equals(Word(w2)))) 	implies ( Result(x1, w1) and not Result(x1, w2))]
+
+	// if a word with length at least 2 ends in the symbol '0' and a second word is obtained by removing the first symbol of the first one, then both words must be accepted
+	MR2 = [ ((Word(w1)->size() > 1) and (Word(w1)->last() == '0') and ((Word(w1)->remove(0))->equals(Word(w2)))) implies (Result(x1, w1) and Result(x1, w2))]
+
+	// if the first word is accepted and has a symbol count greater than 1, then a word with the same symbols but reversed should also be accepted
+	MR3 = [ (IsAccepted(w1) and SymbolCount(w1) > 1 and (Word(w1)->reverse()->equals(Word(w2)))) implies (Result(x1, w1) and Result(x1, w2))]
+
+	// if the first word is accepted and we append a symbol to it, the new word should not be accepted if the automaton does not accept the appended symbol
+	MR4 = [ (IsAccepted(w1) and (Word(w1)->including('x'))->equals(Word(w2)) and not (Result(x1, w2))) implies (not Result(x1, w1))]
+
+	// if two words are equal and one is accepted, then the other must also be accepted
+	MR5 = [ (Word(w1)->equals(Word(w2)) and IsAccepted(w1)) implies (Result(x1, w1) and Result(x1, w2))]
+
+	// if the first word is accepted and has a specific automata name, then a word with the same automata name should also be accepted
+	MR6 = [ (IsAccepted(w1) and AutomataName(w1) == AutomataName(w2)) implies (Result(x1, w1) and Result(x1, w2))]
+}
+

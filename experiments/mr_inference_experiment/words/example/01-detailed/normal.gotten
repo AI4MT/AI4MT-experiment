@@ -1,0 +1,41 @@
+metamodel dfa "/dfa.gotten/model/DFAAutomaton.ecore" with x1, x2
+models "/dfa.gotten/model/dfamodels"
+metamodel word "/dfa.gotten/model/DFAWord.ecore" with w1, w2
+models "/dfa.gotten/model/wmodels"
+
+word input Features {
+	context Words def: Word: List = symbol
+	context Words def: Automata: String = automata
+	context Words def: Accept: Boolean = accept
+}
+
+output Features {
+   Result : Boolean
+}
+
+Processor {
+	Name : String
+	Version : String	
+}
+
+MetamorphicRelations {
+	// if the automata accepts the words ending in '0' and we have a second word that appends '1' to any word ending in '0' 
+	// then the automata accepts the word ending in '0' and rejects the word ending in '1' 
+	MR1 = [ ((Word(w1)->last() == '0') and ((Word(w1)->including('1'))->equals(Word(w2)))) 	implies ( Result(x1, w1) and not Result(x1, w2))]
+
+	// if a word with length at least 2 ends in the symbol '0' and a second word is obtained by removing the first symbol of the first one, then both words must be accepted
+	MR2 = [ ((Word(w1)->size() > 1) and (Word(w1)->last() == '0') and ((Word(w1)->remove(0))->equals(Word(w2)))) implies (Result(x1, w1) and Result(x1, w2))]
+
+	// if the automaton accepts a word and we append a symbol that is not in the automaton's alphabet, the new word should not be accepted
+	MR3 = [ (Accept(w1) and (Word(w2)->equals(Word(w1)->concat('x')))) implies (not Result(x1, w2))]
+
+	// if two words are accepted by the same automaton, then their concatenation should also be accepted
+	MR4 = [ (Accept(w1) and Accept(w2) and (Word(w3)->equals(Word(w1)->concat(Word(w2)))) ) implies (Result(x1, w3))]
+
+	// if a word is accepted and we remove its last symbol, the resulting word should be accepted if the original word was accepted
+	MR5 = [ (Accept(w1) and (Word(w2)->equals(Word(w1)->remove(Word(w1)->size() - 1))) ) implies (Result(x1, w2))]
+
+	// if a word is accepted and we change its first symbol to another symbol in the alphabet, the new word should also be accepted
+	MR6 = [ (Accept(w1) and (Word(w2)->equals(Word(w1)->replace(0, 'a'))) and (Word(w1)->includes('a'))) implies (Result(x1, w2))]
+}
+

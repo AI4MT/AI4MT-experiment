@@ -1,0 +1,35 @@
+metamodel avehicles "/AutonomousVehicle/model/avehicle.ecore" with m1, m2
+models "/AutonomousVehicle/model/avmodels"
+avehicles input Features {
+    minimalSpeed: Int,
+    angVelGain: Int,
+    approximationReductionGain: Double,
+    distance: Double
+}
+output Features {
+    timeToDestination(m1): Double,
+    timeToDestination(m2): Double,
+    distance(m1): Double,
+    distance(m2): Double,
+    errorDist(m1): Double,
+    errorDist(m2): Double,
+    execTime(m1): Double,
+    execTime(m2): Double
+}
+MetamorphicRelations {
+    // Metamorphic Relation 1: Increasing speed should decrease time to destination
+    "SpeedIncreaseDecreasesTime" = [
+        (avehicles.minimalSpeed = 30 and avehicles.angVelGain = 5) implies (timeToDestination(m1) > timeToDestination(m2))
+    ]
+
+    // Metamorphic Relation 2: Increasing approximation reduction gain should decrease error distance
+    "ApproximationReductionDecreasesError" = [
+        (avehicles.approximationReductionGain = 0.5 and avehicles.distance = 100) implies (errorDist(m1) > errorDist(m2))
+    ]
+
+    // Metamorphic Relation 3: Increasing distance should increase execution time
+    "DistanceIncreaseIncreasesExecTime" = [
+        (avehicles.distance = 200) implies (execTime(m1) < execTime(m2))
+    ]
+}
+

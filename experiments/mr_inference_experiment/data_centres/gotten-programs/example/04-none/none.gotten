@@ -1,0 +1,22 @@
+metamodel datacentre "/sample.gotten/model/datac.ecore" with m1, m2
+metamodel workload "/sample.gotten/model/workload.ecore" with w1, w2
+datacentre input Features {
+  latency: Int // Latencia de la red en milisegundos.
+  bandwidth: Int // Ancho de banda de la red en Mbps.
+  numBoards: Int // Número de placas en el rack.
+  context TestCase_Input def: rackCount: Int = racks->size()
+}
+datacentre output Features {
+  Time: Long
+  Energy: Long
+}
+
+// Existing Metamorphic Relations
+MetamorphicRelations {
+  MR1 = [ (numBoards(m1) > numBoards(m2)) implies ((Time(m2) >= Time(m1)) and (Energy(m2) <= Energy(m1)))]
+  MR2 = [ (rackCount(m1) > rackCount(m2)) implies ((Time(m1) >= Time(m2)) and (Energy(m2) <= Energy(m1)))]
+
+// New Metamorphic Relations
+  MR3 = [ (latency(m1) < latency(m2)) implies ((Time(m1) <= Time(m2)) and (Energy(m1) <= Energy(m2)))]
+  MR4 = [ (bandwidth(m1) > bandwidth(m2)) implies ((Time(m2) >= Time(m1)) and (Energy(m1) <= Energy(m2)))]
+}

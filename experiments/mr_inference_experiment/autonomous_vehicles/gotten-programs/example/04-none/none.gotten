@@ -1,0 +1,18 @@
+metamodel avehicles "/AutonomousVehicle/model/avehicle.ecore" with m1, m2
+models "/AutonomousVehicle/model/avmodels"
+avehicles input Features {
+  context TestCase_Input def: TotalSpeed: EInt = nominalSpeed + minimalSpeed
+  context TestCase_Input def: TotalDistance: EDouble = distance + refPoses->collect(x->collect(x.x)->sum())
+}
+output Features {
+  timeToDestination: EDouble
+  distance: EDouble
+  errorDist: EDouble
+  execTime: EDouble
+}
+MetamorphicRelations {
+  MR1 = [ (TotalSpeed(m1) > TotalSpeed(m2)) implies (timeToDestination(m1) <= timeToDestination(m2)) ]
+  MR2 = [ (TotalDistance(m1) > TotalDistance(m2) and (m1.angVelGain) == (m2.angVelGain)) implies (execTime(m1) <= execTime(m2)) ]
+  MR3 = [ (m1.approximationReductionGain > m2.approximationReductionGain) implies (errorDist(m1) <= errorDist(m2)) ]
+  MR4 = [ (m1.minimalSpeed < m2.minimalSpeed) implies (distance(m1) >= distance(m2)) ]
+}

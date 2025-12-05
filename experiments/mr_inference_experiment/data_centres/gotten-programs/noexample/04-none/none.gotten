@@ -1,0 +1,23 @@
+metamodel datacentre "/sample.gotten/model/datac.ecore" with m1, m2
+metamodel workload "/sample.gotten/model/workload.ecore" with w1, w2
+datacentre input Features {
+  Bandwidth: Int
+  Latency: Int
+  MemorySpeed: Int
+}
+output Features {
+  Time(m1): Long
+  Time(m2): Long
+  Energy(m1): Long
+  Energy(m2): Long
+}
+MetamorphicRelations {
+  // Existing rules
+  "Rule1" = [ Time(m1) implies Time(m2) ]
+  "Rule2" = [ Energy(m1) implies Energy(m2) ]
+  // New rules
+  "Rule3" = [ Bandwidth(m1) > Latency(m1) implies Time(m1) < Time(m2) ]
+  "Rule4" = [ MemorySpeed(m1) > 1000 implies Energy(m1) < Energy(m2) ]
+  "Rule5" = [ Latency(m1) < 50 implies Time(m1) < Time(m2) ]
+}
+

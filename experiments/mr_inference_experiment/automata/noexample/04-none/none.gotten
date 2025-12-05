@@ -1,0 +1,34 @@
+metamodel dfa "/dfa.gotten/model/DFAAutomaton.ecore" with x1, x2
+models "/dfa.gotten/model/dfamodels"
+metamodel word "/dfa.gotten/model/DFAWord.ecore" with w1, w2
+models "/dfa.gotten/model/wmodels"
+
+dfa input Features {
+    InitialState : String
+    FinalStates : Set
+    NonFinalStates : Set
+    Transitions : Set
+    InitialIsFinal : Boolean
+    UniqueFinal : Boolean
+}
+
+word input Features {
+}
+
+output Features {
+   Result : Boolean
+}
+
+Processor {
+	Name : String
+	Version : String	
+}
+
+MetamorphicRelations {
+    MR1 = [ InitialIsFinal(x1) implies Result(x1, w1) ]
+    MR2 = [ UniqueFinal(x1) implies Result(x1, w1) ]
+    MR3 = [ FinalStates(x1)->size() >= 1 implies Result(x1, w1) ]
+    MR4 = [ NonFinalStates(x1)->size() >= 1 implies not Result(x1, w1) ]
+    MR5 = [ Transitions(x1)->size() > 0 implies Result(x1, w1) ]
+    MR6 = [ InitialState(x1) = FinalStates(x1)->first().name implies Result(x1, w1) ]
+}
