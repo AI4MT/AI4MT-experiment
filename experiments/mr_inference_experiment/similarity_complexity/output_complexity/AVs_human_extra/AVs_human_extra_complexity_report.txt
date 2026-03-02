@@ -1,0 +1,340 @@
+======================================================================
+MR COMPLEXITY REPORT (UNSIMPLIFIED TREES): AVs_human_extra
+======================================================================
+
+References:
+  Halstead, M.H. (1977). Elements of Software Science. North Holland.
+  McCabe, T.J. (1976). A complexity measure. IEEE Trans. SE-2(4), 308-320.
+
+Halstead classification for MR trees:
+  Operators: AND, OR, COMP(>), COMP(>=), COMP(<=), COMP(<),
+             COMP(==), COMP(!=), PRED, NEG_PRED
+  Operands:  Original expressions (NS(m1), TTD(m2), R(x1,w1), etc.)
+  Structural (MR, LHS, RHS): excluded from Halstead.
+
+--------------------------------------------------
+SUMMARY
+--------------------------------------------------
+Total MRs: 15
+  Tree_Size: mean=11.67, std=1.95, min=9.00, max=13.00
+  Depth: mean=3.67, std=0.49, min=3.00, max=4.00
+  Halstead_V: mean=26.51, std=8.06, min=15.51, max=33.22
+  McCabe_CC: mean=1.00, std=0.00, min=1.00, max=1.00
+
+--------------------------------------------------
+PER-MR DETAILS
+--------------------------------------------------
+
+example-human-MR1:
+  Rule: NS(m1) > NS(m2)  =>  TTD(m2) >= TTD(m1) AND D(m2) >= D(m1)
+  Tree:
+    MR
+      LHS
+        COMP(>)
+          NS(m1)
+          NS(m2)
+      RHS
+        AND
+          COMP(>=)
+            TTD(m2)
+            TTD(m1)
+          COMP(>=)
+            D(m2)
+            D(m1)
+  Size=13, Depth=4, Leaves=6, Vocabulary=9
+  Halstead V=31.70, D=1.50, E=47.55
+  McCabe CC=1
+  Operators: COMP(>), AND, COMP(>=), COMP(>=)
+  Operands:  NS(m1), NS(m2), TTD(m2), TTD(m1), D(m2), D(m1)
+
+example-human-MR2:
+  Rule: OC(m1) > OC(m2)  =>  TTD(m1) >= TTD(m2) AND D(m1) >= D(m2)
+  Tree:
+    MR
+      LHS
+        COMP(>)
+          OC(m1)
+          OC(m2)
+      RHS
+        AND
+          COMP(>=)
+            TTD(m1)
+            TTD(m2)
+          COMP(>=)
+            D(m1)
+            D(m2)
+  Size=13, Depth=4, Leaves=6, Vocabulary=9
+  Halstead V=31.70, D=1.50, E=47.55
+  McCabe CC=1
+  Operators: COMP(>), AND, COMP(>=), COMP(>=)
+  Operands:  OC(m1), OC(m2), TTD(m1), TTD(m2), D(m1), D(m2)
+
+example-human-MR3:
+  Rule: WPC(m1) > WPC(m2)  =>  TTD(m1) >= TTD(m2) AND D(m1) >= D(m2)
+  Tree:
+    MR
+      LHS
+        COMP(>)
+          WPC(m1)
+          WPC(m2)
+      RHS
+        AND
+          COMP(>=)
+            TTD(m1)
+            TTD(m2)
+          COMP(>=)
+            D(m1)
+            D(m2)
+  Size=13, Depth=4, Leaves=6, Vocabulary=9
+  Halstead V=31.70, D=1.50, E=47.55
+  McCabe CC=1
+  Operators: COMP(>), AND, COMP(>=), COMP(>=)
+  Operands:  WPC(m1), WPC(m2), TTD(m1), TTD(m2), D(m1), D(m2)
+
+example-detailed-MR3:
+  Rule: WPC(m1) > WPC(m2)  =>  TTD(m1) >= TTD(m2) AND D(m1) >= D(m2)
+  Tree:
+    MR
+      LHS
+        COMP(>)
+          WPC(m1)
+          WPC(m2)
+      RHS
+        AND
+          COMP(>=)
+            TTD(m1)
+            TTD(m2)
+          COMP(>=)
+            D(m1)
+            D(m2)
+  Size=13, Depth=4, Leaves=6, Vocabulary=9
+  Halstead V=31.70, D=1.50, E=47.55
+  McCabe CC=1
+  Operators: COMP(>), AND, COMP(>=), COMP(>=)
+  Operands:  WPC(m1), WPC(m2), TTD(m1), TTD(m2), D(m1), D(m2)
+
+example-detailed-MR4:
+  Rule: MS(m1) > MS(m2)  =>  TTD(m1) <= TTD(m2)
+  Tree:
+    MR
+      LHS
+        COMP(>)
+          MS(m1)
+          MS(m2)
+      RHS
+        COMP(<=)
+          TTD(m1)
+          TTD(m2)
+  Size=9, Depth=3, Leaves=4, Vocabulary=6
+  Halstead V=15.51, D=1.00, E=15.51
+  McCabe CC=1
+  Operators: COMP(>), COMP(<=)
+  Operands:  MS(m1), MS(m2), TTD(m1), TTD(m2)
+
+example-detailed-MR5:
+  Rule: AVG(m1) > AVG(m2)  =>  D(m1) <= D(m2)
+  Tree:
+    MR
+      LHS
+        COMP(>)
+          AVG(m1)
+          AVG(m2)
+      RHS
+        COMP(<=)
+          D(m1)
+          D(m2)
+  Size=9, Depth=3, Leaves=4, Vocabulary=6
+  Halstead V=15.51, D=1.00, E=15.51
+  McCabe CC=1
+  Operators: COMP(>), COMP(<=)
+  Operands:  AVG(m1), AVG(m2), D(m1), D(m2)
+
+example-detailed-MR6:
+  Rule: ARG(m1) > ARG(m2)  =>  BAL(m1) <= BAL(m2)
+  Tree:
+    MR
+      LHS
+        COMP(>)
+          ARG(m1)
+          ARG(m2)
+      RHS
+        COMP(<=)
+          BAL(m1)
+          BAL(m2)
+  Size=9, Depth=3, Leaves=4, Vocabulary=6
+  Halstead V=15.51, D=1.00, E=15.51
+  McCabe CC=1
+  Operators: COMP(>), COMP(<=)
+  Operands:  ARG(m1), ARG(m2), BAL(m1), BAL(m2)
+
+example-noMR-MR2:
+  Rule: OC(m1)	< OC(m2)  =>  D(m1) >= D(m2)
+  Tree:
+    MR
+      LHS
+        COMP(<)
+          OC(m1)
+          OC(m2)
+      RHS
+        COMP(>=)
+          D(m1)
+          D(m2)
+  Size=9, Depth=3, Leaves=4, Vocabulary=6
+  Halstead V=15.51, D=1.00, E=15.51
+  McCabe CC=1
+  Operators: COMP(<), COMP(>=)
+  Operands:  OC(m1), OC(m2), D(m1), D(m2)
+
+example-noIF-MR4:
+  Rule: MS(m1)	> MS(m2)  =>  TTD(m1) <= TTD(m2) AND ED(m1) <= ED(m2)
+  Tree:
+    MR
+      LHS
+        COMP(>)
+          MS(m1)
+          MS(m2)
+      RHS
+        AND
+          COMP(<=)
+            TTD(m1)
+            TTD(m2)
+          COMP(<=)
+            ED(m1)
+            ED(m2)
+  Size=13, Depth=4, Leaves=6, Vocabulary=9
+  Halstead V=31.70, D=1.50, E=47.55
+  McCabe CC=1
+  Operators: COMP(>), AND, COMP(<=), COMP(<=)
+  Operands:  MS(m1), MS(m2), TTD(m1), TTD(m2), ED(m1), ED(m2)
+
+example-noIF-MR6:
+  Rule: ARG(m1) > ARG(m2)  =>  TTD(m1) <= TTD(m2) AND ED(m1) <=	ED(m2)
+  Tree:
+    MR
+      LHS
+        COMP(>)
+          ARG(m1)
+          ARG(m2)
+      RHS
+        AND
+          COMP(<=)
+            TTD(m1)
+            TTD(m2)
+          COMP(<=)
+            ED(m1)
+            ED(m2)
+  Size=13, Depth=4, Leaves=6, Vocabulary=9
+  Halstead V=31.70, D=1.50, E=47.55
+  McCabe CC=1
+  Operators: COMP(>), AND, COMP(<=), COMP(<=)
+  Operands:  ARG(m1), ARG(m2), TTD(m1), TTD(m2), ED(m1), ED(m2)
+
+example-none-MR4:
+  Rule: MS(m1)	< MS(m2)  =>  D(m1) >= D(m2)
+  Tree:
+    MR
+      LHS
+        COMP(<)
+          MS(m1)
+          MS(m2)
+      RHS
+        COMP(>=)
+          D(m1)
+          D(m2)
+  Size=9, Depth=3, Leaves=4, Vocabulary=6
+  Halstead V=15.51, D=1.00, E=15.51
+  McCabe CC=1
+  Operators: COMP(<), COMP(>=)
+  Operands:  MS(m1), MS(m2), D(m1), D(m2)
+
+noexample-detailed-MR4:
+  Rule: MS(m1) > MS(m2)  =>  TTD(m1) >= TTD(m2) AND D(m1) >= D(m2)
+  Tree:
+    MR
+      LHS
+        COMP(>)
+          MS(m1)
+          MS(m2)
+      RHS
+        AND
+          COMP(>=)
+            TTD(m1)
+            TTD(m2)
+          COMP(>=)
+            D(m1)
+            D(m2)
+  Size=13, Depth=4, Leaves=6, Vocabulary=9
+  Halstead V=31.70, D=1.50, E=47.55
+  McCabe CC=1
+  Operators: COMP(>), AND, COMP(>=), COMP(>=)
+  Operands:  MS(m1), MS(m2), TTD(m1), TTD(m2), D(m1), D(m2)
+
+noexample-detailed-MR6:
+  Rule: ARG(m1) > ARG(m2)  =>  TTD(m1) >= TTD(m2) AND D(m1) >= D(m2)
+  Tree:
+    MR
+      LHS
+        COMP(>)
+          ARG(m1)
+          ARG(m2)
+      RHS
+        AND
+          COMP(>=)
+            TTD(m1)
+            TTD(m2)
+          COMP(>=)
+            D(m1)
+            D(m2)
+  Size=13, Depth=4, Leaves=6, Vocabulary=9
+  Halstead V=31.70, D=1.50, E=47.55
+  McCabe CC=1
+  Operators: COMP(>), AND, COMP(>=), COMP(>=)
+  Operands:  ARG(m1), ARG(m2), TTD(m1), TTD(m2), D(m1), D(m2)
+
+noexample-noIF-MR4:
+  Rule: MS(m1) > MS(m2)  =>  TTD(m1) <= TTD(m2) AND ED(m1) >= ED(m2)
+  Tree:
+    MR
+      LHS
+        COMP(>)
+          MS(m1)
+          MS(m2)
+      RHS
+        AND
+          COMP(<=)
+            TTD(m1)
+            TTD(m2)
+          COMP(>=)
+            ED(m1)
+            ED(m2)
+  Size=13, Depth=4, Leaves=6, Vocabulary=10
+  Halstead V=33.22, D=2.00, E=66.44
+  McCabe CC=1
+  Operators: COMP(>), AND, COMP(<=), COMP(>=)
+  Operands:  MS(m1), MS(m2), TTD(m1), TTD(m2), ED(m1), ED(m2)
+
+noexample-noIF-MR6:
+  Rule: ARG(m1) < ARG(m2)  =>  TTD(m1) >= TTD(m2) AND	ED(m1) <= ED(m2)
+  Tree:
+    MR
+      LHS
+        COMP(<)
+          ARG(m1)
+          ARG(m2)
+      RHS
+        AND
+          COMP(>=)
+            TTD(m1)
+            TTD(m2)
+          COMP(<=)
+            ED(m1)
+            ED(m2)
+  Size=13, Depth=4, Leaves=6, Vocabulary=10
+  Halstead V=33.22, D=2.00, E=66.44
+  McCabe CC=1
+  Operators: COMP(<), AND, COMP(>=), COMP(<=)
+  Operands:  ARG(m1), ARG(m2), TTD(m1), TTD(m2), ED(m1), ED(m2)
+
+======================================================================
+END OF REPORT
+======================================================================

@@ -1,0 +1,7 @@
+,example-detailed-MR1,example-detailed-MR2,example-detailed-MR3,example-detailed-MR4,example-detailed-MR5,noexample-detailed-MR4
+example-detailed-MR1,0.0,0.455,0.455,0.455,0.455,0.455
+example-detailed-MR2,0.455,0.0,0.286,0.286,0.286,0.143
+example-detailed-MR3,0.455,0.286,0.0,0.286,0.0,0.286
+example-detailed-MR4,0.455,0.286,0.286,0.0,0.286,0.286
+example-detailed-MR5,0.455,0.286,0.0,0.286,0.0,0.286
+noexample-detailed-MR4,0.455,0.143,0.286,0.286,0.286,0.0

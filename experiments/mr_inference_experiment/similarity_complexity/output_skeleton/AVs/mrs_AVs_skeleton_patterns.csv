@@ -1,0 +1,15 @@
+MR_ID,Pattern,Tree_Size
+example-detailed-MR1,DEC => INC AND INC,7
+example-detailed-MR2,DEC => DEC AND DEC,7
+example-detailed-MR3,DEC => DEC AND DEC,7
+example-detailed-MR4,DEC => INC,5
+example-detailed-MR5,DEC => INC,5
+example-detailed-MR6,DEC => INC,5
+example-noMR-MR2,INC => DEC,5
+example-noIF-MR4,DEC => INC AND INC,7
+example-noIF-MR6,DEC => INC AND INC,7
+example-none-MR4,INC => DEC,5
+noexample-detailed-MR4,DEC => DEC AND DEC,7
+noexample-detailed-MR6,DEC => DEC AND DEC,7
+noexample-noIF-MR4,DEC => INC AND DEC,7
+noexample-noIF-MR6,INC => DEC AND INC,7

@@ -1,0 +1,5 @@
+,base-normal-MR1,base-normal-MR2,base-noMR-MR1,base-noMR-MR2
+base-normal-MR1,0,2,3,3
+base-normal-MR2,2,0,4,4
+base-noMR-MR1,3,4,0,2
+base-noMR-MR2,3,4,2,0

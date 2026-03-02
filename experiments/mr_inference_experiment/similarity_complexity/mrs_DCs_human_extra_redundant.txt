@@ -1,0 +1,37 @@
+#=====================================================
+#GRUPO BASE - MRs Válidas (Synt ✓ y Sem ✓)
+#=====================================================
+#normal (4 MRs válidas)
+example, MR1, human, NN(m1) > NN(m2) '=> T(m1) <= T(m2)
+example, MR2, human, CPU(m1) > CPU(m2) AND W(m1)=W(m2) '=> E(m1) <= E(m2)
+example, MR3, human, SS(m1) > SS(m2) AND W(m1)=W(m2) '=> T(m1) <= T(m2)
+example, MR4, human, TBW(m1) > TBW(m2) '=> T(m2) <= T(m1)
+example, MR5, human, MS(m1) > MS(m2) AND W(m1)=W(m2)  '=> T(m1) < T(m2)
+example, MR6, detailed, TBW(m1) > TBW(m2) '=> T(m2) <= T(m1)
+example, MR7, detailed, TMS(m1) > TMS(m2) '=> T(m2) >= T(m1)
+
+#noMR (3 MRs válidas)
+example, MR1, noMR, TBW(m1) > TBW(m2) '=> T(m2) <= T(m1)
+example, MR3, noMR, TMS(m1) > TMS(m2) '=> T(m2) <= T(m1)
+example, MR4, noMR, NN(m1) > NN(m2) '=> E(m2) <= E(m1)
+
+#noIF (0 MRs válidas)
+
+#none (0 MRs válidas)
+
+#=====================================================
+#GRUPO NOBASE - MRs Válidas (Synt ✓ y Sem ✓)
+#=====================================================
+#normal (4 MRs válidas)
+noexample, MR3, detailed, TBW(m1) > TBW(m2) '=> T(m1) <= T(m2)
+noexample, MR5, detailed, TMS(m1) > TMS(m2) '=> T(m1) <= T(m2)
+
+#noMR (0 MRs válidas - todas tienen X en Synt o Sem)
+
+#noIF (4 MRs válidas)
+noexample, MR3, noIF, NN(m1) > NN(m2) '=> E(m1) > E(m2)
+noexample, MR4, noIF, L(m1) < L(m2) '=> T(m1) < T(m2)
+noexample, MR5, noIF, BW(m1) > BW(m2) '=> E(m1) < E(m2)
+noexample, MR6, noIF, MS(m1) > MS(m2) '=> T(m1) < T(m2)
+
+#none (0 MRs válidas - todas tienen X en Synt o Sem)

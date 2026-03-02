@@ -1,0 +1,7 @@
+,example-detailed-MR1,example-detailed-MR2,example-detailed-MR3,example-detailed-MR4,example-detailed-MR5,noexample-detailed-MR4
+example-detailed-MR1,0,5,5,5,5,5
+example-detailed-MR2,5,0,2,2,2,1
+example-detailed-MR3,5,2,0,2,0,2
+example-detailed-MR4,5,2,2,0,2,2
+example-detailed-MR5,5,2,0,2,0,2
+noexample-detailed-MR4,5,1,2,2,2,0

@@ -1,0 +1,257 @@
+======================================================================
+SKELETON STRUCTURE ANALYSIS REPORT: mrs_AVs
+======================================================================
+
+Direction determined by base variable (m1/x1) position.
+
+--------------------------------------------------
+SUMMARY
+--------------------------------------------------
+Total MRs: 14
+Unique patterns: 6
+Identical pairs: 13
+Mean TED: 2.05
+
+--------------------------------------------------
+PATTERN DISTRIBUTION
+--------------------------------------------------
+           Pattern  Count  Percentage
+DEC => DEC AND DEC      4   28.571429
+DEC => INC AND INC      3   21.428571
+        DEC => INC      3   21.428571
+        INC => DEC      2   14.285714
+DEC => INC AND DEC      1    7.142857
+INC => DEC AND INC      1    7.142857
+
+--------------------------------------------------
+MR SKELETON DETAILS
+--------------------------------------------------
+
+example-detailed-MR1:
+  Pattern: DEC => INC AND INC
+    MR
+      LHS
+        DEC
+      RHS
+        AND
+          INC
+          INC
+
+example-detailed-MR2:
+  Pattern: DEC => DEC AND DEC
+    MR
+      LHS
+        DEC
+      RHS
+        AND
+          DEC
+          DEC
+
+example-detailed-MR3:
+  Pattern: DEC => DEC AND DEC
+    MR
+      LHS
+        DEC
+      RHS
+        AND
+          DEC
+          DEC
+
+example-detailed-MR4:
+  Pattern: DEC => INC
+    MR
+      LHS
+        DEC
+      RHS
+        INC
+
+example-detailed-MR5:
+  Pattern: DEC => INC
+    MR
+      LHS
+        DEC
+      RHS
+        INC
+
+example-detailed-MR6:
+  Pattern: DEC => INC
+    MR
+      LHS
+        DEC
+      RHS
+        INC
+
+example-noMR-MR2:
+  Pattern: INC => DEC
+    MR
+      LHS
+        INC
+      RHS
+        DEC
+
+example-noIF-MR4:
+  Pattern: DEC => INC AND INC
+    MR
+      LHS
+        DEC
+      RHS
+        AND
+          INC
+          INC
+
+example-noIF-MR6:
+  Pattern: DEC => INC AND INC
+    MR
+      LHS
+        DEC
+      RHS
+        AND
+          INC
+          INC
+
+example-none-MR4:
+  Pattern: INC => DEC
+    MR
+      LHS
+        INC
+      RHS
+        DEC
+
+noexample-detailed-MR4:
+  Pattern: DEC => DEC AND DEC
+    MR
+      LHS
+        DEC
+      RHS
+        AND
+          DEC
+          DEC
+
+noexample-detailed-MR6:
+  Pattern: DEC => DEC AND DEC
+    MR
+      LHS
+        DEC
+      RHS
+        AND
+          DEC
+          DEC
+
+noexample-noIF-MR4:
+  Pattern: DEC => INC AND DEC
+    MR
+      LHS
+        DEC
+      RHS
+        AND
+          INC
+          DEC
+
+noexample-noIF-MR6:
+  Pattern: INC => DEC AND INC
+    MR
+      LHS
+        INC
+      RHS
+        AND
+          DEC
+          INC
+
+============================================================
+SKELETON TED ANALYSIS: mrs_AVs
+============================================================
+
+Total pairs: 91
+Mean distance: 2.05
+Median: 2.00 | Min: 0 | Max: 4
+Std: 1.09
+
+--- Distance Distribution ---
+  TED = 0:  13 pairs ( 14.3%)
+  TED = 1:   7 pairs (  7.7%)
+  TED = 2:  39 pairs ( 42.9%)
+  TED = 3:  26 pairs ( 28.6%)
+  TED = 4:   6 pairs (  6.6%)
+
+Identical structure pairs (TED=0): 13
+  example-detailed-MR1 <-> example-noIF-MR4
+  example-detailed-MR1 <-> example-noIF-MR6
+  example-detailed-MR2 <-> example-detailed-MR3
+  example-detailed-MR2 <-> noexample-detailed-MR4
+  example-detailed-MR2 <-> noexample-detailed-MR6
+  example-detailed-MR3 <-> noexample-detailed-MR4
+  example-detailed-MR3 <-> noexample-detailed-MR6
+  example-detailed-MR4 <-> example-detailed-MR5
+  example-detailed-MR4 <-> example-detailed-MR6
+  example-detailed-MR5 <-> example-detailed-MR6
+  example-noMR-MR2 <-> example-none-MR4
+  example-noIF-MR4 <-> example-noIF-MR6
+  noexample-detailed-MR4 <-> noexample-detailed-MR6
+
+
+======================================================================
+COMPLEXITY METRICS
+======================================================================
+
+References:
+  - Halstead, M.H. (1977). Elements of Software Science. North Holland.
+  - McCabe, T.J. (1976). A complexity measure. IEEE Trans. SE-2(4), 308-320.
+  - Li, Y., Zhang, C. (2011). A metric normalization of tree edit distance.
+    Front. Comput. Sci. China, 5(1), 119-125.
+
+Halstead adaptation for skeleton trees:
+  Operators: AND, OR (logical connectors)
+  Operands: INC, DEC, EQ, PRED, NEG_PRED, INCLUDES, SIZE_LT, SIZE_GT, etc.
+  Structural nodes (MR, LHS, RHS) excluded from Halstead computation.
+  Volume: V = N * log2(n), where N = total tokens, n = vocabulary size
+
+McCabe CC adaptation:
+  CC = number_of_OR_nodes + 1
+  Each OR introduces an alternative logical path in the rule.
+
+--------------------------------------------------
+PER-MR COMPLEXITY
+--------------------------------------------------
+                 MR_ID  Tree_Size  Depth  McCabe_CC  V_volume  D_difficulty            Pattern
+  example-detailed-MR1          7      3          1      6.34          0.75 DEC => INC AND INC
+  example-detailed-MR2          7      3          1      4.00          1.50 DEC => DEC AND DEC
+  example-detailed-MR3          7      3          1      4.00          1.50 DEC => DEC AND DEC
+  example-detailed-MR4          5      2          1      2.00          0.00         DEC => INC
+  example-detailed-MR5          5      2          1      2.00          0.00         DEC => INC
+  example-detailed-MR6          5      2          1      2.00          0.00         DEC => INC
+      example-noMR-MR2          5      2          1      2.00          0.00         INC => DEC
+      example-noIF-MR4          7      3          1      6.34          0.75 DEC => INC AND INC
+      example-noIF-MR6          7      3          1      6.34          0.75 DEC => INC AND INC
+      example-none-MR4          5      2          1      2.00          0.00         INC => DEC
+noexample-detailed-MR4          7      3          1      4.00          1.50 DEC => DEC AND DEC
+noexample-detailed-MR6          7      3          1      4.00          1.50 DEC => DEC AND DEC
+    noexample-noIF-MR4          7      3          1      6.34          0.75 DEC => INC AND DEC
+    noexample-noIF-MR6          7      3          1      6.34          0.75 INC => DEC AND INC
+
+--------------------------------------------------
+COMPLEXITY SUMMARY STATISTICS
+--------------------------------------------------
+  Tree_Size: mean=6.29, std=0.99, min=5.00, max=7.00
+  Depth: mean=2.64, std=0.50, min=2.00, max=3.00
+  McCabe_CC: mean=1.00, std=0.00, min=1.00, max=1.00
+  V_volume: mean=4.12, std=1.90, min=2.00, max=6.34
+  D_difficulty: mean=0.70, std=0.62, min=0.00, max=1.50
+
+============================================================
+NORMALIZED TED (NTED) ANALYSIS: mrs_AVs
+============================================================
+
+Total pairs: 91
+
+--- NTED Distance [0=identical, 1=completely different] ---
+Mean: 0.301 | Median: 0.286
+Min: 0.000 | Max: 0.571
+Std: 0.158
+
+--- NTED Similarity [1=identical, 0=completely different] ---
+Mean: 0.699 | Median: 0.714
+Min: 0.429 | Max: 1.000
+
+======================================================================
+END OF REPORT
+======================================================================

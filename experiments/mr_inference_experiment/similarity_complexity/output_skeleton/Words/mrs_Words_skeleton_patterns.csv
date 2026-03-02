@@ -1,0 +1,5 @@
+MR_ID,Pattern,Tree_Size
+base-normal-MR1,EQ AND EQ => PRED AND NEG_PRED,9
+base-normal-MR2,SIZE_GT AND EQ AND EQ => PRED AND PRED,10
+base-noMR-MR1,SIZE_GT AND EQ => NEG_PRED,7
+base-noMR-MR2,SIZE_LT AND EQ => PRED,7

@@ -1,0 +1,38 @@
+# =====================================================
+# GRUPO BASE - MRs Válidas (Synt ✓ y Sem ✓)
+# =====================================================
+
+# normal (6 MRs válidas)
+example, MR1, human, NS(m1) > NS(m2) '=> TTD(m2) >= TTD(m1) AND D(m2) >= D(m1)
+example, MR2, human, OC(m1) > OC(m2) '=> TTD(m1) >= TTD(m2) AND D(m1) >= D(m2)
+example, MR3, detailed, WPC(m1) > WPC(m2) '=> TTD(m1) >= TTD(m2) AND D(m1) >= D(m2)
+example, MR4, detailed, MS(m1) > MS(m2) '=> TTD(m1) <= TTD(m2)
+example, MR5, detailed, AVG(m1) > AVG(m2) '=> D(m1) <= D(m2)
+example, MR6, detailed, ARG(m1) > ARG(m2) '=> BAL(m1) <= BAL(m2)
+
+# noMR (1 MRs válidas - todas tienen X en Synt o Sem)
+example, MR2, noMR, OC(m1)	< OC(m2) '=> D(m1) >= D(m2)
+
+# noIF (2 MRs válidas)
+example, MR4, noIF, MS(m1)	> MS(m2) '=> TTD(m1) <= TTD(m2) AND ED(m1) <= ED(m2)
+example, MR6, noIF, ARG(m1) > ARG(m2) '=> TTD(m1) <= TTD(m2) AND ED(m1) <=	ED(m2)
+
+# none (1 MRs válidas)
+example, MR4, none, MS(m1)	< MS(m2) '=> D(m1) >= D(m2)
+
+# =====================================================
+# GRUPO NOBASE - MRs Válidas (Synt ✓ y Sem ✓)
+# =====================================================
+
+# normal (2 MRs válidas)
+noexample, MR4, detailed, MS(m1) > MS(m2) '=> TTD(m1) >= TTD(m2) AND D(m1) >= D(m2)
+noexample, MR6, detailed, ARG(m1) > ARG(m2) '=> TTD(m1) >= TTD(m2) AND D(m1) >= D(m2)
+
+# noMR (0 MRs válidas - todas tienen X)
+
+# noIF (2 MRs válidas - todas tienen X)
+noexample, MR4, noIF, MS(m1) > MS(m2) '=> TTD(m1) <= TTD(m2) AND ED(m1) >= ED(m2)
+noexample, MR6, noIF, ARG(m1) < ARG(m2) '=> TTD(m1) >= TTD(m2) AND	ED(m1) <= ED(m2)
+
+# none (0 MRs válidas - todas tienen X)
+

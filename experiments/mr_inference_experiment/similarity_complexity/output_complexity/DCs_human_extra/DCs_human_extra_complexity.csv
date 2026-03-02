@@ -1,0 +1,14 @@
+MR_ID,Raw_MR,Tree_Size,Depth,Leaves,Branching_Factor,McCabe_CC,N1_operators,N2_operands,n1_unique_ops,n2_unique_opds,N_length,n_vocabulary,Halstead_V,Halstead_D,Halstead_E,Operators_detail,Operands_detail,Origin,Domain
+example-human-MR1,"example, MR1, human, NN(m1) > NN(m2) '=> T(m1) <= T(m2)",9,3,4,1.6,1,2,4,2,4,6,6,15.51,1.0,15.51,"COMP(>), COMP(<=)","NN(m1), NN(m2), T(m1), T(m2)",Human,DCs_human_extra
+example-human-MR2,"example, MR2, human, CPU(m1) > CPU(m2) AND W(m1)=W(m2) '=> E(m1) <= E(m2)",13,4,6,1.71,1,4,6,4,6,10,10,33.22,2.0,66.44,"AND, COMP(>), COMP(==), COMP(<=)","CPU(m1), CPU(m2), W(m1), W(m2), E(m1), E(m2)",Human,DCs_human_extra
+example-human-MR3,"example, MR3, human, SS(m1) > SS(m2) AND W(m1)=W(m2) '=> T(m1) <= T(m2)",13,4,6,1.71,1,4,6,4,6,10,10,33.22,2.0,66.44,"AND, COMP(>), COMP(==), COMP(<=)","SS(m1), SS(m2), W(m1), W(m2), T(m1), T(m2)",Human,DCs_human_extra
+example-human-MR4,"example, MR4, human, TBW(m1) > TBW(m2) '=> T(m2) <= T(m1)",9,3,4,1.6,1,2,4,2,4,6,6,15.51,1.0,15.51,"COMP(>), COMP(<=)","TBW(m1), TBW(m2), T(m2), T(m1)",Human,DCs_human_extra
+example-human-MR5,"example, MR5, human, MS(m1) > MS(m2) AND W(m1)=W(m2)  '=> T(m1) < T(m2)",13,4,6,1.71,1,4,6,4,6,10,10,33.22,2.0,66.44,"AND, COMP(>), COMP(==), COMP(<)","MS(m1), MS(m2), W(m1), W(m2), T(m1), T(m2)",Human,DCs_human_extra
+example-detailed-MR6,"example, MR6, detailed, TBW(m1) > TBW(m2) '=> T(m2) <= T(m1)",9,3,4,1.6,1,2,4,2,4,6,6,15.51,1.0,15.51,"COMP(>), COMP(<=)","TBW(m1), TBW(m2), T(m2), T(m1)",AI,DCs_human_extra
+example-detailed-MR7,"example, MR7, detailed, TMS(m1) > TMS(m2) '=> T(m2) >= T(m1)",9,3,4,1.6,1,2,4,2,4,6,6,15.51,1.0,15.51,"COMP(>), COMP(>=)","TMS(m1), TMS(m2), T(m2), T(m1)",AI,DCs_human_extra
+example-noMR-MR3,"example, MR3, noMR, TMS(m1) > TMS(m2) '=> T(m2) <= T(m1)",9,3,4,1.6,1,2,4,2,4,6,6,15.51,1.0,15.51,"COMP(>), COMP(<=)","TMS(m1), TMS(m2), T(m2), T(m1)",AI,DCs_human_extra
+example-noMR-MR4,"example, MR4, noMR, NN(m1) > NN(m2) '=> E(m2) <= E(m1)",9,3,4,1.6,1,2,4,2,4,6,6,15.51,1.0,15.51,"COMP(>), COMP(<=)","NN(m1), NN(m2), E(m2), E(m1)",AI,DCs_human_extra
+noexample-detailed-MR3,"noexample, MR3, detailed, TBW(m1) > TBW(m2) '=> T(m1) <= T(m2)",9,3,4,1.6,1,2,4,2,4,6,6,15.51,1.0,15.51,"COMP(>), COMP(<=)","TBW(m1), TBW(m2), T(m1), T(m2)",AI,DCs_human_extra
+noexample-noIF-MR4,"noexample, MR4, noIF, L(m1) < L(m2) '=> T(m1) < T(m2)",9,3,4,1.6,1,2,4,1,4,6,5,13.93,0.5,6.97,"COMP(<), COMP(<)","L(m1), L(m2), T(m1), T(m2)",AI,DCs_human_extra
+noexample-noIF-MR5,"noexample, MR5, noIF, BW(m1) > BW(m2) '=> E(m1) < E(m2)",9,3,4,1.6,1,2,4,2,4,6,6,15.51,1.0,15.51,"COMP(>), COMP(<)","BW(m1), BW(m2), E(m1), E(m2)",AI,DCs_human_extra
+noexample-noIF-MR6,"noexample, MR6, noIF, MS(m1) > MS(m2) '=> T(m1) < T(m2)",9,3,4,1.6,1,2,4,2,4,6,6,15.51,1.0,15.51,"COMP(>), COMP(<)","MS(m1), MS(m2), T(m1), T(m2)",AI,DCs_human_extra

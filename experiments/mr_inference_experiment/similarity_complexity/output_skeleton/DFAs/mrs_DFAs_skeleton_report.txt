@@ -1,0 +1,169 @@
+======================================================================
+SKELETON STRUCTURE ANALYSIS REPORT: mrs_DFAs
+======================================================================
+
+Direction determined by base variable (m1/x1) position.
+
+--------------------------------------------------
+SUMMARY
+--------------------------------------------------
+Total MRs: 6
+Unique patterns: 5
+Identical pairs: 1
+Mean TED: 2.80
+
+--------------------------------------------------
+PATTERN DISTRIBUTION
+--------------------------------------------------
+                                         Pattern  Count  Percentage
+                         SIZE_LT => PRED OR PRED      2   33.333333
+EQ => (PRED AND NEG_PRED) OR (NEG_PRED AND PRED)      1   16.666667
+                    INCLUDES => NEG_PRED OR PRED      1   16.666667
+                 SIZE_LT => NEG_PRED OR NEG_PRED      1   16.666667
+                     SIZE_GT => NEG_PRED OR PRED      1   16.666667
+
+--------------------------------------------------
+MR SKELETON DETAILS
+--------------------------------------------------
+
+example-detailed-MR1:
+  Pattern: EQ => (PRED AND NEG_PRED) OR (NEG_PRED AND PRED)
+    MR
+      LHS
+        EQ
+      RHS
+        OR
+          AND
+            PRED
+            NEG_PRED
+          AND
+            NEG_PRED
+            PRED
+
+example-detailed-MR2:
+  Pattern: INCLUDES => NEG_PRED OR PRED
+    MR
+      LHS
+        INCLUDES
+      RHS
+        OR
+          NEG_PRED
+          PRED
+
+example-detailed-MR3:
+  Pattern: SIZE_LT => PRED OR PRED
+    MR
+      LHS
+        SIZE_LT
+      RHS
+        OR
+          PRED
+          PRED
+
+example-detailed-MR4:
+  Pattern: SIZE_LT => NEG_PRED OR NEG_PRED
+    MR
+      LHS
+        SIZE_LT
+      RHS
+        OR
+          NEG_PRED
+          NEG_PRED
+
+example-detailed-MR5:
+  Pattern: SIZE_LT => PRED OR PRED
+    MR
+      LHS
+        SIZE_LT
+      RHS
+        OR
+          PRED
+          PRED
+
+noexample-detailed-MR4:
+  Pattern: SIZE_GT => NEG_PRED OR PRED
+    MR
+      LHS
+        SIZE_GT
+      RHS
+        OR
+          NEG_PRED
+          PRED
+
+============================================================
+SKELETON TED ANALYSIS: mrs_DFAs
+============================================================
+
+Total pairs: 15
+Mean distance: 2.80
+Median: 2.00 | Min: 0 | Max: 5
+Std: 1.64
+
+--- Distance Distribution ---
+  TED = 0:   1 pairs (  6.7%)
+  TED = 1:   1 pairs (  6.7%)
+  TED = 2:   8 pairs ( 53.3%)
+  TED = 5:   5 pairs ( 33.3%)
+
+Identical structure pairs (TED=0): 1
+  example-detailed-MR3 <-> example-detailed-MR5
+
+
+======================================================================
+COMPLEXITY METRICS
+======================================================================
+
+References:
+  - Halstead, M.H. (1977). Elements of Software Science. North Holland.
+  - McCabe, T.J. (1976). A complexity measure. IEEE Trans. SE-2(4), 308-320.
+  - Li, Y., Zhang, C. (2011). A metric normalization of tree edit distance.
+    Front. Comput. Sci. China, 5(1), 119-125.
+
+Halstead adaptation for skeleton trees:
+  Operators: AND, OR (logical connectors)
+  Operands: INC, DEC, EQ, PRED, NEG_PRED, INCLUDES, SIZE_LT, SIZE_GT, etc.
+  Structural nodes (MR, LHS, RHS) excluded from Halstead computation.
+  Volume: V = N * log2(n), where N = total tokens, n = vocabulary size
+
+McCabe CC adaptation:
+  CC = number_of_OR_nodes + 1
+  Each OR introduces an alternative logical path in the rule.
+
+--------------------------------------------------
+PER-MR COMPLEXITY
+--------------------------------------------------
+                 MR_ID  Tree_Size  Depth  McCabe_CC  V_volume  D_difficulty                                          Pattern
+  example-detailed-MR1         11      4          2     18.58          1.67 EQ => (PRED AND NEG_PRED) OR (NEG_PRED AND PRED)
+  example-detailed-MR2          7      3          2      8.00          0.50                     INCLUDES => NEG_PRED OR PRED
+  example-detailed-MR3          7      3          2      6.34          0.75                          SIZE_LT => PRED OR PRED
+  example-detailed-MR4          7      3          2      6.34          0.75                  SIZE_LT => NEG_PRED OR NEG_PRED
+  example-detailed-MR5          7      3          2      6.34          0.75                          SIZE_LT => PRED OR PRED
+noexample-detailed-MR4          7      3          2      8.00          0.50                      SIZE_GT => NEG_PRED OR PRED
+
+--------------------------------------------------
+COMPLEXITY SUMMARY STATISTICS
+--------------------------------------------------
+  Tree_Size: mean=7.67, std=1.63, min=7.00, max=11.00
+  Depth: mean=3.17, std=0.41, min=3.00, max=4.00
+  McCabe_CC: mean=2.00, std=0.00, min=2.00, max=2.00
+  V_volume: mean=8.93, std=4.80, min=6.34, max=18.58
+  D_difficulty: mean=0.82, std=0.43, min=0.50, max=1.67
+
+============================================================
+NORMALIZED TED (NTED) ANALYSIS: mrs_DFAs
+============================================================
+
+Total pairs: 15
+
+--- NTED Distance [0=identical, 1=completely different] ---
+Mean: 0.314 | Median: 0.286
+Min: 0.000 | Max: 0.455
+Std: 0.125
+
+--- NTED Similarity [1=identical, 0=completely different] ---
+Mean: 0.686 | Median: 0.714
+Min: 0.545 | Max: 1.000
+
+======================================================================
+END OF REPORT
+======================================================================

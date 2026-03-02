@@ -1,0 +1,17 @@
+,base-normal-MR1,base-normal-MR2,base-normal-MR3,base-normal-MR4,base-normal-MR5,base-normal-MR6,base-normal-MR7,base-noMR-MR1,base-noMR-MR3,base-noMR-MR4,nobase-normal-MR3,nobase-normal-MR5,nobase-noIF-MR3,nobase-noIF-MR4,nobase-noIF-MR5,nobase-noIF-MR6
+base-normal-MR1,0,2,2,1,2,1,0,1,1,1,0,0,1,1,0,0
+base-normal-MR2,2,0,0,3,0,3,2,3,3,3,2,2,3,3,2,2
+base-normal-MR3,2,0,0,3,0,3,2,3,3,3,2,2,3,3,2,2
+base-normal-MR4,1,3,3,0,3,0,1,0,0,0,1,1,0,2,1,1
+base-normal-MR5,2,0,0,3,0,3,2,3,3,3,2,2,3,3,2,2
+base-normal-MR6,1,3,3,0,3,0,1,0,0,0,1,1,0,2,1,1
+base-normal-MR7,0,2,2,1,2,1,0,1,1,1,0,0,1,1,0,0
+base-noMR-MR1,1,3,3,0,3,0,1,0,0,0,1,1,0,2,1,1
+base-noMR-MR3,1,3,3,0,3,0,1,0,0,0,1,1,0,2,1,1
+base-noMR-MR4,1,3,3,0,3,0,1,0,0,0,1,1,0,2,1,1
+nobase-normal-MR3,0,2,2,1,2,1,0,1,1,1,0,0,1,1,0,0
+nobase-normal-MR5,0,2,2,1,2,1,0,1,1,1,0,0,1,1,0,0
+nobase-noIF-MR3,1,3,3,0,3,0,1,0,0,0,1,1,0,2,1,1
+nobase-noIF-MR4,1,3,3,2,3,2,1,2,2,2,1,1,2,0,1,1
+nobase-noIF-MR5,0,2,2,1,2,1,0,1,1,1,0,0,1,1,0,0
+nobase-noIF-MR6,0,2,2,1,2,1,0,1,1,1,0,0,1,1,0,0

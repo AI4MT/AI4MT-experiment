@@ -1,0 +1,61 @@
+% Requires (at least): \usepackage{siunitx,multirow,hhline,colortbl,xcolor}
+\begin{table}[h!]
+  \centering
+  \caption{\revised{Complexity summary by domain and source. TS: Tree Size. $V$, $D$, $E$: Halstead Volume, Difficulty, and Effort.}}
+  \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|l|l|      S[table-format=2.2]|S[table-format=2.2]|S[table-format=2.2]||      S[table-format=1.2]|S[table-format=1.2]|S[table-format=1.2]||      S[table-format=2.2]|S[table-format=2.2]|S[table-format=2.2]||      S[table-format=1.2]|S[table-format=1.2]|S[table-format=1.2]||      S[table-format=3.2]|S[table-format=3.2]|S[table-format=3.2]|}
+      \hline
+      \rowcolor{gray!15}
+      \textbf{Case} & \textbf{Source} &
+      \multicolumn{3}{c||}{\textbf{TS}} &
+      \multicolumn{3}{c||}{\textbf{Depth}} &
+      \multicolumn{3}{c||}{\textbf{$V$}} &
+      \multicolumn{3}{c||}{\textbf{$D$}} &
+      \multicolumn{3}{c|}{\textbf{$E$}} \\
+      \hline
+      \rowcolor{gray!30}
+      & &
+      \multicolumn{1}{c|}{avg} & \multicolumn{1}{c|}{min} & \multicolumn{1}{c||}{max} &
+      \multicolumn{1}{c|}{avg} & \multicolumn{1}{c|}{min} & \multicolumn{1}{c||}{max} &
+      \multicolumn{1}{c|}{avg} & \multicolumn{1}{c|}{min} & \multicolumn{1}{c||}{max} &
+      \multicolumn{1}{c|}{avg} & \multicolumn{1}{c|}{min} & \multicolumn{1}{c||}{max} &
+      \multicolumn{1}{c|}{avg} & \multicolumn{1}{c|}{min} & \multicolumn{1}{c|}{max} \\
+      \hline
+
+      \multirow{2}{*}{DCs\_human\_extra}
+      & Human (n=5) & 11.40 & 9.00 & 13.00 & 3.60 & 3.00 & 4.00 & 26.14 & 15.51 & 33.22 & 1.60 & 1.00 & 2.00 & 46.07 & 15.51 & 66.44 \\
+      \hhline{|~|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|}
+      & AI (n=8)   & 9.00 & 9.00 & 9.00 & 3.00 & 3.00 & 3.00 & 15.31 & 13.93 & 15.51 & 0.94 & 0.50 & 1.00 & 14.44 & 6.97 & 15.51 \\
+      \hline
+
+      \noalign{\vskip\doublerulesep}
+      \hline
+
+      \multirow{2}{*}{AVs\_human\_extra}
+      & Human (n=3) & 13.00 & 13.00 & 13.00 & 4.00 & 4.00 & 4.00 & 31.70 & 31.70 & 31.70 & 1.50 & 1.50 & 1.50 & 47.55 & 47.55 & 47.55 \\
+      \hhline{|~|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|}
+      & AI (n=12)   & 11.33 & 9.00 & 13.00 & 3.58 & 3.00 & 4.00 & 25.21 & 15.51 & 33.22 & 1.38 & 1.00 & 2.00 & 37.35 & 15.51 & 66.44 \\
+      \hline
+
+      \noalign{\vskip\doublerulesep}
+      \hline
+
+      \multirow{2}{*}{DFAs\_human\_extra}
+      & Human (n=2) & 13.50 & 10.00 & 17.00 & 4.50 & 4.00 & 5.00 & 31.23 & 18.09 & 44.38 & 2.62 & 1.50 & 3.75 & 96.78 & 27.14 & 166.42 \\
+      \hhline{|~|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|}
+      & AI (n=4)   & 11.00 & 11.00 & 11.00 & 4.00 & 4.00 & 4.00 & 22.84 & 22.46 & 24.00 & 1.62 & 1.50 & 2.00 & 37.27 & 33.69 & 48.00 \\
+      \hline
+
+      \noalign{\vskip\doublerulesep}
+      \hline
+
+      \multirow{2}{*}{Words}
+      & Human (n=2) & 16.50 & 15.00 & 18.00 & 4.00 & 4.00 & 4.00 & 46.81 & 39.86 & 53.77 & 2.00 & 2.00 & 2.00 & 93.64 & 79.73 & 107.55 \\
+      \hhline{|~|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|}
+      & AI (n=2)   & 12.00 & 12.00 & 12.00 & 4.00 & 4.00 & 4.00 & 27.00 & 27.00 & 27.00 & 2.50 & 2.50 & 2.50 & 67.50 & 67.50 & 67.50 \\
+      \hline
+
+    \end{tabular}%
+  }
+  \label{tab:complexity_summary_by_domain_source}
+\end{table}

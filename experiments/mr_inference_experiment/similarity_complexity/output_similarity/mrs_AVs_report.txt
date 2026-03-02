@@ -1,0 +1,220 @@
+============================================================
+MR ANALYSIS REPORT: mrs_AVs
+============================================================
+
+Domain: NUMERIC
+MRs loaded: 14
+
+----------------------------------------
+SIMILARITY FORMULA (Unified)
+----------------------------------------
+  J_LHS: 0.100 (10.0%)
+  J_RHS: 0.100 (10.0%)
+  J_LHS_Signed: 0.375 (37.5%)
+  J_RHS_Signed: 0.375 (37.5%)
+  Sim_Template: 0.050 (5.0%)
+
+----------------------------------------
+FEATURE COVERAGE
+----------------------------------------
+Feature  LHS Count  RHS Count     Type
+    ARG          4          0 LHS Only
+    AVG          1          0 LHS Only
+    BAL          0          1 RHS Only
+      D          0          8 RHS Only
+     ED          0          4 RHS Only
+     MS          5          0 LHS Only
+     NS          1          0 LHS Only
+     OC          2          0 LHS Only
+    TTD          0         10 RHS Only
+    WPC          1          0 LHS Only
+
+----------------------------------------
+MR DETAILS
+----------------------------------------
+
+  example-human-MR1:
+    LHS: NS(m1) > NS(m2)
+    RHS: TTD(m2) >= TTD(m1) AND D(m2) >= D(m1)
+    LHS elements: {'NS'}
+    RHS elements: {'D', 'TTD'}
+    LHS signed: {('NS', '-')}
+    RHS signed: {('D', '+'), ('TTD', '+')}
+
+  example-human-MR2:
+    LHS: OC(m1) > OC(m2)
+    RHS: TTD(m1) >= TTD(m2) AND D(m1) >= D(m2)
+    LHS elements: {'OC'}
+    RHS elements: {'D', 'TTD'}
+    LHS signed: {('OC', '-')}
+    RHS signed: {('TTD', '-'), ('D', '-')}
+
+  example-detailed-MR3:
+    LHS: WPC(m1) > WPC(m2)
+    RHS: TTD(m1) >= TTD(m2) AND D(m1) >= D(m2)
+    LHS elements: {'WPC'}
+    RHS elements: {'D', 'TTD'}
+    LHS signed: {('WPC', '-')}
+    RHS signed: {('TTD', '-'), ('D', '-')}
+
+  example-detailed-MR4:
+    LHS: MS(m1) > MS(m2)
+    RHS: TTD(m1) <= TTD(m2)
+    LHS elements: {'MS'}
+    RHS elements: {'TTD'}
+    LHS signed: {('MS', '-')}
+    RHS signed: {('TTD', '+')}
+
+  example-detailed-MR5:
+    LHS: AVG(m1) > AVG(m2)
+    RHS: D(m1) <= D(m2)
+    LHS elements: {'AVG'}
+    RHS elements: {'D'}
+    LHS signed: {('AVG', '-')}
+    RHS signed: {('D', '+')}
+
+  example-detailed-MR6:
+    LHS: ARG(m1) > ARG(m2)
+    RHS: BAL(m1) <= BAL(m2)
+    LHS elements: {'ARG'}
+    RHS elements: {'BAL'}
+    LHS signed: {('ARG', '-')}
+    RHS signed: {('BAL', '+')}
+
+  example-noMR-MR2:
+    LHS: OC(m1)	< OC(m2)
+    RHS: D(m1) >= D(m2)
+    LHS elements: {'OC'}
+    RHS elements: {'D'}
+    LHS signed: {('OC', '+')}
+    RHS signed: {('D', '-')}
+
+  example-noIF-MR4:
+    LHS: MS(m1)	> MS(m2)
+    RHS: TTD(m1) <= TTD(m2) AND ED(m1) <= ED(m2)
+    LHS elements: {'MS'}
+    RHS elements: {'TTD', 'ED'}
+    LHS signed: {('MS', '-')}
+    RHS signed: {('ED', '+'), ('TTD', '+')}
+
+  example-noIF-MR6:
+    LHS: ARG(m1) > ARG(m2)
+    RHS: TTD(m1) <= TTD(m2) AND ED(m1) <=	ED(m2)
+    LHS elements: {'ARG'}
+    RHS elements: {'TTD', 'ED'}
+    LHS signed: {('ARG', '-')}
+    RHS signed: {('ED', '+'), ('TTD', '+')}
+
+  example-none-MR4:
+    LHS: MS(m1)	< MS(m2)
+    RHS: D(m1) >= D(m2)
+    LHS elements: {'MS'}
+    RHS elements: {'D'}
+    LHS signed: {('MS', '+')}
+    RHS signed: {('D', '-')}
+
+  noexample-detailed-MR4:
+    LHS: MS(m1) > MS(m2)
+    RHS: TTD(m1) >= TTD(m2) AND D(m1) >= D(m2)
+    LHS elements: {'MS'}
+    RHS elements: {'D', 'TTD'}
+    LHS signed: {('MS', '-')}
+    RHS signed: {('TTD', '-'), ('D', '-')}
+
+  noexample-detailed-MR6:
+    LHS: ARG(m1) > ARG(m2)
+    RHS: TTD(m1) >= TTD(m2) AND D(m1) >= D(m2)
+    LHS elements: {'ARG'}
+    RHS elements: {'D', 'TTD'}
+    LHS signed: {('ARG', '-')}
+    RHS signed: {('TTD', '-'), ('D', '-')}
+
+  noexample-noIF-MR4:
+    LHS: MS(m1) > MS(m2)
+    RHS: TTD(m1) <= TTD(m2) AND ED(m1) >= ED(m2)
+    LHS elements: {'MS'}
+    RHS elements: {'TTD', 'ED'}
+    LHS signed: {('MS', '-')}
+    RHS signed: {('ED', '-'), ('TTD', '+')}
+
+  noexample-noIF-MR6:
+    LHS: ARG(m1) < ARG(m2)
+    RHS: TTD(m1) >= TTD(m2) AND	ED(m1) <= ED(m2)
+    LHS elements: {'ARG'}
+    RHS elements: {'TTD', 'ED'}
+    LHS signed: {('ARG', '+')}
+    RHS signed: {('TTD', '-'), ('ED', '+')}
+
+
+==================================================
+MATRIX ANALYSIS: Composite
+==================================================
+
+Total pairs: 91
+Mean: 0.197 | Median: 0.150
+Min: 0.000 | Max: 0.750
+Std: 0.199
+
+--- Distribution by range ---
+  [0.0-0.1):    42 ( 46.2%)
+  [0.1-0.3):    28 ( 30.8%)
+  [0.3-0.5):     6 (  6.6%)
+  [0.5-0.7):    12 ( 13.2%)
+  [0.7-0.9):     3 (  3.3%)
+  [0.9-1.0]:     0 (  0.0%)
+
+--- Top 5 most frequent values ---
+  0.00: 16 occurrences (17.6%)
+  0.05: 16 occurrences (17.6%)
+  0.08: 10 occurrences (11.0%)
+  0.24: 9 occurrences (9.9%)
+  0.52: 9 occurrences (9.9%)
+
+--- Pairs >= 0.6: 3 ---
+  example-detailed-MR4 <-> example-noIF-MR4: 0.713
+  example-detailed-MR4 <-> noexample-noIF-MR4: 0.713
+  example-noIF-MR4 <-> noexample-noIF-MR4: 0.750
+
+--- No Near-identical pairs (>= 0.99) found: 0 ---
+
+----------------------------------------
+NON-IDENTICAL MRs (threshold<=0.99): 14
+----------------------------------------
+  example-human-MR1
+  example-human-MR2
+  example-detailed-MR3
+  example-detailed-MR4
+  example-detailed-MR5
+  example-detailed-MR6
+  example-noMR-MR2
+  example-noIF-MR4
+  example-noIF-MR6
+  example-none-MR4
+  noexample-detailed-MR4
+  noexample-detailed-MR6
+  noexample-noIF-MR4
+  noexample-noIF-MR6
+
+IDENTICAL MRs (threshold=1.0): 0
+
+============================================================
+
+----------------------------------------
+NON-REDUNDANT MRs (threshold=0.6): 12
+----------------------------------------
+  example-human-MR1
+  example-human-MR2
+  example-detailed-MR3
+  example-detailed-MR4
+  example-detailed-MR5
+  example-detailed-MR6
+  example-noMR-MR2
+  example-noIF-MR6
+  example-none-MR4
+  noexample-detailed-MR4
+  noexample-detailed-MR6
+  noexample-noIF-MR6
+
+============================================================
+END OF REPORT
+============================================================

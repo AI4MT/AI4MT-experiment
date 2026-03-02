@@ -1,0 +1,30 @@
+#=====================================================
+#GRUPO BASE - MRs Válidas (Synt ✓ y Sem ✓)
+#=====================================================
+#Normal: 5 MRs
+example, human, MR1, NFS(x1) == FS(x2) '=> (R(x1, w1) and ¬R(x2, w1)) or (¬R(x1, w1) and R(x2, w1))
+example, human, MR2, FS(x2)->includesAll(FS(x1)) '=> ¬R(x1, w1) or R(x2, w1)
+example, detailed, MR3, FS(x1)->size() < FS(x2)->size()'=>R(x1, w1) or R(x2, w1)
+example, detailed, MR4, NFS(x1)->size() < NFS(x2)->size()'=>¬R(x1, w1) or ¬R(x2, w1)
+example, detailed, MR5, T(x1)->size() < T(x2)->size()'=>R(x1, w1) or R(x2, w1)
+
+#noMR: 0
+
+#NoIF: 0
+
+#none: 0
+
+
+
+#=====================================================
+#GRUPO NOBASE - MRs Válidas (Synt ✓ y Sem ✓)
+#=====================================================
+#Normal: 1 MRs
+noexample, detailed, MR4, T(x1)->size() > T(x2)->size() '=> ¬R(x1, w1) or R(x2, w1)
+
+#noMR: 0
+
+#NoIF: 0 MRs
+
+#none: 0 MRs
+

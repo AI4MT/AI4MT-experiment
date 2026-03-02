@@ -1,0 +1,123 @@
+======================================================================
+MR COMPLEXITY REPORT (UNSIMPLIFIED TREES): Words
+======================================================================
+
+References:
+  Halstead, M.H. (1977). Elements of Software Science. North Holland.
+  McCabe, T.J. (1976). A complexity measure. IEEE Trans. SE-2(4), 308-320.
+
+Halstead classification for MR trees:
+  Operators: AND, OR, COMP(>), COMP(>=), COMP(<=), COMP(<),
+             COMP(==), COMP(!=), PRED, NEG_PRED
+  Operands:  Original expressions (NS(m1), TTD(m2), R(x1,w1), etc.)
+  Structural (MR, LHS, RHS): excluded from Halstead.
+
+--------------------------------------------------
+SUMMARY
+--------------------------------------------------
+Total MRs: 4
+  Tree_Size: mean=14.25, std=2.87, min=12.00, max=18.00
+  Depth: mean=4.00, std=0.00, min=4.00, max=4.00
+  Halstead_V: mean=36.91, std=12.77, min=27.00, max=53.77
+  McCabe_CC: mean=1.00, std=0.00, min=1.00, max=1.00
+
+--------------------------------------------------
+PER-MR DETAILS
+--------------------------------------------------
+
+example-human-MR1:
+  Rule: w1->last() == '0' and w1->including('1') == w2  =>  R(x1, w1) and ¬R(x1, w2)
+  Tree:
+    MR
+      LHS
+        AND
+          COMP(==)
+            w1->last()
+            '0'
+          COMP(==)
+            w1->including('1')
+            w2
+      RHS
+        AND
+          PRED
+            R(x1, w1)
+          NEG_PRED
+            R(x1, w2)
+  Size=15, Depth=4, Leaves=6, Vocabulary=10
+  Halstead V=39.86, D=2.00, E=79.73
+  McCabe CC=1
+  Operators: AND, COMP(==), COMP(==), AND, PRED, NEG_PRED
+  Operands:  w1->last(), '0', w1->including('1'), w2, R(x1, w1), R(x1, w2)
+
+example-human-MR2:
+  Rule: w1->size() > 1 and w1->last() == '0' and w2 == w1->remove(0)  =>  R(x1, w1) and R(x1, w2)
+  Tree:
+    MR
+      LHS
+        AND
+          COMP(>)
+            w1->size()
+            1
+          COMP(==)
+            w1->last()
+            '0'
+          COMP(==)
+            w2
+            w1->remove(0)
+      RHS
+        AND
+          PRED
+            R(x1, w1)
+          PRED
+            R(x1, w2)
+  Size=18, Depth=4, Leaves=8, Vocabulary=12
+  Halstead V=53.77, D=2.00, E=107.55
+  McCabe CC=1
+  Operators: AND, COMP(>), COMP(==), COMP(==), AND, PRED, PRED
+  Operands:  w1->size(), 1, w1->last(), '0', w2, w1->remove(0), R(x1, w1), R(x1, w2)
+
+example-noMR-MR1:
+  Rule: w1->size() > w2->size() and Result(x1, w1) == Result(x2, w2)  =>  ¬Result(x1, w1)
+  Tree:
+    MR
+      LHS
+        AND
+          COMP(>)
+            w1->size()
+            w2->size()
+          COMP(==)
+            Result(x1, w1)
+            Result(x2, w2)
+      RHS
+        NEG_PRED
+          Result(x1, w1)
+  Size=12, Depth=4, Leaves=5, Vocabulary=8
+  Halstead V=27.00, D=2.50, E=67.50
+  McCabe CC=1
+  Operators: AND, COMP(>), COMP(==), NEG_PRED
+  Operands:  w1->size(), w2->size(), Result(x1, w1), Result(x2, w2), Result(x1, w1)
+
+example-noMR-MR2:
+  Rule: w1->size() <= w2->size() and Result(x1, w1) == Result(x2, w2)  =>  Result(x1, w1)
+  Tree:
+    MR
+      LHS
+        AND
+          COMP(<=)
+            w1->size()
+            w2->size()
+          COMP(==)
+            Result(x1, w1)
+            Result(x2, w2)
+      RHS
+        PRED
+          Result(x1, w1)
+  Size=12, Depth=4, Leaves=5, Vocabulary=8
+  Halstead V=27.00, D=2.50, E=67.50
+  McCabe CC=1
+  Operators: AND, COMP(<=), COMP(==), PRED
+  Operands:  w1->size(), w2->size(), Result(x1, w1), Result(x2, w2), Result(x1, w1)
+
+======================================================================
+END OF REPORT
+======================================================================

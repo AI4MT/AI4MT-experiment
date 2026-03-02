@@ -1,0 +1,15 @@
+MR_ID,Tree_Size,Depth,Leaves,Branching_Factor,McCabe_CC,N1_operators,N2_operands,n1_unique_operators,n2_unique_operands,N_length,n_vocabulary,V_volume,D_difficulty,E_effort,Pattern
+example-detailed-MR1,7,3,3,1.5,1,1,3,1,2,4,3,6.34,0.75,4.75,DEC => INC AND INC
+example-detailed-MR2,7,3,3,1.5,1,1,3,1,1,4,2,4.0,1.5,6.0,DEC => DEC AND DEC
+example-detailed-MR3,7,3,3,1.5,1,1,3,1,1,4,2,4.0,1.5,6.0,DEC => DEC AND DEC
+example-detailed-MR4,5,2,2,1.33,1,0,2,0,2,2,2,2.0,0.0,0.0,DEC => INC
+example-detailed-MR5,5,2,2,1.33,1,0,2,0,2,2,2,2.0,0.0,0.0,DEC => INC
+example-detailed-MR6,5,2,2,1.33,1,0,2,0,2,2,2,2.0,0.0,0.0,DEC => INC
+example-noMR-MR2,5,2,2,1.33,1,0,2,0,2,2,2,2.0,0.0,0.0,INC => DEC
+example-noIF-MR4,7,3,3,1.5,1,1,3,1,2,4,3,6.34,0.75,4.75,DEC => INC AND INC
+example-noIF-MR6,7,3,3,1.5,1,1,3,1,2,4,3,6.34,0.75,4.75,DEC => INC AND INC
+example-none-MR4,5,2,2,1.33,1,0,2,0,2,2,2,2.0,0.0,0.0,INC => DEC
+noexample-detailed-MR4,7,3,3,1.5,1,1,3,1,1,4,2,4.0,1.5,6.0,DEC => DEC AND DEC
+noexample-detailed-MR6,7,3,3,1.5,1,1,3,1,1,4,2,4.0,1.5,6.0,DEC => DEC AND DEC
+noexample-noIF-MR4,7,3,3,1.5,1,1,3,1,2,4,3,6.34,0.75,4.75,DEC => INC AND DEC
+noexample-noIF-MR6,7,3,3,1.5,1,1,3,1,2,4,3,6.34,0.75,4.75,INC => DEC AND INC

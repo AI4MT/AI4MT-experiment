@@ -1,0 +1,5 @@
+MR_ID,Tree_Size,Depth,Leaves,Branching_Factor,McCabe_CC,N1_operators,N2_operands,n1_unique_operators,n2_unique_operands,N_length,n_vocabulary,V_volume,D_difficulty,E_effort,Pattern
+base-normal-MR1,9,3,4,1.6,1,2,4,1,3,6,4,12.0,0.67,8.0,EQ AND EQ => PRED AND NEG_PRED
+base-normal-MR2,10,3,5,1.8,1,2,5,1,3,7,4,14.0,0.83,11.67,SIZE_GT AND EQ AND EQ => PRED AND PRED
+base-noMR-MR1,7,3,3,1.5,1,1,3,1,3,4,4,8.0,0.5,4.0,SIZE_GT AND EQ => NEG_PRED
+base-noMR-MR2,7,3,3,1.5,1,1,3,1,3,4,4,8.0,0.5,4.0,SIZE_LT AND EQ => PRED

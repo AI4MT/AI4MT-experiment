@@ -1,0 +1,145 @@
+======================================================================
+SKELETON STRUCTURE ANALYSIS REPORT: mrs_Words
+======================================================================
+
+Direction determined by base variable (m1/x1) position.
+
+--------------------------------------------------
+SUMMARY
+--------------------------------------------------
+Total MRs: 4
+Unique patterns: 4
+Identical pairs: 0
+Mean TED: 3.00
+
+--------------------------------------------------
+PATTERN DISTRIBUTION
+--------------------------------------------------
+                               Pattern  Count  Percentage
+        EQ AND EQ => PRED AND NEG_PRED      1        25.0
+SIZE_GT AND EQ AND EQ => PRED AND PRED      1        25.0
+            SIZE_GT AND EQ => NEG_PRED      1        25.0
+                SIZE_LT AND EQ => PRED      1        25.0
+
+--------------------------------------------------
+MR SKELETON DETAILS
+--------------------------------------------------
+
+base-normal-MR1:
+  Pattern: EQ AND EQ => PRED AND NEG_PRED
+    MR
+      LHS
+        AND
+          EQ
+          EQ
+      RHS
+        AND
+          PRED
+          NEG_PRED
+
+base-normal-MR2:
+  Pattern: SIZE_GT AND EQ AND EQ => PRED AND PRED
+    MR
+      LHS
+        AND
+          SIZE_GT
+          EQ
+          EQ
+      RHS
+        AND
+          PRED
+          PRED
+
+base-noMR-MR1:
+  Pattern: SIZE_GT AND EQ => NEG_PRED
+    MR
+      LHS
+        AND
+          SIZE_GT
+          EQ
+      RHS
+        NEG_PRED
+
+base-noMR-MR2:
+  Pattern: SIZE_LT AND EQ => PRED
+    MR
+      LHS
+        AND
+          SIZE_LT
+          EQ
+      RHS
+        PRED
+
+============================================================
+SKELETON TED ANALYSIS: mrs_Words
+============================================================
+
+Total pairs: 6
+Mean distance: 3.00
+Median: 3.00 | Min: 2 | Max: 4
+Std: 0.82
+
+--- Distance Distribution ---
+  TED = 2:   2 pairs ( 33.3%)
+  TED = 3:   2 pairs ( 33.3%)
+  TED = 4:   2 pairs ( 33.3%)
+
+Identical structure pairs (TED=0): 0
+
+
+======================================================================
+COMPLEXITY METRICS
+======================================================================
+
+References:
+  - Halstead, M.H. (1977). Elements of Software Science. North Holland.
+  - McCabe, T.J. (1976). A complexity measure. IEEE Trans. SE-2(4), 308-320.
+  - Li, Y., Zhang, C. (2011). A metric normalization of tree edit distance.
+    Front. Comput. Sci. China, 5(1), 119-125.
+
+Halstead adaptation for skeleton trees:
+  Operators: AND, OR (logical connectors)
+  Operands: INC, DEC, EQ, PRED, NEG_PRED, INCLUDES, SIZE_LT, SIZE_GT, etc.
+  Structural nodes (MR, LHS, RHS) excluded from Halstead computation.
+  Volume: V = N * log2(n), where N = total tokens, n = vocabulary size
+
+McCabe CC adaptation:
+  CC = number_of_OR_nodes + 1
+  Each OR introduces an alternative logical path in the rule.
+
+--------------------------------------------------
+PER-MR COMPLEXITY
+--------------------------------------------------
+          MR_ID  Tree_Size  Depth  McCabe_CC  V_volume  D_difficulty                                Pattern
+base-normal-MR1          9      3          1      12.0          0.67         EQ AND EQ => PRED AND NEG_PRED
+base-normal-MR2         10      3          1      14.0          0.83 SIZE_GT AND EQ AND EQ => PRED AND PRED
+  base-noMR-MR1          7      3          1       8.0          0.50             SIZE_GT AND EQ => NEG_PRED
+  base-noMR-MR2          7      3          1       8.0          0.50                 SIZE_LT AND EQ => PRED
+
+--------------------------------------------------
+COMPLEXITY SUMMARY STATISTICS
+--------------------------------------------------
+  Tree_Size: mean=8.25, std=1.50, min=7.00, max=10.00
+  Depth: mean=3.00, std=0.00, min=3.00, max=3.00
+  McCabe_CC: mean=1.00, std=0.00, min=1.00, max=1.00
+  V_volume: mean=10.50, std=3.00, min=8.00, max=14.00
+  D_difficulty: mean=0.62, std=0.16, min=0.50, max=0.83
+
+============================================================
+NORMALIZED TED (NTED) ANALYSIS: mrs_Words
+============================================================
+
+Total pairs: 6
+
+--- NTED Distance [0=identical, 1=completely different] ---
+Mean: 0.325 | Median: 0.333
+Min: 0.200 | Max: 0.400
+Std: 0.069
+
+--- NTED Similarity [1=identical, 0=completely different] ---
+Mean: 0.675 | Median: 0.667
+Min: 0.600 | Max: 0.800
+
+======================================================================
+END OF REPORT
+======================================================================

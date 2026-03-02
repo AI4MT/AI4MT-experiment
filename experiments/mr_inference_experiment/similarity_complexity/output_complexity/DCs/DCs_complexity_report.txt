@@ -1,0 +1,214 @@
+======================================================================
+MR COMPLEXITY REPORT (UNSIMPLIFIED TREES): DCs
+======================================================================
+
+References:
+  Halstead, M.H. (1977). Elements of Software Science. North Holland.
+  McCabe, T.J. (1976). A complexity measure. IEEE Trans. SE-2(4), 308-320.
+
+Halstead classification for MR trees:
+  Operators: AND, OR, COMP(>), COMP(>=), COMP(<=), COMP(<),
+             COMP(==), COMP(!=), PRED, NEG_PRED
+  Operands:  Original expressions (NS(m1), TTD(m2), R(x1,w1), etc.)
+  Structural (MR, LHS, RHS): excluded from Halstead.
+
+--------------------------------------------------
+SUMMARY
+--------------------------------------------------
+Total MRs: 10
+  Tree_Size: mean=9.40, std=1.26, min=9.00, max=13.00
+  Depth: mean=3.10, std=0.32, min=3.00, max=4.00
+  Halstead_V: mean=17.12, std=5.68, min=13.93, max=33.22
+  McCabe_CC: mean=1.00, std=0.00, min=1.00, max=1.00
+
+--------------------------------------------------
+PER-MR DETAILS
+--------------------------------------------------
+
+example-human-MR1:
+  Rule: NN(m1) > NN(m2)  =>  T(m1) <= T(m2)
+  Tree:
+    MR
+      LHS
+        COMP(>)
+          NN(m1)
+          NN(m2)
+      RHS
+        COMP(<=)
+          T(m1)
+          T(m2)
+  Size=9, Depth=3, Leaves=4, Vocabulary=6
+  Halstead V=15.51, D=1.00, E=15.51
+  McCabe CC=1
+  Operators: COMP(>), COMP(<=)
+  Operands:  NN(m1), NN(m2), T(m1), T(m2)
+
+example-human-MR2:
+  Rule: CPU(m1) > CPU(m2) AND W(m1)=W(m2)  =>  E(m1) <= E(m2)
+  Tree:
+    MR
+      LHS
+        AND
+          COMP(>)
+            CPU(m1)
+            CPU(m2)
+          COMP(==)
+            W(m1)
+            W(m2)
+      RHS
+        COMP(<=)
+          E(m1)
+          E(m2)
+  Size=13, Depth=4, Leaves=6, Vocabulary=10
+  Halstead V=33.22, D=2.00, E=66.44
+  McCabe CC=1
+  Operators: AND, COMP(>), COMP(==), COMP(<=)
+  Operands:  CPU(m1), CPU(m2), W(m1), W(m2), E(m1), E(m2)
+
+example-detailed-MR3:
+  Rule: TBW(m1) > TBW(m2)  =>  T(m2) <= T(m1)
+  Tree:
+    MR
+      LHS
+        COMP(>)
+          TBW(m1)
+          TBW(m2)
+      RHS
+        COMP(<=)
+          T(m2)
+          T(m1)
+  Size=9, Depth=3, Leaves=4, Vocabulary=6
+  Halstead V=15.51, D=1.00, E=15.51
+  McCabe CC=1
+  Operators: COMP(>), COMP(<=)
+  Operands:  TBW(m1), TBW(m2), T(m2), T(m1)
+
+example-detailed-MR4:
+  Rule: TMS(m1) > TMS(m2)  =>  T(m2) >= T(m1)
+  Tree:
+    MR
+      LHS
+        COMP(>)
+          TMS(m1)
+          TMS(m2)
+      RHS
+        COMP(>=)
+          T(m2)
+          T(m1)
+  Size=9, Depth=3, Leaves=4, Vocabulary=6
+  Halstead V=15.51, D=1.00, E=15.51
+  McCabe CC=1
+  Operators: COMP(>), COMP(>=)
+  Operands:  TMS(m1), TMS(m2), T(m2), T(m1)
+
+example-noMR-MR3:
+  Rule: TMS(m1) > TMS(m2)  =>  T(m2) <= T(m1)
+  Tree:
+    MR
+      LHS
+        COMP(>)
+          TMS(m1)
+          TMS(m2)
+      RHS
+        COMP(<=)
+          T(m2)
+          T(m1)
+  Size=9, Depth=3, Leaves=4, Vocabulary=6
+  Halstead V=15.51, D=1.00, E=15.51
+  McCabe CC=1
+  Operators: COMP(>), COMP(<=)
+  Operands:  TMS(m1), TMS(m2), T(m2), T(m1)
+
+example-noMR-MR4:
+  Rule: NN(m1) > NN(m2)  =>  E(m2) <= E(m1)
+  Tree:
+    MR
+      LHS
+        COMP(>)
+          NN(m1)
+          NN(m2)
+      RHS
+        COMP(<=)
+          E(m2)
+          E(m1)
+  Size=9, Depth=3, Leaves=4, Vocabulary=6
+  Halstead V=15.51, D=1.00, E=15.51
+  McCabe CC=1
+  Operators: COMP(>), COMP(<=)
+  Operands:  NN(m1), NN(m2), E(m2), E(m1)
+
+noexample-detailed-MR3:
+  Rule: TBW(m1) > TBW(m2)  =>  T(m1) <= T(m2)
+  Tree:
+    MR
+      LHS
+        COMP(>)
+          TBW(m1)
+          TBW(m2)
+      RHS
+        COMP(<=)
+          T(m1)
+          T(m2)
+  Size=9, Depth=3, Leaves=4, Vocabulary=6
+  Halstead V=15.51, D=1.00, E=15.51
+  McCabe CC=1
+  Operators: COMP(>), COMP(<=)
+  Operands:  TBW(m1), TBW(m2), T(m1), T(m2)
+
+noexample-noIF-MR4:
+  Rule: L(m1) < L(m2)  =>  T(m1) < T(m2)
+  Tree:
+    MR
+      LHS
+        COMP(<)
+          L(m1)
+          L(m2)
+      RHS
+        COMP(<)
+          T(m1)
+          T(m2)
+  Size=9, Depth=3, Leaves=4, Vocabulary=5
+  Halstead V=13.93, D=0.50, E=6.97
+  McCabe CC=1
+  Operators: COMP(<), COMP(<)
+  Operands:  L(m1), L(m2), T(m1), T(m2)
+
+noexample-noIF-MR5:
+  Rule: BW(m1) > BW(m2)  =>  E(m1) < E(m2)
+  Tree:
+    MR
+      LHS
+        COMP(>)
+          BW(m1)
+          BW(m2)
+      RHS
+        COMP(<)
+          E(m1)
+          E(m2)
+  Size=9, Depth=3, Leaves=4, Vocabulary=6
+  Halstead V=15.51, D=1.00, E=15.51
+  McCabe CC=1
+  Operators: COMP(>), COMP(<)
+  Operands:  BW(m1), BW(m2), E(m1), E(m2)
+
+noexample-noIF-MR6:
+  Rule: MS(m1) > MS(m2)  =>  T(m1) < T(m2)
+  Tree:
+    MR
+      LHS
+        COMP(>)
+          MS(m1)
+          MS(m2)
+      RHS
+        COMP(<)
+          T(m1)
+          T(m2)
+  Size=9, Depth=3, Leaves=4, Vocabulary=6
+  Halstead V=15.51, D=1.00, E=15.51
+  McCabe CC=1
+  Operators: COMP(>), COMP(<)
+  Operands:  MS(m1), MS(m2), T(m1), T(m2)
+
+======================================================================
+END OF REPORT
+======================================================================

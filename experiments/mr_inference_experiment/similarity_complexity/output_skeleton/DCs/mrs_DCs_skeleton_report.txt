@@ -1,0 +1,280 @@
+======================================================================
+SKELETON STRUCTURE ANALYSIS REPORT: mrs_DCs
+======================================================================
+
+Direction determined by base variable (m1/x1) position.
+
+--------------------------------------------------
+SUMMARY
+--------------------------------------------------
+Total MRs: 16
+Unique patterns: 4
+Identical pairs: 33
+Mean TED: 1.27
+
+--------------------------------------------------
+PATTERN DISTRIBUTION
+--------------------------------------------------
+          Pattern  Count  Percentage
+       DEC => INC      6       37.50
+       DEC => DEC      6       37.50
+DEC AND EQ => INC      3       18.75
+       INC => INC      1        6.25
+
+--------------------------------------------------
+MR SKELETON DETAILS
+--------------------------------------------------
+
+base-normal-MR1:
+  Pattern: DEC => INC
+    MR
+      LHS
+        DEC
+      RHS
+        INC
+
+base-normal-MR2:
+  Pattern: DEC AND EQ => INC
+    MR
+      LHS
+        AND
+          DEC
+          EQ
+      RHS
+        INC
+
+base-normal-MR3:
+  Pattern: DEC AND EQ => INC
+    MR
+      LHS
+        AND
+          DEC
+          EQ
+      RHS
+        INC
+
+base-normal-MR4:
+  Pattern: DEC => DEC
+    MR
+      LHS
+        DEC
+      RHS
+        DEC
+
+base-normal-MR5:
+  Pattern: DEC AND EQ => INC
+    MR
+      LHS
+        AND
+          DEC
+          EQ
+      RHS
+        INC
+
+base-normal-MR6:
+  Pattern: DEC => DEC
+    MR
+      LHS
+        DEC
+      RHS
+        DEC
+
+base-normal-MR7:
+  Pattern: DEC => INC
+    MR
+      LHS
+        DEC
+      RHS
+        INC
+
+base-noMR-MR1:
+  Pattern: DEC => DEC
+    MR
+      LHS
+        DEC
+      RHS
+        DEC
+
+base-noMR-MR3:
+  Pattern: DEC => DEC
+    MR
+      LHS
+        DEC
+      RHS
+        DEC
+
+base-noMR-MR4:
+  Pattern: DEC => DEC
+    MR
+      LHS
+        DEC
+      RHS
+        DEC
+
+nobase-normal-MR3:
+  Pattern: DEC => INC
+    MR
+      LHS
+        DEC
+      RHS
+        INC
+
+nobase-normal-MR5:
+  Pattern: DEC => INC
+    MR
+      LHS
+        DEC
+      RHS
+        INC
+
+nobase-noIF-MR3:
+  Pattern: DEC => DEC
+    MR
+      LHS
+        DEC
+      RHS
+        DEC
+
+nobase-noIF-MR4:
+  Pattern: INC => INC
+    MR
+      LHS
+        INC
+      RHS
+        INC
+
+nobase-noIF-MR5:
+  Pattern: DEC => INC
+    MR
+      LHS
+        DEC
+      RHS
+        INC
+
+nobase-noIF-MR6:
+  Pattern: DEC => INC
+    MR
+      LHS
+        DEC
+      RHS
+        INC
+
+============================================================
+SKELETON TED ANALYSIS: mrs_DCs
+============================================================
+
+Total pairs: 120
+Mean distance: 1.27
+Median: 1.00 | Min: 0 | Max: 3
+Std: 1.05
+
+--- Distance Distribution ---
+  TED = 0:  33 pairs ( 27.5%)
+  TED = 1:  42 pairs ( 35.0%)
+  TED = 2:  24 pairs ( 20.0%)
+  TED = 3:  21 pairs ( 17.5%)
+
+Identical structure pairs (TED=0): 33
+  base-normal-MR1 <-> base-normal-MR7
+  base-normal-MR1 <-> nobase-normal-MR3
+  base-normal-MR1 <-> nobase-normal-MR5
+  base-normal-MR1 <-> nobase-noIF-MR5
+  base-normal-MR1 <-> nobase-noIF-MR6
+  base-normal-MR2 <-> base-normal-MR3
+  base-normal-MR2 <-> base-normal-MR5
+  base-normal-MR3 <-> base-normal-MR5
+  base-normal-MR4 <-> base-normal-MR6
+  base-normal-MR4 <-> base-noMR-MR1
+  base-normal-MR4 <-> base-noMR-MR3
+  base-normal-MR4 <-> base-noMR-MR4
+  base-normal-MR4 <-> nobase-noIF-MR3
+  base-normal-MR6 <-> base-noMR-MR1
+  base-normal-MR6 <-> base-noMR-MR3
+  base-normal-MR6 <-> base-noMR-MR4
+  base-normal-MR6 <-> nobase-noIF-MR3
+  base-normal-MR7 <-> nobase-normal-MR3
+  base-normal-MR7 <-> nobase-normal-MR5
+  base-normal-MR7 <-> nobase-noIF-MR5
+  base-normal-MR7 <-> nobase-noIF-MR6
+  base-noMR-MR1 <-> base-noMR-MR3
+  base-noMR-MR1 <-> base-noMR-MR4
+  base-noMR-MR1 <-> nobase-noIF-MR3
+  base-noMR-MR3 <-> base-noMR-MR4
+  base-noMR-MR3 <-> nobase-noIF-MR3
+  base-noMR-MR4 <-> nobase-noIF-MR3
+  nobase-normal-MR3 <-> nobase-normal-MR5
+  nobase-normal-MR3 <-> nobase-noIF-MR5
+  nobase-normal-MR3 <-> nobase-noIF-MR6
+  nobase-normal-MR5 <-> nobase-noIF-MR5
+  nobase-normal-MR5 <-> nobase-noIF-MR6
+  nobase-noIF-MR5 <-> nobase-noIF-MR6
+
+
+======================================================================
+COMPLEXITY METRICS
+======================================================================
+
+References:
+  - Halstead, M.H. (1977). Elements of Software Science. North Holland.
+  - McCabe, T.J. (1976). A complexity measure. IEEE Trans. SE-2(4), 308-320.
+  - Li, Y., Zhang, C. (2011). A metric normalization of tree edit distance.
+    Front. Comput. Sci. China, 5(1), 119-125.
+
+Halstead adaptation for skeleton trees:
+  Operators: AND, OR (logical connectors)
+  Operands: INC, DEC, EQ, PRED, NEG_PRED, INCLUDES, SIZE_LT, SIZE_GT, etc.
+  Structural nodes (MR, LHS, RHS) excluded from Halstead computation.
+  Volume: V = N * log2(n), where N = total tokens, n = vocabulary size
+
+McCabe CC adaptation:
+  CC = number_of_OR_nodes + 1
+  Each OR introduces an alternative logical path in the rule.
+
+--------------------------------------------------
+PER-MR COMPLEXITY
+--------------------------------------------------
+            MR_ID  Tree_Size  Depth  McCabe_CC  V_volume  D_difficulty           Pattern
+  base-normal-MR1          5      2          1       2.0           0.0        DEC => INC
+  base-normal-MR2          7      3          1       8.0           0.5 DEC AND EQ => INC
+  base-normal-MR3          7      3          1       8.0           0.5 DEC AND EQ => INC
+  base-normal-MR4          5      2          1       0.0           0.0        DEC => DEC
+  base-normal-MR5          7      3          1       8.0           0.5 DEC AND EQ => INC
+  base-normal-MR6          5      2          1       0.0           0.0        DEC => DEC
+  base-normal-MR7          5      2          1       2.0           0.0        DEC => INC
+    base-noMR-MR1          5      2          1       0.0           0.0        DEC => DEC
+    base-noMR-MR3          5      2          1       0.0           0.0        DEC => DEC
+    base-noMR-MR4          5      2          1       0.0           0.0        DEC => DEC
+nobase-normal-MR3          5      2          1       2.0           0.0        DEC => INC
+nobase-normal-MR5          5      2          1       2.0           0.0        DEC => INC
+  nobase-noIF-MR3          5      2          1       0.0           0.0        DEC => DEC
+  nobase-noIF-MR4          5      2          1       0.0           0.0        INC => INC
+  nobase-noIF-MR5          5      2          1       2.0           0.0        DEC => INC
+  nobase-noIF-MR6          5      2          1       2.0           0.0        DEC => INC
+
+--------------------------------------------------
+COMPLEXITY SUMMARY STATISTICS
+--------------------------------------------------
+  Tree_Size: mean=5.38, std=0.81, min=5.00, max=7.00
+  Depth: mean=2.19, std=0.40, min=2.00, max=3.00
+  McCabe_CC: mean=1.00, std=0.00, min=1.00, max=1.00
+  V_volume: mean=2.25, std=3.00, min=0.00, max=8.00
+  D_difficulty: mean=0.09, std=0.20, min=0.00, max=0.50
+
+============================================================
+NORMALIZED TED (NTED) ANALYSIS: mrs_DCs
+============================================================
+
+Total pairs: 120
+
+--- NTED Distance [0=identical, 1=completely different] ---
+Mean: 0.208 | Median: 0.200
+Min: 0.000 | Max: 0.429
+Std: 0.152
+
+--- NTED Similarity [1=identical, 0=completely different] ---
+Mean: 0.792 | Median: 0.800
+Min: 0.571 | Max: 1.000
+
+======================================================================
+END OF REPORT
+======================================================================

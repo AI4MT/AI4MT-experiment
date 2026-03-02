@@ -1,0 +1,7 @@
+MR_ID,Tree_Size,Depth,Leaves,Branching_Factor,McCabe_CC,N1_operators,N2_operands,n1_unique_operators,n2_unique_operands,N_length,n_vocabulary,V_volume,D_difficulty,E_effort,Pattern
+example-detailed-MR1,11,4,5,1.67,2,3,5,2,3,8,5,18.58,1.67,30.96,EQ => (PRED AND NEG_PRED) OR (NEG_PRED AND PRED)
+example-detailed-MR2,7,3,3,1.5,2,1,3,1,3,4,4,8.0,0.5,4.0,INCLUDES => NEG_PRED OR PRED
+example-detailed-MR3,7,3,3,1.5,2,1,3,1,2,4,3,6.34,0.75,4.75,SIZE_LT => PRED OR PRED
+example-detailed-MR4,7,3,3,1.5,2,1,3,1,2,4,3,6.34,0.75,4.75,SIZE_LT => NEG_PRED OR NEG_PRED
+example-detailed-MR5,7,3,3,1.5,2,1,3,1,2,4,3,6.34,0.75,4.75,SIZE_LT => PRED OR PRED
+noexample-detailed-MR4,7,3,3,1.5,2,1,3,1,3,4,4,8.0,0.5,4.0,SIZE_GT => NEG_PRED OR PRED

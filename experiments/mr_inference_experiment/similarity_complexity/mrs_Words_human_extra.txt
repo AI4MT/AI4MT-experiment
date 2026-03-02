@@ -1,0 +1,27 @@
+#=====================================================
+#GRUPO BASE - MRs Válidas (Synt ✓ y Sem ✓)
+#=====================================================
+#Normal: 2 MRs
+example, human, MR1, w1->last() == '0' and w1->including('1') == w2 '=> R(x1, w1) and ¬R(x1, w2)
+example, human, MR2, w1->size() > 1 and w1->last() == '0' and w2 == w1->remove(0) '=> R(x1, w1) and R(x1, w2)
+
+#noMR: 2 MRs
+example, noMR, MR1, w1->size() > w2->size() and Result(x1, w1) == Result(x2, w2) '=> ¬Result(x1, w1)
+example, noMR, MR2, w1->size() <= w2->size() and Result(x1, w1) == Result(x2, w2) '=> Result(x1, w1)
+
+#NoIF: 0 MRs
+
+#none: 0
+
+#=====================================================
+#GRUPO NO-BASE - MRs Válidas (Synt ✓ y Sem ✓)
+#=====================================================
+
+#Normal: 0 MRs
+
+#noMR: 0
+
+#NoIF: 0 MRs
+
+#none: 0
+

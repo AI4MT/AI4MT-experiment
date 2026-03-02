@@ -1,0 +1,15 @@
+,example-detailed-MR1,example-detailed-MR2,example-detailed-MR3,example-detailed-MR4,example-detailed-MR5,example-detailed-MR6,example-noMR-MR2,example-noIF-MR4,example-noIF-MR6,example-none-MR4,noexample-detailed-MR4,noexample-detailed-MR6,noexample-noIF-MR4,noexample-noIF-MR6
+example-detailed-MR1,0,2,2,2,2,2,4,0,0,4,2,2,1,2
+example-detailed-MR2,2,0,0,3,3,3,3,2,2,3,0,0,1,2
+example-detailed-MR3,2,0,0,3,3,3,3,2,2,3,0,0,1,2
+example-detailed-MR4,2,3,3,0,0,0,2,2,2,2,3,3,2,3
+example-detailed-MR5,2,3,3,0,0,0,2,2,2,2,3,3,2,3
+example-detailed-MR6,2,3,3,0,0,0,2,2,2,2,3,3,2,3
+example-noMR-MR2,4,3,3,2,2,2,0,4,4,0,3,3,3,2
+example-noIF-MR4,0,2,2,2,2,2,4,0,0,4,2,2,1,2
+example-noIF-MR6,0,2,2,2,2,2,4,0,0,4,2,2,1,2
+example-none-MR4,4,3,3,2,2,2,0,4,4,0,3,3,3,2
+noexample-detailed-MR4,2,0,0,3,3,3,3,2,2,3,0,0,1,2
+noexample-detailed-MR6,2,0,0,3,3,3,3,2,2,3,0,0,1,2
+noexample-noIF-MR4,1,1,1,2,2,2,3,1,1,3,1,1,0,3
+noexample-noIF-MR6,2,2,2,3,3,3,2,2,2,2,2,2,3,0

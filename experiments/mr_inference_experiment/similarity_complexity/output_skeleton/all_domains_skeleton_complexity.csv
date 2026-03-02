@@ -1,0 +1,67 @@
+MR_ID,Size,Depth,Leaves,Branching_Factor,McCabe_CC,N1_operators,N2_operands,n1_unique_operators,n2_unique_operands,N_length,n_vocabulary,Halstead_V,D_difficulty,E_effort,Pattern,Mean_NTED,Domain
+example-detailed-MR1,7,3,3,1.5,1,1,3,1,2,4,3,6.34,0.75,4.75,DEC => INC AND INC,275,AVs
+example-detailed-MR2,7,3,3,1.5,1,1,3,1,1,4,2,4.0,1.5,6.0,DEC => DEC AND DEC,264,AVs
+example-detailed-MR3,7,3,3,1.5,1,1,3,1,1,4,2,4.0,1.5,6.0,DEC => DEC AND DEC,264,AVs
+example-detailed-MR4,5,2,2,1.33,1,0,2,0,2,2,2,2.0,0.0,0.0,DEC => INC,314,AVs
+example-detailed-MR5,5,2,2,1.33,1,0,2,0,2,2,2,2.0,0.0,0.0,DEC => INC,314,AVs
+example-detailed-MR6,5,2,2,1.33,1,0,2,0,2,2,2,2.0,0.0,0.0,DEC => INC,314,AVs
+example-noMR-MR2,5,2,2,1.33,1,0,2,0,2,2,2,2.0,0.0,0.0,INC => DEC,411,AVs
+example-noIF-MR4,7,3,3,1.5,1,1,3,1,2,4,3,6.34,0.75,4.75,DEC => INC AND INC,275,AVs
+example-noIF-MR6,7,3,3,1.5,1,1,3,1,2,4,3,6.34,0.75,4.75,DEC => INC AND INC,275,AVs
+example-none-MR4,5,2,2,1.33,1,0,2,0,2,2,2,2.0,0.0,0.0,INC => DEC,411,AVs
+noexample-detailed-MR4,7,3,3,1.5,1,1,3,1,1,4,2,4.0,1.5,6.0,DEC => DEC AND DEC,264,AVs
+noexample-detailed-MR6,7,3,3,1.5,1,1,3,1,1,4,2,4.0,1.5,6.0,DEC => DEC AND DEC,264,AVs
+noexample-noIF-MR4,7,3,3,1.5,1,1,3,1,2,4,3,6.34,0.75,4.75,DEC => INC AND DEC,242,AVs
+noexample-noIF-MR6,7,3,3,1.5,1,1,3,1,2,4,3,6.34,0.75,4.75,INC => DEC AND INC,0.33,AVs
+base-normal-MR1,5,2,2,1.33,1,0,2,0,2,2,2,2.0,0.0,0.0,DEC => INC,0.15,DCs
+base-normal-MR2,7,3,3,1.5,1,1,3,1,3,4,4,8.0,0.5,4.0,DEC AND EQ => INC,314,DCs
+base-normal-MR3,7,3,3,1.5,1,1,3,1,3,4,4,8.0,0.5,4.0,DEC AND EQ => INC,314,DCs
+base-normal-MR4,5,2,2,1.33,1,0,2,0,1,2,1,0.0,0.0,0.0,DEC => DEC,192,DCs
+base-normal-MR5,7,3,3,1.5,1,1,3,1,3,4,4,8.0,0.5,4.0,DEC AND EQ => INC,314,DCs
+base-normal-MR6,5,2,2,1.33,1,0,2,0,1,2,1,0.0,0.0,0.0,DEC => DEC,192,DCs
+base-normal-MR7,5,2,2,1.33,1,0,2,0,2,2,2,2.0,0.0,0.0,DEC => INC,0.15,DCs
+base-noMR-MR1,5,2,2,1.33,1,0,2,0,1,2,1,0.0,0.0,0.0,DEC => DEC,192,DCs
+base-noMR-MR3,5,2,2,1.33,1,0,2,0,1,2,1,0.0,0.0,0.0,DEC => DEC,192,DCs
+base-noMR-MR4,5,2,2,1.33,1,0,2,0,1,2,1,0.0,0.0,0.0,DEC => DEC,192,DCs
+nobase-normal-MR3,5,2,2,1.33,1,0,2,0,2,2,2,2.0,0.0,0.0,DEC => INC,0.15,DCs
+nobase-normal-MR5,5,2,2,1.33,1,0,2,0,2,2,2,2.0,0.0,0.0,DEC => INC,0.15,DCs
+nobase-noIF-MR3,5,2,2,1.33,1,0,2,0,1,2,1,0.0,0.0,0.0,DEC => DEC,192,DCs
+nobase-noIF-MR4,5,2,2,1.33,1,0,2,0,1,2,1,0.0,0.0,0.0,INC => INC,326,DCs
+nobase-noIF-MR5,5,2,2,1.33,1,0,2,0,2,2,2,2.0,0.0,0.0,DEC => INC,0.15,DCs
+nobase-noIF-MR6,5,2,2,1.33,1,0,2,0,2,2,2,2.0,0.0,0.0,DEC => INC,0.15,DCs
+example-detailed-MR1,11,4,5,1.67,2,3,5,2,3,8,5,18.58,1.67,30.96,EQ => (PRED AND NEG_PRED) OR (NEG_PRED AND PRED),455,DFAs
+example-detailed-MR2,7,3,3,1.5,2,1,3,1,3,4,4,8.0,0.5,4.0,INCLUDES => NEG_PRED OR PRED,291,DFAs
+example-detailed-MR3,7,3,3,1.5,2,1,3,1,2,4,3,6.34,0.75,4.75,SIZE_LT => PRED OR PRED,262,DFAs
+example-detailed-MR4,7,3,3,1.5,2,1,3,1,2,4,3,6.34,0.75,4.75,SIZE_LT => NEG_PRED OR NEG_PRED,319,DFAs
+example-detailed-MR5,7,3,3,1.5,2,1,3,1,2,4,3,6.34,0.75,4.75,SIZE_LT => PRED OR PRED,262,DFAs
+noexample-detailed-MR4,7,3,3,1.5,2,1,3,1,3,4,4,8.0,0.5,4.0,SIZE_GT => NEG_PRED OR PRED,291,DFAs
+base-normal-MR1,9,3,4,1.6,1,2,4,1,3,6,4,12.0,0.67,8.0,EQ AND EQ => PRED AND NEG_PRED,289,Words
+base-normal-MR2,10,3,5,1.8,1,2,5,1,3,7,4,14.0,0.83,11.67,SIZE_GT AND EQ AND EQ => PRED AND PRED,333,Words
+base-noMR-MR1,7,3,3,1.5,1,1,3,1,3,4,4,8.0,0.5,4.0,SIZE_GT AND EQ => NEG_PRED,0.34,Words
+base-noMR-MR2,7,3,3,1.5,1,1,3,1,3,4,4,8.0,0.5,4.0,SIZE_LT AND EQ => PRED,0.34,Words
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+Domain,"Dominio (AVs, DCs, DFAs, Words)",,,,,,,,,,,,,,,,
+MR_ID,Identificador de la regla,,,,,,,,,,,,,,,,
+Size,"Nodos totales del árbol skeleton (incluyendo MR, LHS, RHS)",,,,,,,,,,,,,,,,
+Depth,Profundidad máxima del árbol,,,,,,,,,,,,,,,,
+Leaves,"Nodos hoja (los operandos: INC, DEC, EQ, PRED...)",,,,,,,,,,,,,,,,
+Branching_Factor,Aristas / nodos internos,,,,,,,,,,,,,,,,
+McCabe_CC,Número de OR + 1,,,,,,,,,,,,,,,,
+N1_operators,Total de AND y OR en el árbol,,,,,,,,,,,,,,,,
+N2_operands,"Total de operandos (INC, DEC, EQ, PRED, etc.)",,,,,,,,,,,,,,,,
+n1_unique_operators,Operadores distintos,,,,,,,,,,,,,,,,
+n2_unique_operands,Operandos distintos,,,,,,,,,,,,,,,,
+N_length,N1 + N2 (longitud Halstead),,,,,,,,,,,,,,,,
+n_vocabulary,n1 + n2 (vocabulario Halstead),,,,,,,,,,,,,,,,
+Halstead_V,N × log₂(n) — volumen en bits,,,,,,,,,,,,,,,,
+Halstead_D,(n1/2) × (N2/n2) — dificultad,,,,,,,,,,,,,,,,
+E_effort,D × V — esfuerzo,,,,,,,,,,,,,,,,
+Mean_NTED,Media de NTED de ese MR contra todos los demás del mismo dominio,,,,,,,,,,,,,,,,
+Pattern,El skeleton en texto (ej: DEC => INC AND INC),,,,,,,,,,,,,,,,

@@ -1,0 +1,61 @@
+Domain,Origin,MR_ID,Tree_Size,Depth,Leaves,Branching_Factor,McCabe_CC,N1_operators,N2_operands,n1_unique_ops,n2_unique_opds,N_length,n_vocabulary,Halstead_V,Halstead_D,Halstead_E,Operators_detail,Operands_detail,Raw_MR
+DCs_human_extra,Human,example-human-MR1,9,3,4,1.6,1,2,4,2,4,6,6,15.51,1.0,15.51,"COMP(>), COMP(<=)","NN(m1), NN(m2), T(m1), T(m2)","example, MR1, human, NN(m1) > NN(m2) '=> T(m1) <= T(m2)"
+DCs_human_extra,Human,example-human-MR2,13,4,6,1.71,1,4,6,4,6,10,10,33.22,2.0,66.44,"AND, COMP(>), COMP(==), COMP(<=)","CPU(m1), CPU(m2), W(m1), W(m2), E(m1), E(m2)","example, MR2, human, CPU(m1) > CPU(m2) AND W(m1)=W(m2) '=> E(m1) <= E(m2)"
+DCs_human_extra,Human,example-human-MR3,13,4,6,1.71,1,4,6,4,6,10,10,33.22,2.0,66.44,"AND, COMP(>), COMP(==), COMP(<=)","SS(m1), SS(m2), W(m1), W(m2), T(m1), T(m2)","example, MR3, human, SS(m1) > SS(m2) AND W(m1)=W(m2) '=> T(m1) <= T(m2)"
+DCs_human_extra,Human,example-human-MR4,9,3,4,1.6,1,2,4,2,4,6,6,15.51,1.0,15.51,"COMP(>), COMP(<=)","TBW(m1), TBW(m2), T(m2), T(m1)","example, MR4, human, TBW(m1) > TBW(m2) '=> T(m2) <= T(m1)"
+DCs_human_extra,Human,example-human-MR5,13,4,6,1.71,1,4,6,4,6,10,10,33.22,2.0,66.44,"AND, COMP(>), COMP(==), COMP(<)","MS(m1), MS(m2), W(m1), W(m2), T(m1), T(m2)","example, MR5, human, MS(m1) > MS(m2) AND W(m1)=W(m2)  '=> T(m1) < T(m2)"
+DCs_human_extra,AI,example-detailed-MR6,9,3,4,1.6,1,2,4,2,4,6,6,15.51,1.0,15.51,"COMP(>), COMP(<=)","TBW(m1), TBW(m2), T(m2), T(m1)","example, MR6, detailed, TBW(m1) > TBW(m2) '=> T(m2) <= T(m1)"
+DCs_human_extra,AI,example-detailed-MR7,9,3,4,1.6,1,2,4,2,4,6,6,15.51,1.0,15.51,"COMP(>), COMP(>=)","TMS(m1), TMS(m2), T(m2), T(m1)","example, MR7, detailed, TMS(m1) > TMS(m2) '=> T(m2) >= T(m1)"
+DCs_human_extra,AI,example-noMR-MR3,9,3,4,1.6,1,2,4,2,4,6,6,15.51,1.0,15.51,"COMP(>), COMP(<=)","TMS(m1), TMS(m2), T(m2), T(m1)","example, MR3, noMR, TMS(m1) > TMS(m2) '=> T(m2) <= T(m1)"
+DCs_human_extra,AI,example-noMR-MR4,9,3,4,1.6,1,2,4,2,4,6,6,15.51,1.0,15.51,"COMP(>), COMP(<=)","NN(m1), NN(m2), E(m2), E(m1)","example, MR4, noMR, NN(m1) > NN(m2) '=> E(m2) <= E(m1)"
+DCs_human_extra,AI,noexample-detailed-MR3,9,3,4,1.6,1,2,4,2,4,6,6,15.51,1.0,15.51,"COMP(>), COMP(<=)","TBW(m1), TBW(m2), T(m1), T(m2)","noexample, MR3, detailed, TBW(m1) > TBW(m2) '=> T(m1) <= T(m2)"
+DCs_human_extra,AI,noexample-noIF-MR4,9,3,4,1.6,1,2,4,1,4,6,5,13.93,0.5,6.97,"COMP(<), COMP(<)","L(m1), L(m2), T(m1), T(m2)","noexample, MR4, noIF, L(m1) < L(m2) '=> T(m1) < T(m2)"
+DCs_human_extra,AI,noexample-noIF-MR5,9,3,4,1.6,1,2,4,2,4,6,6,15.51,1.0,15.51,"COMP(>), COMP(<)","BW(m1), BW(m2), E(m1), E(m2)","noexample, MR5, noIF, BW(m1) > BW(m2) '=> E(m1) < E(m2)"
+DCs_human_extra,AI,noexample-noIF-MR6,9,3,4,1.6,1,2,4,2,4,6,6,15.51,1.0,15.51,"COMP(>), COMP(<)","MS(m1), MS(m2), T(m1), T(m2)","noexample, MR6, noIF, MS(m1) > MS(m2) '=> T(m1) < T(m2)"
+AVs_human_extra,Human,example-human-MR1,13,4,6,1.71,1,4,6,3,6,10,9,31.7,1.5,47.55,"COMP(>), AND, COMP(>=), COMP(>=)","NS(m1), NS(m2), TTD(m2), TTD(m1), D(m2), D(m1)","example, MR1, human, NS(m1) > NS(m2) '=> TTD(m2) >= TTD(m1) AND D(m2) >= D(m1)"
+AVs_human_extra,Human,example-human-MR2,13,4,6,1.71,1,4,6,3,6,10,9,31.7,1.5,47.55,"COMP(>), AND, COMP(>=), COMP(>=)","OC(m1), OC(m2), TTD(m1), TTD(m2), D(m1), D(m2)","example, MR2, human, OC(m1) > OC(m2) '=> TTD(m1) >= TTD(m2) AND D(m1) >= D(m2)"
+AVs_human_extra,Human,example-human-MR3,13,4,6,1.71,1,4,6,3,6,10,9,31.7,1.5,47.55,"COMP(>), AND, COMP(>=), COMP(>=)","WPC(m1), WPC(m2), TTD(m1), TTD(m2), D(m1), D(m2)","example, MR3, human, WPC(m1) > WPC(m2) '=> TTD(m1) >= TTD(m2) AND D(m1) >= D(m2)"
+AVs_human_extra,AI,example-detailed-MR3,13,4,6,1.71,1,4,6,3,6,10,9,31.7,1.5,47.55,"COMP(>), AND, COMP(>=), COMP(>=)","WPC(m1), WPC(m2), TTD(m1), TTD(m2), D(m1), D(m2)","example, MR3, detailed, WPC(m1) > WPC(m2) '=> TTD(m1) >= TTD(m2) AND D(m1) >= D(m2)"
+AVs_human_extra,AI,example-detailed-MR4,9,3,4,1.6,1,2,4,2,4,6,6,15.51,1.0,15.51,"COMP(>), COMP(<=)","MS(m1), MS(m2), TTD(m1), TTD(m2)","example, MR4, detailed, MS(m1) > MS(m2) '=> TTD(m1) <= TTD(m2)"
+AVs_human_extra,AI,example-detailed-MR5,9,3,4,1.6,1,2,4,2,4,6,6,15.51,1.0,15.51,"COMP(>), COMP(<=)","AVG(m1), AVG(m2), D(m1), D(m2)","example, MR5, detailed, AVG(m1) > AVG(m2) '=> D(m1) <= D(m2)"
+AVs_human_extra,AI,example-detailed-MR6,9,3,4,1.6,1,2,4,2,4,6,6,15.51,1.0,15.51,"COMP(>), COMP(<=)","ARG(m1), ARG(m2), BAL(m1), BAL(m2)","example, MR6, detailed, ARG(m1) > ARG(m2) '=> BAL(m1) <= BAL(m2)"
+AVs_human_extra,AI,example-noMR-MR2,9,3,4,1.6,1,2,4,2,4,6,6,15.51,1.0,15.51,"COMP(<), COMP(>=)","OC(m1), OC(m2), D(m1), D(m2)","example, MR2, noMR, OC(m1)	< OC(m2) '=> D(m1) >= D(m2)"
+AVs_human_extra,AI,example-noIF-MR4,13,4,6,1.71,1,4,6,3,6,10,9,31.7,1.5,47.55,"COMP(>), AND, COMP(<=), COMP(<=)","MS(m1), MS(m2), TTD(m1), TTD(m2), ED(m1), ED(m2)","example, MR4, noIF, MS(m1)	> MS(m2) '=> TTD(m1) <= TTD(m2) AND ED(m1) <= ED(m2)"
+AVs_human_extra,AI,example-noIF-MR6,13,4,6,1.71,1,4,6,3,6,10,9,31.7,1.5,47.55,"COMP(>), AND, COMP(<=), COMP(<=)","ARG(m1), ARG(m2), TTD(m1), TTD(m2), ED(m1), ED(m2)","example, MR6, noIF, ARG(m1) > ARG(m2) '=> TTD(m1) <= TTD(m2) AND ED(m1) <=	ED(m2)"
+AVs_human_extra,AI,example-none-MR4,9,3,4,1.6,1,2,4,2,4,6,6,15.51,1.0,15.51,"COMP(<), COMP(>=)","MS(m1), MS(m2), D(m1), D(m2)","example, MR4, none, MS(m1)	< MS(m2) '=> D(m1) >= D(m2)"
+AVs_human_extra,AI,noexample-detailed-MR4,13,4,6,1.71,1,4,6,3,6,10,9,31.7,1.5,47.55,"COMP(>), AND, COMP(>=), COMP(>=)","MS(m1), MS(m2), TTD(m1), TTD(m2), D(m1), D(m2)","noexample, MR4, detailed, MS(m1) > MS(m2) '=> TTD(m1) >= TTD(m2) AND D(m1) >= D(m2)"
+AVs_human_extra,AI,noexample-detailed-MR6,13,4,6,1.71,1,4,6,3,6,10,9,31.7,1.5,47.55,"COMP(>), AND, COMP(>=), COMP(>=)","ARG(m1), ARG(m2), TTD(m1), TTD(m2), D(m1), D(m2)","noexample, MR6, detailed, ARG(m1) > ARG(m2) '=> TTD(m1) >= TTD(m2) AND D(m1) >= D(m2)"
+AVs_human_extra,AI,noexample-noIF-MR4,13,4,6,1.71,1,4,6,4,6,10,10,33.22,2.0,66.44,"COMP(>), AND, COMP(<=), COMP(>=)","MS(m1), MS(m2), TTD(m1), TTD(m2), ED(m1), ED(m2)","noexample, MR4, noIF, MS(m1) > MS(m2) '=> TTD(m1) <= TTD(m2) AND ED(m1) >= ED(m2)"
+AVs_human_extra,AI,noexample-noIF-MR6,13,4,6,1.71,1,4,6,4,6,10,10,33.22,2.0,66.44,"COMP(<), AND, COMP(>=), COMP(<=)","ARG(m1), ARG(m2), TTD(m1), TTD(m2), ED(m1), ED(m2)","noexample, MR6, noIF, ARG(m1) < ARG(m2) '=> TTD(m1) >= TTD(m2) AND	ED(m1) <= ED(m2)"
+DFAs_human_extra,Human,example-human-MR1,17,5,6,1.45,2,8,6,5,4,14,9,44.38,3.75,166.42,"COMP(==), OR, AND, PRED, NEG_PRED, AND, NEG_PRED, PRED","NFS(x1), FS(x2), R(x1, w1), R(x2, w1), R(x1, w1), R(x2, w1)","example, human, MR1, NFS(x1) == FS(x2) '=> (R(x1, w1) and ¬R(x2, w1)) or (¬R(x1, w1) and R(x2, w1))"
+DFAs_human_extra,Human,example-human-MR2,10,4,3,1.29,2,4,3,3,3,7,6,18.09,1.5,27.14,"PRED, OR, NEG_PRED, PRED","FS(x2)->includesAll(FS(x1)), R(x1, w1), R(x2, w1)","example, human, MR2, FS(x2)->includesAll(FS(x1)) '=> ¬R(x1, w1) or R(x2, w1)"
+DFAs_human_extra,AI,example-detailed-MR3,11,4,4,1.43,2,4,4,3,4,8,7,22.46,1.5,33.69,"COMP(<), OR, PRED, PRED","FS(x1)->size(), FS(x2)->size(), R(x1, w1), R(x2, w1)","example, detailed, MR3, FS(x1)->size() < FS(x2)->size()'=>R(x1, w1) or R(x2, w1)"
+DFAs_human_extra,AI,example-detailed-MR4,11,4,4,1.43,2,4,4,3,4,8,7,22.46,1.5,33.69,"COMP(<), OR, NEG_PRED, NEG_PRED","NFS(x1)->size(), NFS(x2)->size(), R(x1, w1), R(x2, w1)","example, detailed, MR4, NFS(x1)->size() < NFS(x2)->size()'=>¬R(x1, w1) or ¬R(x2, w1)"
+DFAs_human_extra,AI,example-detailed-MR5,11,4,4,1.43,2,4,4,3,4,8,7,22.46,1.5,33.69,"COMP(<), OR, PRED, PRED","T(x1)->size(), T(x2)->size(), R(x1, w1), R(x2, w1)","example, detailed, MR5, T(x1)->size() < T(x2)->size()'=>R(x1, w1) or R(x2, w1)"
+DFAs_human_extra,AI,noexample-detailed-MR4,11,4,4,1.43,2,4,4,4,4,8,8,24.0,2.0,48.0,"COMP(>), OR, NEG_PRED, PRED","T(x1)->size(), T(x2)->size(), R(x1, w1), R(x2, w1)","noexample, detailed, MR4, T(x1)->size() > T(x2)->size() '=> ¬R(x1, w1) or R(x2, w1)"
+Words,Human,example-human-MR1,15,4,6,1.56,1,6,6,4,6,12,10,39.86,2.0,79.73,"AND, COMP(==), COMP(==), AND, PRED, NEG_PRED","w1->last(), '0', w1->including('1'), w2, R(x1, w1), R(x1, w2)","example, human, MR1, w1->last() == '0' and w1->including('1') == w2 '=> R(x1, w1) and ¬R(x1, w2)"
+Words,Human,example-human-MR2,18,4,8,1.7,1,7,8,4,8,15,12,53.77,2.0,107.55,"AND, COMP(>), COMP(==), COMP(==), AND, PRED, PRED","w1->size(), 1, w1->last(), '0', w2, w1->remove(0), R(x1, w1), R(x1, w2)","example, human, MR2, w1->size() > 1 and w1->last() == '0' and w2 == w1->remove(0) '=> R(x1, w1) and R(x1, w2)"
+Words,AI,example-noMR-MR1,12,4,5,1.57,1,4,5,4,4,9,8,27.0,2.5,67.5,"AND, COMP(>), COMP(==), NEG_PRED","w1->size(), w2->size(), Result(x1, w1), Result(x2, w2), Result(x1, w1)","example, noMR, MR1, w1->size() > w2->size() and Result(x1, w1) == Result(x2, w2) '=> ¬Result(x1, w1)"
+Words,AI,example-noMR-MR2,12,4,5,1.57,1,4,5,4,4,9,8,27.0,2.5,67.5,"AND, COMP(<=), COMP(==), PRED","w1->size(), w2->size(), Result(x1, w1), Result(x2, w2), Result(x1, w1)","example, noMR, MR2, w1->size() <= w2->size() and Result(x1, w1) == Result(x2, w2) '=> Result(x1, w1)"
+
+LEGEND
+Domain,SUT domain (AVs / DCs / DFAs / Words)
+Origin,Human-written or AI-generated MR
+MR_ID,Metamorphic Relation identifier (group-category-MRn)
+Tree_Size,Total number of nodes in the unsimplified parse tree
+Depth,Maximum depth of the parse tree
+Leaves,Number of leaf nodes (operands)
+Branching_Factor,Average branching factor = edges / internal nodes
+McCabe_CC,"Cyclomatic Complexity = #OR + 1 (McCabe, 1976)"
+N1_operators,Total operator tokens (AND / OR / COMP / PRED / NEG_PRED)
+N2_operands,"Total operand tokens (original expressions: NS(m1), TTD(m2), etc.)"
+n1_unique_ops,Number of distinct operator types
+n2_unique_opds,Number of distinct operand expressions
+N_length,Halstead program length = N1 + N2
+n_vocabulary,Halstead vocabulary = n1 + n2
+Halstead_V,"Volume = N * log2(n) in bits (Halstead, 1977)"
+Halstead_D,"Difficulty = (n1/2) * (N2/n2) (Halstead, 1977)"
+Halstead_E,"Effort = D * V (Halstead, 1977)"
+Operators_detail,List of operator tokens found in the tree
+Operands_detail,List of operand tokens found in the tree
+Raw_MR,Original MR text as written in the input file

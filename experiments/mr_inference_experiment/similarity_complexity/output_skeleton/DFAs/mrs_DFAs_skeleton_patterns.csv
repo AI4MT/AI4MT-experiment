@@ -1,0 +1,7 @@
+MR_ID,Pattern,Tree_Size
+example-detailed-MR1,EQ => (PRED AND NEG_PRED) OR (NEG_PRED AND PRED),11
+example-detailed-MR2,INCLUDES => NEG_PRED OR PRED,7
+example-detailed-MR3,SIZE_LT => PRED OR PRED,7
+example-detailed-MR4,SIZE_LT => NEG_PRED OR NEG_PRED,7
+example-detailed-MR5,SIZE_LT => PRED OR PRED,7
+noexample-detailed-MR4,SIZE_GT => NEG_PRED OR PRED,7

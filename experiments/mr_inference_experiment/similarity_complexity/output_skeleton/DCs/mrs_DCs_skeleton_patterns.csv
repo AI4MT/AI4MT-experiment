@@ -1,0 +1,17 @@
+MR_ID,Pattern,Tree_Size
+base-normal-MR1,DEC => INC,5
+base-normal-MR2,DEC AND EQ => INC,7
+base-normal-MR3,DEC AND EQ => INC,7
+base-normal-MR4,DEC => DEC,5
+base-normal-MR5,DEC AND EQ => INC,7
+base-normal-MR6,DEC => DEC,5
+base-normal-MR7,DEC => INC,5
+base-noMR-MR1,DEC => DEC,5
+base-noMR-MR3,DEC => DEC,5
+base-noMR-MR4,DEC => DEC,5
+nobase-normal-MR3,DEC => INC,5
+nobase-normal-MR5,DEC => INC,5
+nobase-noIF-MR3,DEC => DEC,5
+nobase-noIF-MR4,INC => INC,5
+nobase-noIF-MR5,DEC => INC,5
+nobase-noIF-MR6,DEC => INC,5
