@@ -7,11 +7,11 @@ This repository contains the results of the experiments with the AI4MT framework
 
 
 
-The experiment is based on 3 domains: data centers, autonomous vehicles, and automata. The following are the Gotten description of those case studies, and the 12 considered metamorphic relations:
+The experiment is based on 3 domains: data centres, autonomous vehicles, and automata. The following are the Gotten description of those case studies, and the 12 considered metamorphic relations:
 
 
 
-### Cloud case study 
+### Data centres case study 
 Taken from P. Gómez-Abajo, P. C. Cañizares, A. Núñez, E. Guerra, J. de Lara, Automated engineering of domain-specific metamorphic testing environments, Inf. Softw. Technol. 157 (2023) 107164.
 
 ```
