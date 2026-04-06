@@ -11,7 +11,8 @@ The experiment is based on 3 domains: data centers, autonomous vehicles, and aut
 
 
 
-### Cloud case study (from P. Gómez-Abajo, P. C. Cañizares, A. Núñez, E. Guerra, J. de Lara, Automated engineering of domain-specific metamorphic testing environments, Inf. Softw. Technol. 157 (2023) 107164.)
+### Cloud case study 
+Taken from P. Gómez-Abajo, P. C. Cañizares, A. Núñez, E. Guerra, J. de Lara, Automated engineering of domain-specific metamorphic testing environments, Inf. Softw. Technol. 157 (2023) 107164.
 
 ```
 input Features {
@@ -43,7 +44,9 @@ MetamorphicRelations {
 ```
 ---
 
-### Autonomous vehicles case study (J. Ayerdi, et al., Performance-driven metamorphic testing of cyber-physical systems, IEEE Trans. Reliab. 72 (2) (2023) 827–845.)
+### Autonomous vehicles case study 
+
+Taken from J. Ayerdi, et al., Performance-driven metamorphic testing of cyber-physical systems, IEEE Trans. Reliab. 72 (2) (2023) 827–845.
 
 ```
 avehicles input Features {
@@ -69,7 +72,7 @@ MetamorphicRelations {
 ```
 ---
 
-### Automata and words case studies:
+### Automata and words case studies
 
 ```
 dfa input Features {
