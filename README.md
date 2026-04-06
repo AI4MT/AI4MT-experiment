@@ -7,7 +7,7 @@ This repository contains the results of the experiments with the AI4MT framework
 
 
 
-The experiment is based on 3 domains: data centres, autonomous vehicles, and automata. The following are the Gotten description of those case studies, and the 12 considered metamorphic relations:
+The experiment is based on 3 domains: data centres, autonomous vehicles, and automata. The following are the [Gotten](https://g0tten.github.io/home) description of those case studies, and the 12 considered metamorphic relations:
 
 
 
